@@ -1,0 +1,33 @@
+CREATE DATABASE booklib;
+USE booklib;
+CREATE TABLE author (id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT, 
+  pretitle VARCHAR(20), 
+  first VARCHAR(80), 
+  middle VARCHAR(80), 
+  last VARCHAR(80) NOT NULL, 
+  posttitle VARCHAR(20), 
+  PRIMARY KEY (id));
+INSERT INTO author VALUES
+  (NULL, NULL, 'Terry', NULL, 'Brooks', NULL), 
+  (NULL, NULL, 'Glen', NULL, 'Cook', NULL), 
+  (NULL, NULL, 'David', NULL, 'Brin', NULL);
+CREATE TABLE book (id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  type ENUM('softcover', 'hardcover') NOT NULL,
+  title VARCHAR(160) NOT NULL,
+  series VARCHAR(160),
+  author SMALLINT NOT NULL,
+  isbn VARCHAR(14),
+  date SMALLINT UNSIGNED,
+  PRIMARY KEY (id));
+INSERT INTO book VALUES
+  (NULL, 'hardcover', 'The Sword Of Shanara Trilogy', 'The Sword Of Shanara', 
+   1, '0-345-45375-1', 1991),
+  (NULL, 'hardcover', 'The Heritage Of Shanara', 'The Heritage Of Shanara', 
+   1, '0-345-46554-7', 2003),
+  (NULL, 'hardcover', 'Heaven\'s Reach', 'Earth Clan',
+   3, '0-553-10174-9', 1998),
+  (NULL, 'hardcover', 'She Is The Darkness', 'Black Company',
+   2, '0-312-85907-4', 1997),
+  (NULL, 'hardcover', 'Bleak Seasons', 'Black Company', 
+   2, '0-312-86105-2', 1996);
+  
