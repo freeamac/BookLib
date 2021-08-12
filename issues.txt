@@ -1,7 +1,0 @@
-A new book gets added but the display does not put it in correct alpha sequence. eg. 
-Added "Towers of Midnight" and it got added at the end of the Ts, not in the middle where
-it should be.
-If you then save and exit, upon return, the sort will be still be wrong
-
-In fact, if you sort by book author and save, that is the way it will be presented the next
-time you open the app.
