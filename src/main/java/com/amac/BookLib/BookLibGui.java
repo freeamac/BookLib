@@ -76,8 +76,11 @@ class BookLibGuiFrame extends JFrame {
 		closeItem,
 		saveItem,
 		saveAsItem,
-		printItem,
-		exportItem;
+		printItem;
+
+	// **Export As...** Menu Items
+	private final JMenuItem exportCSVItem,
+		exportHtmlItem;
 
 	// **Edit** Menu Items
 	private final JMenuItem cutItem,
@@ -220,8 +223,12 @@ class BookLibGuiFrame extends JFrame {
 			KeyStroke.getKeyStroke(KeyEvent.VK_P, InputEvent.CTRL_MASK));
 		printItem.setEnabled(false);
 		fileMenu.addSeparator();
-		exportItem = fileMenu.add(new TestAction("Export..."));
-		exportItem.setEnabled(false);
+		JMenu exportMenu = new JMenu("Export As ...");
+		fileMenu.add(exportMenu);
+		exportCSVItem = exportMenu.add(new TestAction("CSV ..."));
+		exportCSVItem.setEnabled(false);
+		exportHtmlItem = exportMenu.add(new TestAction("Html ..."));
+		exportHtmlItem.setEnabled(false);
 		fileMenu.addSeparator();
 
 		// Set up all Action Listeners for each **File** menu item as an anonymous class
@@ -232,7 +239,8 @@ class BookLibGuiFrame extends JFrame {
 				currentDisplayBookList = null;
 				dataModified = true;
 				toggleMenuItems(true);
-				//exportItem.setEnabled(true);
+				exportCSVItem.setEnabled(true);
+				exportHtmlItem.setEnabled(true);
 				setVisible(true);
 
 			}
@@ -242,6 +250,14 @@ class BookLibGuiFrame extends JFrame {
 			public void actionPerformed(ActionEvent event) {
 				dataFile = saveOrLoadFileDialog(FileDialog.LOAD);
 				try {
+					if (dataFile == null) {
+						JOptionPane.showMessageDialog(
+							null,
+							"Action cancelled. No file selected.",
+							"Information",
+							JOptionPane.INFORMATION_MESSAGE);
+						return;
+					};
 					bookLibrary = new BookLibrary(dataFile);
 				} catch (Exception e) {
 					JOptionPane.showMessageDialog(
@@ -259,7 +275,8 @@ class BookLibGuiFrame extends JFrame {
 					displayingSearchList);
 
 				toggleMenuItems(true);
-				//exportItem.setEnabled(true);
+				exportCSVItem.setEnabled(true);
+				exportHtmlItem.setEnabled(true);
 				setVisible(true);
 			}
 		});
@@ -329,7 +346,8 @@ class BookLibGuiFrame extends JFrame {
 				contentPane.add(bookLibPanel);
 				contentPane.repaint();
 				toggleMenuItems(false);
-				//exportItem.setEnabled(false);
+				exportCSVItem.setEnabled(false);
+				exportHtmlItem.setEnabled(false);
 				setVisible(true);
 			}
 		});
