@@ -887,3 +887,34 @@ class AuthorListCompare implements Comparator {
 			return lastname_a.compareTo(lastname_b);
 	}
 }
+
+/**
+ * An auxilliary class to implement the comparison sorting of books
+ * based on their publish date. If the publish date of each book is equal
+ * the secondary sort is based on book title.
+ * 
+ * The primary purpose of this class is to allow the sorting of a list
+ * of books by publish date.
+ */
+class PublishDateListCompare implements Comparator {
+	public int compare(Object a, Object b) {
+		int less = -1;
+		int greater = 1;
+
+		Book book_a = (Book) a;
+		Book book_b = (Book) b;
+		int publishDate_a = book_a.getPublishYear();
+		int publishDate_b = book_b.getPublishYear();
+
+		if (publishDate_a == publishDate_b) {
+			// Handle same publish date scenario
+			String title_a = book_a.getTitle();
+			String title_b = book_b.getTitle();
+			return title_a.compareTo(title_b);
+		} else {
+			 return publishDate_a < publishDate_b ? less : greater;
+		}
+
+	}
+}
+

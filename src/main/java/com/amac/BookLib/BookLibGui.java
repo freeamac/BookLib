@@ -93,7 +93,7 @@ class BookLibGuiFrame extends JFrame {
 		searchBySeriesItem;
 
 	// **View** Menu Items
-	final JMenuItem allBooksItem, sortByBookTitlesItem, sortByBookAuthorsItem;
+	final JMenuItem allBooksItem, sortByBookTitlesItem, sortByBookAuthorsItem, sortByBookPubslishDateItem;
 
 	/**
 	 * Opens the Save or Load file dialog based on the passed mode. The 
@@ -161,6 +161,7 @@ class BookLibGuiFrame extends JFrame {
 			allBooksItem.setEnabled(true);
 			sortByBookTitlesItem.setEnabled(true);
 			sortByBookAuthorsItem.setEnabled(true);
+			sortByBookPubslishDateItem.setEnabled(true);
 		} else {
 			// Enable/disable any menu items that could now be used
 			// with the book library being closed
@@ -179,6 +180,7 @@ class BookLibGuiFrame extends JFrame {
 			allBooksItem.setEnabled(false);
 			sortByBookTitlesItem.setEnabled(false);
 			sortByBookAuthorsItem.setEnabled(false);
+			sortByBookPubslishDateItem.setEnabled(false);
 		}
 	}
 
@@ -667,6 +669,23 @@ class BookLibGuiFrame extends JFrame {
 					Collections.sort(
 						currentDisplayBookList,
 						new AuthorListCompare());
+					bookLibPanel.UpdateData(
+						currentDisplayBookList,
+						displayingSearchList);
+					setVisible(true);
+				}
+			}
+		});
+
+		// Sort display by book authors
+		sortByBookPubslishDateItem = viewMenu.add("Sort By Book Publish Date");
+		sortByBookPubslishDateItem.setEnabled(false);
+		sortByBookPubslishDateItem.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent event) {
+				if (currentDisplayBookList != null) {
+					Collections.sort(
+						currentDisplayBookList,
+						new PublishDateListCompare());
 					bookLibPanel.UpdateData(
 						currentDisplayBookList,
 						displayingSearchList);
