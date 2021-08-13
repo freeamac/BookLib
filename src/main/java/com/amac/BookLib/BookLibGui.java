@@ -23,8 +23,8 @@ import java.io.*;
 public class BookLibGui {
 
 	public static void main(String[] args) {
-		BookLibGuiFrame frame = new BookLibGuiFrame();
 		JFrame.setDefaultLookAndFeelDecorated(true);
+		BookLibGuiFrame frame = new BookLibGuiFrame();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
 	}
@@ -195,6 +195,7 @@ class BookLibGuiFrame extends JFrame {
 	public BookLibGuiFrame() {
 
 		setTitle("Library Of Books");
+		//super("Library Of Books");
 		setSize(DEFAULT_WIDTH, DEFAULT_HEIGHT);
 
 		// Setup **File** Menu
