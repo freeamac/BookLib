@@ -506,6 +506,29 @@ public class Book implements Comparable, Comparator {
 	// Output methods
 
 	/**
+	 * Create a formatted string from the list of <code>Author</code> separated by the passed separator.
+	 * 
+	 * @param sep The separator to use to separate the author names.
+	 * @return The formatted string of Authors.
+	 */
+	public String getAuthorsString(String sep) {
+		String authorsString;
+		ListIterator<Author> authorListIterator = authors.listIterator();
+		if (authors.size() > 0) {
+			Author authorNext;
+			authorNext = authorListIterator.next();
+			authorsString = authorNext.toString();
+			while (authorListIterator.hasNext()) {
+				authorNext = authorListIterator.next();
+				authorsString = authorsString + sep + authorNext.toString();
+			};
+		} else {
+			authorsString = "";	
+		};
+		return authorsString;
+	}
+
+	/**
 	 * Create a valid XML definition for representing the book object.
 	 * 
 	 * @param indent The initial space indentation for formatting the xml

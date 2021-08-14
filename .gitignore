@@ -4,6 +4,9 @@
 # Ignore Gradle build output directory
 build
 
+# Ignore downloaded dependent libraries
+libs
+
 # Ignore backup files
 *~
 *.bak

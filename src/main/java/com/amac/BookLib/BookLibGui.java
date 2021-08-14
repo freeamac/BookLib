@@ -4,7 +4,10 @@ import javax.swing.*;
 import javax.swing.table.*;
 import java.util.*;
 import java.io.*;
-//import com.amac.Book;
+
+import com.opencsv.CSVWriter;
+
+//import com.amac.Book;import java.io.FileWriter;
 //import com.amac.BookLibrary;
 
 /**
@@ -23,7 +26,11 @@ import java.io.*;
 public class BookLibGui {
 
 	public static void main(String[] args) {
+		// Ensure all frames and dialogs have standard window decorations
+		// eg. Title bar, close button, etc
 		JFrame.setDefaultLookAndFeelDecorated(true);
+		JDialog.setDefaultLookAndFeelDecorated(true);
+
 		BookLibGuiFrame frame = new BookLibGuiFrame();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
@@ -226,7 +233,7 @@ class BookLibGuiFrame extends JFrame {
 		fileMenu.addSeparator();
 		JMenu exportMenu = new JMenu("Export As ...");
 		fileMenu.add(exportMenu);
-		exportCSVItem = exportMenu.add(new TestAction("CSV ..."));
+		exportCSVItem = exportMenu.add("CSV ...");
 		exportCSVItem.setEnabled(false);
 		exportHtmlItem = exportMenu.add(new TestAction("Html ..."));
 		exportHtmlItem.setEnabled(false);
@@ -374,6 +381,13 @@ class BookLibGuiFrame extends JFrame {
 						e.printStackTrace(System.err);
 					};
 				}
+			}
+		});
+
+		exportCSVItem.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent event) {
+				if (bookLibPanel != null)
+					bookLibPanel.exportToCSV();
 			}
 		});
 
@@ -760,7 +774,7 @@ class BookLibPanel extends JPanel {
 	private static final String[] columnNames =
 		{ "Book Title", "Authors", "Series", "Publish Date", "Cover", "ISBN" };
 	private Object[][] bookData;
-	private LinkedList bookList;
+	private LinkedList<Book> bookList;
 	private JTable bookTable;
 	private JScrollPane scrollPane;
 	private readOnlyTableModel readOnlyTM;
@@ -891,7 +905,7 @@ class BookLibPanel extends JPanel {
 	 * @param booklist The new list of books to display
 	 * @param searchlist True if this is a refined list and that should be indicated
 	 */
-	public void UpdateData(LinkedList booklist, boolean searchlist) {
+	public void UpdateData(LinkedList<Book> booklist, boolean searchlist) {
 
 		// Ensure panel sized relative to parent container size
 		Container parent = getParent();
@@ -919,7 +933,7 @@ class BookLibPanel extends JPanel {
 		for (int i = 0; i < booklist.size(); i++) {
 			Book book = (Book) booklist.get(i);
 			bookData[i][0] = book.getTitle();
-			LinkedList book_auths = book.getAuthors();
+			LinkedList<Author> book_auths = book.getAuthors();
 			String authors = null;
 			for (int k = 0; k < book_auths.size(); k++) {
 				Author auth = (Author) book_auths.get(k);
@@ -936,7 +950,7 @@ class BookLibPanel extends JPanel {
 				bookData[i][3] = "";
 			else
 				bookData[i][3] =
-					(new Integer(book.getPublishYear())).toString();
+					Integer.toString(book.getPublishYear());
 			bookData[i][4] = Book.COVERNAME[book.getCoverType()];
 			bookData[i][5] = book.getISBN();
 		};
@@ -971,6 +985,91 @@ class BookLibPanel extends JPanel {
 			return null;
 		else
 			return (Book) bookList.get(row);
+	}
+
+	// Export methods
+
+	/** 
+	 * Export the current panel displayed to the passed file in CSV format
+	 * 
+	 */
+	public void exportToCSV() {
+
+		File file;
+		// Set up file dialog to save csv values and ensure correct extension and
+		// non-existence
+		String filename = JOptionPane.showInputDialog("New CSV file to export to");
+		if (!filename.endsWith(".csv"))  {
+			file = new File(filename + ".csv");
+			if (file.exists()) {
+				JOptionPane.showMessageDialog(
+					null,
+					"File already exisits: " + file.getName() + " .",
+					"Error",
+					JOptionPane.ERROR_MESSAGE);
+				return;
+			} 
+		} else {
+			file = new File(filename);
+		}
+
+		// Create new file
+		try {
+			file.createNewFile();
+		} catch (IOException e) {
+			JOptionPane.showMessageDialog(
+				null,
+				"Unable to open " + file.getName() + " for writing:"
+				+ e.getMessage()
+				+ "\nSee console output for debugging information.",
+				"Error",
+				JOptionPane.ERROR_MESSAGE);
+			e.printStackTrace(System.err);
+			return;
+		}
+
+		// Set up as a FileWriter
+		FileWriter fileWriter;
+		try {
+			fileWriter = new FileWriter(file);
+		} catch (IOException e) {
+			JOptionPane.showMessageDialog(
+				null,
+				"Unable to open " + file.getName() + " for writing:"
+				+ e.getMessage()
+				+ "\nSee console output for debugging information.",
+				"Error",
+				JOptionPane.ERROR_MESSAGE);
+			e.printStackTrace(System.err);
+			return;
+		}
+
+		// Setup and handle output in csv format
+		CSVWriter csvWriter = new CSVWriter(fileWriter);
+		csvWriter.writeNext(columnNames);
+
+		ListIterator<Book> booklistIterator = bookList.listIterator();
+		while (booklistIterator.hasNext()) {
+			Book nextBook = booklistIterator.next();
+			//String[] csvEntries = new String[6];
+			String[] csvEntries = {nextBook.title, nextBook.getAuthorsString(",\n"), nextBook.series, String.valueOf(nextBook.publishYear), Book.COVERNAME[nextBook.coverType], nextBook.ISBN};
+			csvWriter.writeNext(csvEntries);
+
+		}
+		try {
+			csvWriter.flush();
+			csvWriter.close();
+		} catch (IOException e) {
+			JOptionPane.showMessageDialog(
+				null,
+				"Unable to write to and close " + file.getName() + " :"
+				+ e.getMessage()
+				+ "\nSee console output for debugging information.",
+				"Error",
+				JOptionPane.ERROR_MESSAGE);
+			e.printStackTrace(System.err);
+			return;
+		}
 	}
 }
 
@@ -1107,7 +1206,10 @@ class AddModifyBookDialog extends JDialog {
 		JPanel panel = new JPanel();
 		panel.setLayout(new GridLayout(5, 2));
 		panel.add(new JLabel("Title:"));
+		//JTextField title = new JTextField("");
+		//title.getInputContext().selectInputMethod(new Locale("ja", "JP"));
 		panel.add(title = new JTextField(""));
+		panel.add(title);
 		panel.add(new JLabel("Series:"));
 		panel.add(series = new JTextField(""));
 		panel.add(new JLabel("ISBN:"));

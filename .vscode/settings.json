@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/home/amac/Data/git/BookLib/libs/opencsv-5.5.jar"
+    ]
+}
