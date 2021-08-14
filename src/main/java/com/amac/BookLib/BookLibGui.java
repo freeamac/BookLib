@@ -134,7 +134,6 @@ class BookLibGuiFrame extends JFrame {
 		fileDialog.setVisible(false);
 		if (fileName != null) {
 			fileDir = fileDialog.getDirectory();
-			//System.out.println("Got " + fileDialog.getFile()); 
 			return (new File(fileDir, fileName));
 
 		} else
@@ -199,7 +198,6 @@ class BookLibGuiFrame extends JFrame {
 	public BookLibGuiFrame() {
 
 		setTitle("Library Of Books");
-		//super("Library Of Books");
 		setSize(DEFAULT_WIDTH, DEFAULT_HEIGHT);
 
 		// Setup **File** Menu
@@ -594,7 +592,6 @@ class BookLibGuiFrame extends JFrame {
 		searchByAuthorItem.setEnabled(false);
 		searchByAuthorItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
-				//searchObj.consoleDump();
 				if (authorSearchDialog == null)
 					authorSearchDialog =
 						new AuthorSearchDialog(BookLibGuiFrame.this);
@@ -618,7 +615,6 @@ class BookLibGuiFrame extends JFrame {
 		searchByBookItem.setEnabled(false);
 		searchByBookItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
-				//searchObj.consoleDump();
 				if (bookSearchDialog == null)
 					bookSearchDialog =
 						new BookSearchDialog(BookLibGuiFrame.this);
@@ -641,7 +637,6 @@ class BookLibGuiFrame extends JFrame {
 		searchBySeriesItem.setEnabled(false);
 		searchBySeriesItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
-				//searchObj.consoleDump();
 				if (seriesSearchDialog == null)
 					seriesSearchDialog =
 						new SeriesSearchDialog(BookLibGuiFrame.this);

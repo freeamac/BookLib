@@ -323,7 +323,10 @@ public class Author {
 		if (!(o instanceof Author))
 			return false;
 		Author y = (Author) o;
-		if (firstname.equalsIgnoreCase(y.getFirstName())
+		String y_firstname = y.getFirstName();
+		if ((firstname == null) && (y_firstname != null))
+			return false;
+		if ((firstname == null) && (y_firstname == null) || (firstname.equalsIgnoreCase(y_firstname))
 			&& lastname.equalsIgnoreCase(y.getLastName()))
 			return true;
 		else
@@ -434,16 +437,17 @@ public class Author {
 					+ "</"
 					+ TAGNAME_TITLE
 					+ ">\n";
-		xmlString =
-			xmlString
-				+ indent1
-				+ "<"
-				+ TAGNAME_FIRSTNAME
-				+ ">"
-				+ firstname
-				+ "</"
-				+ TAGNAME_FIRSTNAME
-				+ ">\n";
+		if (firstname != null)
+			xmlString =
+				xmlString
+					+ indent1
+					+ "<"
+					+ TAGNAME_FIRSTNAME
+					+ ">"
+					+ firstname
+					+ "</"
+					+ TAGNAME_FIRSTNAME
+					+ ">\n";
 		if (middlename != null)
 			xmlString =
 				xmlString
