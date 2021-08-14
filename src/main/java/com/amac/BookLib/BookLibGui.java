@@ -7,9 +7,6 @@ import java.io.*;
 
 import com.opencsv.CSVWriter;
 
-//import com.amac.Book;import java.io.FileWriter;
-//import com.amac.BookLibrary;
-
 /**
  * The <code>BookLibGui</code> is the graphical interface allowing
  * the manipulation of <code>BookLibrary</code> objects. A main
@@ -235,7 +232,7 @@ class BookLibGuiFrame extends JFrame {
 		fileMenu.add(exportMenu);
 		exportCSVItem = exportMenu.add("CSV ...");
 		exportCSVItem.setEnabled(false);
-		exportHtmlItem = exportMenu.add(new TestAction("Html ..."));
+		exportHtmlItem = exportMenu.add("Html ...");
 		exportHtmlItem.setEnabled(false);
 		fileMenu.addSeparator();
 
@@ -388,6 +385,13 @@ class BookLibGuiFrame extends JFrame {
 			public void actionPerformed(ActionEvent event) {
 				if (bookLibPanel != null)
 					bookLibPanel.exportToCSV();
+			}
+		});
+
+		exportHtmlItem.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent event) {
+				if (bookLibPanel != null)
+					bookLibPanel.exportToHTML();
 			}
 		});
 
@@ -990,8 +994,12 @@ class BookLibPanel extends JPanel {
 	// Export methods
 
 	/** 
-	 * Export the current panel displayed to the passed file in CSV format
+	 * Export the current panel displayed to a file in CSV format.
 	 * 
+	 * The file must have a ".csv" extension. If the user does not 
+	 * provide one, the extension is added. 
+	 * 
+	 * The file cannot already exist or an error message is given.
 	 */
 	public void exportToCSV() {
 
@@ -1059,6 +1067,142 @@ class BookLibPanel extends JPanel {
 		try {
 			csvWriter.flush();
 			csvWriter.close();
+			fileWriter.close();
+			JOptionPane.showMessageDialog(
+				null,
+				"Book Information exported to " + file.getAbsolutePath(),
+				"Information",
+				JOptionPane.INFORMATION_MESSAGE);
+		} catch (IOException e) {
+			JOptionPane.showMessageDialog(
+				null,
+				"Unable to write to and close " + file.getName() + " :"
+				+ e.getMessage()
+				+ "\nSee console output for debugging information.",
+				"Error",
+				JOptionPane.ERROR_MESSAGE);
+			e.printStackTrace(System.err);
+			return;
+		}
+	}
+
+	/** Helper method to print a blank instead of "null" for nulls.
+	 * 
+	 * @param s The string to check for null.
+	 * @return "" or the string.
+	 */
+	private static String nullToBlank(String s) {
+		if (s == null)
+			return "";
+		else
+			return s;
+	}
+
+	/** 
+	 * Export the current panel displayed to a file in HTML format.
+	 * 
+	 * The file must have a ".html" extension. If the user does not 
+	 * provide one, the extension is added. 
+	 * 
+	 * The file cannot already exist or an error message is given.
+	 */
+	public void exportToHTML() {
+
+		File file;
+		// Set up file dialog to save html values and ensure correct extension and
+		// non-existence
+		String filename = JOptionPane.showInputDialog("New HTML file to export to");
+		if (!filename.endsWith(".html"))  {
+			file = new File(filename + ".html");
+			if (file.exists()) {
+				JOptionPane.showMessageDialog(
+					null,
+					"File already exisits: " + file.getName() + " .",
+					"Error",
+					JOptionPane.ERROR_MESSAGE);
+				return;
+			} 
+		} else {
+			file = new File(filename);
+		}
+
+		// Create new file
+		try {
+			file.createNewFile();
+		} catch (IOException e) {
+			JOptionPane.showMessageDialog(
+				null,
+				"Unable to open " + file.getName() + " for writing:"
+				+ e.getMessage()
+				+ "\nSee console output for debugging information.",
+				"Error",
+				JOptionPane.ERROR_MESSAGE);
+			e.printStackTrace(System.err);
+			return;
+		}
+
+		// Set up as a FileWriter
+		FileWriter fileWriter;
+		try {
+			fileWriter = new FileWriter(file);
+		} catch (IOException e) {
+			JOptionPane.showMessageDialog(
+				null,
+				"Unable to open " + file.getName() + " for writing:"
+				+ e.getMessage()
+				+ "\nSee console output for debugging information.",
+				"Error",
+				JOptionPane.ERROR_MESSAGE);
+			e.printStackTrace(System.err);
+			return;
+		}
+
+		// Output in html header information 
+		try {
+			fileWriter.write("<HTML xmlns=\"http://www.w3.org/TR/REC-html40\">\n");
+			fileWriter.write("<HEAD>\n");
+			fileWriter.write("  <META http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\n");
+			fileWriter.write("  <TITLE>Book Library</TITLE>\n");
+			fileWriter.write("</HEAD>\n");
+			fileWriter.write("<BODY>\n");
+			fileWriter.write("  <H1>Book Library</H1>\n");
+			fileWriter.write("  <table  width=\"100%\" border=\"5\" cellspacing=\"3\">\n");
+			fileWriter.write("  <tr width=\"100%\">\n");
+			fileWriter.write("    <th width=\"25%\">Title</th>\n");
+			fileWriter.write("    <th width=\"20%\">Author(s)</th>\n");
+			fileWriter.write("    <th width=\"25%\">Series</th>\n");
+			fileWriter.write("    <th width=\"10%\">Publish Year</th>\n");
+			fileWriter.write("    <th width=\"10%\">Cover</th>\n");
+			fileWriter.write("    <th width=\"10%\">ISBN</th>\n");
+			fileWriter.write("  </tr>\n");
+
+			// Output each Book as an entry in the html table
+			ListIterator<Book> booklistIterator = bookList.listIterator();
+			while (booklistIterator.hasNext()) {
+				Book nextBook = booklistIterator.next();
+				fileWriter.write("  <tr width=\"100%\">\n");
+				fileWriter.write("    <td width=\"25%\">" + nextBook.title + "</td>\n");
+				fileWriter.write("    <td width=\"20%\">" + nextBook.getAuthorsString(",</br>") + "</td>\n");
+				fileWriter.write("    <td width=\"25%\">" + BookLibPanel.nullToBlank(nextBook.series) + "</td>\n");
+				fileWriter.write("    <td width=\"10%\">" + String.valueOf(nextBook.publishYear) + "</td>\n");
+				fileWriter.write("    <td width=\"10%\">" + Book.COVERNAME[nextBook.coverType] + "</td>\n");
+				fileWriter.write("    <td width=\"10%\">" + BookLibPanel.nullToBlank(nextBook.ISBN) + "</td>\n");
+				fileWriter.write("  <tr>\n");
+			}
+
+			// Output html closing information
+			fileWriter.write("  </table>\n");
+			fileWriter.write("</body>\n");
+			fileWriter.write("</html>\n");
+
+			// Flush, close and notify success 
+			fileWriter.flush();
+			fileWriter.close();
+			JOptionPane.showMessageDialog(
+				null,
+				"Book Information exported to " + file.getAbsolutePath(),
+				"Information",
+				JOptionPane.INFORMATION_MESSAGE);
 		} catch (IOException e) {
 			JOptionPane.showMessageDialog(
 				null,
