@@ -314,18 +314,19 @@ public class BookLibrary {
 	 * specified in the search object.
 	 * 
 	 * @param searchObject
+	 * @param caseInsensitive If we should use a case insensitive search
 	 * @return Linked list of books matching the search criteria
 	 */
-	public LinkedList searchResults(BookSearchObject searchObject) {
+	public LinkedList searchResults(BookSearchObject searchObject, boolean caseInsensitive) {
 
 		// Farm the search off to the appropriate private method based
 		// on the type of search in the search object
 		if (searchObject.getSearchType() == BookSearchObject.BOOKSEARCH)
-			return bookSearchResults(searchObject);
+			return bookSearchResults(searchObject, caseInsensitive);
 		else if (searchObject.getSearchType() == BookSearchObject.AUTHORSEARCH)
-			return authorSearchResults(searchObject);
+			return authorSearchResults(searchObject, caseInsensitive);
 		else if (searchObject.getSearchType() == BookSearchObject.SERIESSEARCH)
-			return seriesSearchResults(searchObject);
+			return seriesSearchResults(searchObject, caseInsensitive);
 		else
 			return null;
 	}
@@ -337,9 +338,10 @@ public class BookLibrary {
 	 * to be returned.
 	 * 
 	 * @param searchObject
+	 * @param caseInsensitive If we should use a case insensitive search
 	 * @return Linked list of books matching the book information search criteria
 	 */
-	private LinkedList bookSearchResults(BookSearchObject searchObject) {
+	private LinkedList bookSearchResults(BookSearchObject searchObject, boolean caseInsensitive) {
 		LinkedList resultList = new LinkedList();
 		for (int i = 0; i < bookList.size(); i++) {
 
@@ -361,12 +363,12 @@ public class BookLibrary {
 
 			if (!searchObject.getISBN().equals(""))
 				if (!BookSearchObject
-					.WildCardMatch(searchObject.getISBN(), b.getISBN()))
+					.WildCardMatch(searchObject.getISBN(), b.getISBN(), caseInsensitive))
 					addToList = false;
 
 			if (!searchObject.getTitle().equals(""))
 				if (!BookSearchObject
-					.WildCardMatch(searchObject.getTitle(), b.getTitle()))
+					.WildCardMatch(searchObject.getTitle(), b.getTitle(), caseInsensitive))
 					addToList = false;
 
 			if (addToList)
@@ -380,9 +382,10 @@ public class BookLibrary {
 	 * series search criteria specified in the search object
 	 * 
 	 * @param searchObject
+	 * @param caseInsensitive If we should use a case insensitive search
 	 * @return Linked list of books matching the book series search criteria
 	 */
-	private LinkedList seriesSearchResults(BookSearchObject searchObject) {
+	private LinkedList seriesSearchResults(BookSearchObject searchObject, boolean caseInsensitive) {
 		LinkedList resultList = new LinkedList();
 		for (int i = 0; i < bookList.size(); i++) {
 
@@ -394,7 +397,7 @@ public class BookLibrary {
 			Book b = (Book) bookList.get(i);
 			if (!searchObject.getSeries().equals(""))
 				if (!BookSearchObject
-					.WildCardMatch(searchObject.getSeries(), b.getSeries()))
+					.WildCardMatch(searchObject.getSeries(), b.getSeries(), caseInsensitive))
 					addToList = false;
 
 			if (addToList)
@@ -410,9 +413,10 @@ public class BookLibrary {
 	 * returned.
 	 * 
 	 * @param searchObject
+	 * @param caseInsensitive If we should use a case insensitive search
 	 * @return Linked list of books matching the book author search criteria
 	 */
-	private LinkedList authorSearchResults(BookSearchObject searchObject) {
+	private LinkedList authorSearchResults(BookSearchObject searchObject, boolean caseInsensitive) {
 		LinkedList resultList = new LinkedList();
 		for (int i = 0; i < bookList.size(); i++) {
 
@@ -429,13 +433,15 @@ public class BookLibrary {
 					if (!BookSearchObject
 						.WildCardMatch(
 							searchObject.getFirstName(),
-							auth.getFirstName()))
+							auth.getFirstName(),
+							caseInsensitive))
 						foundFirst = false;
 				if (!searchObject.getLastName().equals(""))
 					if (!BookSearchObject
 						.WildCardMatch(
 							searchObject.getLastName(),
-							auth.getLastName()))
+							auth.getLastName(),
+							caseInsensitive))
 						foundLast = false;
 				authorFound = foundFirst && foundLast;
 			}
@@ -602,9 +608,10 @@ class BookSearchObject {
 	 * 
 	 * @param searchStr Search string
 	 * @param Str String to look in for a match of the search string
+	 * @param caseInsensitive If we should use a case insensitive search
 	 * @return True if a match is found. False otherwise (ie. no match)
 	 */
-	static public boolean WildCardMatch(String searchStr, String Str) {
+	static public boolean WildCardMatch(String searchStr, String Str, boolean caseInsensitive) {
 
 		if ((searchStr == null) || (Str == null))
 			return false;
@@ -630,6 +637,10 @@ class BookSearchObject {
 			patStr.insert(0, ".*");
 		if (patStr.charAt(i - 1) != WILDCARD)
 			patStr.append(".*");
+
+		// Make case insensitive if required
+		if (caseInsensitive)
+			patStr.insert(0, "(?i)");
 
 		boolean matched = Pattern.matches(patStr.toString(), Str);
 		return matched;

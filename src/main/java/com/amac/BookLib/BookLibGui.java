@@ -55,6 +55,9 @@ class BookLibGuiFrame extends JFrame {
 	// Indicates if displaying a refined search list
 	private boolean displayingSearchList = false;
 
+	// Indicates if the displayed search list was using case insensitive search
+	private boolean caseInsensitiveDisplayedSearchList = false;
+
 	// Data modified flag. Used to signal before close need to save data
 	private boolean dataModified = false;
 
@@ -477,7 +480,7 @@ class BookLibGuiFrame extends JFrame {
 							// Need to redo search list being displayed since the added
 							// added book may now appear in the list
 							currentDisplayBookList =
-								bookLibrary.searchResults(searchObj);
+								bookLibrary.searchResults(searchObj, caseInsensitiveDisplayedSearchList);
 						bookLibPanel.UpdateData(
 							currentDisplayBookList,
 							displayingSearchList);
@@ -573,7 +576,7 @@ class BookLibGuiFrame extends JFrame {
 							// Need to redo search list being displayed since the added
 							// added book may now appear in the list
 							currentDisplayBookList =
-								bookLibrary.searchResults(searchObj);
+								bookLibrary.searchResults(searchObj, caseInsensitiveDisplayedSearchList);
 						bookLibPanel.UpdateData(
 							currentDisplayBookList,
 							displayingSearchList);
@@ -599,8 +602,9 @@ class BookLibGuiFrame extends JFrame {
 					searchObj = authorSearchDialog.getSearchObject();
 					searchObj.consoleOutput();
 					currentDisplayBookList =
-						bookLibrary.searchResults(searchObj);
+						bookLibrary.searchResults(searchObj, authorSearchDialog.getCaseInsensitiveSearch());
 					displayingSearchList = true;
+					caseInsensitiveDisplayedSearchList = authorSearchDialog.getCaseInsensitiveSearch();
 					bookLibPanel.UpdateData(
 						currentDisplayBookList,
 						displayingSearchList);
@@ -622,8 +626,9 @@ class BookLibGuiFrame extends JFrame {
 					searchObj = bookSearchDialog.getSearchObject();
 					searchObj.consoleOutput();
 					currentDisplayBookList =
-						bookLibrary.searchResults(searchObj);
+						bookLibrary.searchResults(searchObj, bookSearchDialog.getCaseInsensitiveSearch());
 					displayingSearchList = true;
+					caseInsensitiveDisplayedSearchList = bookSearchDialog.getCaseInsensitiveSearch();
 					bookLibPanel.UpdateData(
 						currentDisplayBookList,
 						displayingSearchList);
@@ -644,8 +649,9 @@ class BookLibGuiFrame extends JFrame {
 					searchObj = seriesSearchDialog.getBookSearchObject();
 					searchObj.consoleOutput();
 					currentDisplayBookList =
-						bookLibrary.searchResults(searchObj);
+						bookLibrary.searchResults(searchObj, seriesSearchDialog.getCaseInsensitiveSearch());
 					displayingSearchList = true;
+					caseInsensitiveDisplayedSearchList = seriesSearchDialog.getCaseInsensitiveSearch();
 					bookLibPanel.UpdateData(
 						currentDisplayBookList,
 						displayingSearchList);
@@ -667,6 +673,7 @@ class BookLibGuiFrame extends JFrame {
 				if (bookLibrary != null) {
 					currentDisplayBookList = bookLibrary.getBookList();
 					displayingSearchList = false;
+					caseInsensitiveDisplayedSearchList = false;
 					bookLibPanel.UpdateData(
 						currentDisplayBookList,
 						displayingSearchList);
@@ -1627,6 +1634,7 @@ class AuthorSearchDialog extends JDialog {
 	private JTextField lastname, firstname;
 	private boolean ok;
 	private BookSearchObject searchObj;
+	private boolean caseInsensitive;
 
 	// Constructors
 
@@ -1639,11 +1647,13 @@ class AuthorSearchDialog extends JDialog {
 
 		// Set up fields for author search information entry
 		JPanel panel = new JPanel();
-		panel.setLayout(new GridLayout(2, 2));
+		panel.setLayout(new GridLayout(3, 2));
 		panel.add(new JLabel("Last Name:"));
 		panel.add(lastname = new JTextField(""));
 		panel.add(new JLabel("First Name:"));
 		panel.add(firstname = new JTextField(""));
+		JCheckBox caseInsensitiveCheckBox = new JCheckBox("Case Insensitive Search?");
+		panel.add(caseInsensitiveCheckBox);
 		contentPane.add(panel, BorderLayout.CENTER);
 
 		// Invoke create of book search object with **Search** button
@@ -1652,6 +1662,7 @@ class AuthorSearchDialog extends JDialog {
 			public void actionPerformed(ActionEvent event) {
 				ok = true;
 				createSearchObject();
+				caseInsensitive = caseInsensitiveCheckBox.isSelected();
 				setVisible(false);
 			}
 		});
@@ -1706,6 +1717,15 @@ class AuthorSearchDialog extends JDialog {
 		return searchObj;
 	}
 
+	/**
+	 * Return if we want a case insensitive serach
+	 * 
+	 * @return true or false
+	 */
+	public boolean getCaseInsensitiveSearch() {
+		return caseInsensitive;
+	}
+
 	// Helper methods
 
 	/**
@@ -1734,6 +1754,7 @@ class BookSearchDialog extends JDialog {
 	private JComboBox coverCombo;
 	private boolean ok;
 	private BookSearchObject searchObj;
+	private boolean caseInsensitive;
 
 	// Constructors
 
@@ -1746,7 +1767,7 @@ class BookSearchDialog extends JDialog {
 
 		// Set up fields for book search information entry
 		JPanel panel = new JPanel();
-		panel.setLayout(new GridLayout(5, 2));
+		panel.setLayout(new GridLayout(6, 2));
 		panel.add(new JLabel("Title:"));
 		panel.add(title = new JTextField(""));
 		panel.add(new JLabel("Author's Last Name:"));
@@ -1762,6 +1783,8 @@ class BookSearchDialog extends JDialog {
 			coverCombo.addItem(Book.COVERNAME[i]);
 		coverCombo.setSelectedIndex(Book.ANYCOVER);
 		panel.add(coverCombo);
+		JCheckBox caseInsensitiveCheckBox = new JCheckBox("Case Insensitive Search?");
+		panel.add(caseInsensitiveCheckBox);
 
 		contentPane.add(panel, BorderLayout.CENTER);
 
@@ -1771,6 +1794,7 @@ class BookSearchDialog extends JDialog {
 			public void actionPerformed(ActionEvent event) {
 				ok = true;
 				createSearchObject();
+				caseInsensitive = caseInsensitiveCheckBox.isSelected();
 				setVisible(false);
 			}
 		});
@@ -1828,6 +1852,15 @@ class BookSearchDialog extends JDialog {
 		return searchObj;
 	}
 
+	/**
+	 * Return if we want a case insensitive serach
+	 * 
+	 * @return true or false
+	 */
+	public boolean getCaseInsensitiveSearch() {
+		return caseInsensitive;
+	}
+
 	// Helper methods
 
 	/**
@@ -1862,6 +1895,7 @@ class SeriesSearchDialog extends JDialog {
 	private JTextField series;
 	private boolean ok;
 	private BookSearchObject searchObj;
+	private boolean caseInsensitive;
 
 	// Constructors
 
@@ -1874,9 +1908,11 @@ class SeriesSearchDialog extends JDialog {
 
 		// Set up fields for a book series search information entry
 		JPanel panel = new JPanel();
-		panel.setLayout(new GridLayout(1, 2));
+		panel.setLayout(new GridLayout(2, 2));
 		panel.add(new JLabel("Series Title:"));
 		panel.add(series = new JTextField(""));
+		JCheckBox caseInsensitiveCheckBox = new JCheckBox("Case Insensitive Search?");
+		panel.add(caseInsensitiveCheckBox);
 
 		contentPane.add(panel, BorderLayout.CENTER);
 
@@ -1886,6 +1922,7 @@ class SeriesSearchDialog extends JDialog {
 			public void actionPerformed(ActionEvent event) {
 				ok = true;
 				createBookSearchObject();
+				caseInsensitive = caseInsensitiveCheckBox.isSelected();
 				setVisible(false);
 			}
 		});
@@ -1937,6 +1974,15 @@ class SeriesSearchDialog extends JDialog {
 	 */
 	public BookSearchObject getBookSearchObject() {
 		return searchObj;
+	}
+
+	/**
+	 * Return if we want a case insensitive serach
+	 * 
+	 * @return true or false
+	 */
+	public boolean getCaseInsensitiveSearch() {
+		return caseInsensitive;
 	}
 
 	// Helper methods
