@@ -1,5 +1,7 @@
 import java.util.*;
 import java.io.*;
+import java.nio.CharBuffer;
+
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Document;
@@ -467,14 +469,14 @@ public class BookLibrary {
 		// Create backup file
 		if (f.exists()) {
 			File f_bak = new File(f.getPath() + "." + EXT_BOOKLIBRARY_BACKUP);
-			InputStream in = new FileInputStream(f);
-			OutputStream out = new FileOutputStream(f_bak);
+			BufferedReader in = new BufferedReader(new InputStreamReader( new FileInputStream(f), "UTF-8"));
+			BufferedWriter out = new BufferedWriter(new OutputStreamWriter( new FileOutputStream(f_bak), "UTF-8"));
 
 			// Transfer bytes from in to out
-			byte[] buf = new byte[1024];
-			int len;
-			while ((len = in.read(buf)) > 0) {
-				out.write(buf, 0, len);
+			CharBuffer buf = CharBuffer.allocate(1024);
+			while (in.read(buf) > 0) {
+				out.append(buf.flip());
+				buf.clear();
 			}
 			in.close();
 			out.close();
@@ -482,7 +484,7 @@ public class BookLibrary {
 
 		FileOutputStream fout = new FileOutputStream(f);
 		BufferedWriter bufwriter =
-			new BufferedWriter(new OutputStreamWriter(fout));
+			new BufferedWriter(new OutputStreamWriter(fout, "UTF-8"));
 
 		// Write out the required xml file header information and then
 		// the start of the book library xml definition

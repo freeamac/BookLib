@@ -1075,9 +1075,9 @@ class BookLibPanel extends JPanel {
 		}
 
 		// Set up as a FileWriter
-		FileWriter fileWriter;
+		Writer fileWriter;
 		try {
-			fileWriter = new FileWriter(file);
+			fileWriter = new BufferedWriter(new OutputStreamWriter( new FileOutputStream(file), "UTF-8"));
 		} catch (IOException e) {
 			JOptionPane.showMessageDialog(
 				null,
@@ -1180,9 +1180,9 @@ class BookLibPanel extends JPanel {
 		}
 
 		// Set up as a FileWriter
-		FileWriter fileWriter;
+		Writer fileWriter;
 		try {
-			fileWriter = new FileWriter(file);
+		    fileWriter = new BufferedWriter(new OutputStreamWriter( new FileOutputStream(file), "UTF-8"));
 		} catch (IOException e) {
 			JOptionPane.showMessageDialog(
 				null,
@@ -1199,7 +1199,7 @@ class BookLibPanel extends JPanel {
 		try {
 			fileWriter.write("<HTML xmlns=\"http://www.w3.org/TR/REC-html40\">\n");
 			fileWriter.write("<HEAD>\n");
-			fileWriter.write("  <META http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\n");
+			fileWriter.write("  <META http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"/>\n");
 			fileWriter.write("  <TITLE>Book Library</TITLE>\n");
 			fileWriter.write("</HEAD>\n");
 			fileWriter.write("<BODY>\n");
