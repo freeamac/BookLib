@@ -58,6 +58,11 @@ class BookLibGuiFrame extends JFrame {
 	// Indicates if the displayed search list was using case insensitive search
 	private boolean caseInsensitiveDisplayedSearchList = false;
 
+	// Indicates current sort, if any, order
+	private boolean bookTitleAscendingSort = false;
+	private boolean authorAscendingSort = false;
+	private boolean publishDateAscendingSort = false;
+
 	// Data modified flag. Used to signal before close need to save data
 	private boolean dataModified = false;
 
@@ -690,7 +695,16 @@ class BookLibGuiFrame extends JFrame {
 		sortByBookTitlesItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
 				if (currentDisplayBookList != null) {
-					Collections.sort(currentDisplayBookList);
+					// Handle flip between ascending and descending order sorts
+					if (!bookTitleAscendingSort) {
+						bookTitleAscendingSort = true;
+						authorAscendingSort = false;
+						publishDateAscendingSort = false;
+						Collections.sort(currentDisplayBookList);
+					} else {
+						bookTitleAscendingSort = false;
+						Collections.sort(currentDisplayBookList, Collections.reverseOrder());
+					}
 					bookLibPanel.UpdateData(
 						currentDisplayBookList,
 						displayingSearchList);
@@ -705,9 +719,20 @@ class BookLibGuiFrame extends JFrame {
 		sortByBookAuthorsItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
 				if (currentDisplayBookList != null) {
-					Collections.sort(
-						currentDisplayBookList,
-						new AuthorListCompare());
+					// Handle flip between ascending and descending order sorts
+					if (!authorAscendingSort) {
+						authorAscendingSort = true;
+						bookTitleAscendingSort = false;
+						publishDateAscendingSort = false;
+						Collections.sort(
+							currentDisplayBookList,
+							new AuthorListCompare());
+					} else {
+						authorAscendingSort = false;
+						Collections.sort(
+							currentDisplayBookList,
+							Collections.reverseOrder(new AuthorListCompare()));
+					}
 					bookLibPanel.UpdateData(
 						currentDisplayBookList,
 						displayingSearchList);
@@ -722,9 +747,20 @@ class BookLibGuiFrame extends JFrame {
 		sortByBookPubslishDateItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
 				if (currentDisplayBookList != null) {
-					Collections.sort(
-						currentDisplayBookList,
-						new PublishDateListCompare());
+					// Handle flip between ascending and descending order sorts
+					if (!publishDateAscendingSort) {
+						publishDateAscendingSort = true;
+						authorAscendingSort = false;
+						bookTitleAscendingSort = false;
+						Collections.sort(
+							currentDisplayBookList,
+							new PublishDateListCompare());
+					} else {
+						publishDateAscendingSort = false;
+						Collections.sort(
+							currentDisplayBookList,
+							Collections.reverseOrder(new PublishDateListCompare()));
+					}
 					bookLibPanel.UpdateData(
 						currentDisplayBookList,
 						displayingSearchList);
