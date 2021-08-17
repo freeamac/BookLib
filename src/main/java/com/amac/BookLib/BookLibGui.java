@@ -1,6 +1,7 @@
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+import javax.swing.filechooser.*;
 import javax.swing.table.*;
 import java.util.*;
 import java.io.*;
@@ -116,36 +117,30 @@ class BookLibGuiFrame extends JFrame {
 	 * files with the approved extension. The file or null (indicating
 	 * a cancelled selection) is returned.
 	 * 
-	 * @param mode FileDialog.LOAD for loading a book library file into the
+	 * @param mode JFileChooser.OPEN_DIALOG for loading a book library file into the
 	 *             GUI or FileDialog.SAVE to select a file to save the current
 	 *             book library file into
 	 * @return The file selected
 	 */
 	private File saveOrLoadFileDialog(int mode) {
-		String dialogTitle;
-		String fileName;
-		String fileDir;
-		if (mode == FileDialog.LOAD)
-			dialogTitle = "Load Book Library File";
-		else
-			dialogTitle = "Save Book Library File";
+		int returnVal;
 
-		FileDialog fileDialog = new FileDialog(this, dialogTitle, mode);
-		if (dataFile != null) {
-			fileDialog.setFile(dataFile.getName());
-			fileDialog.setDirectory(dataFile.getPath());
-		};
-		fileDialog.setFilenameFilter(new BookLibrary.fileNameFilter());
-		fileDialog.setVisible(true);
-		fileName = fileDialog.getFile();
-		fileDialog.setVisible(false);
-		if (fileName != null) {
-			fileDir = fileDialog.getDirectory();
-			return (new File(fileDir, fileName));
-
-		} else
+		JFileChooser fileChooser = new JFileChooser();
+		FileNameExtensionFilter fileNameExtensionFilter = new FileNameExtensionFilter("Book Library Database", "bdb");
+		fileChooser.setCurrentDirectory(new File(""));
+		fileChooser.addChoosableFileFilter(fileNameExtensionFilter);
+		fileChooser.setFileFilter(fileNameExtensionFilter);
+		if (mode == JFileChooser.OPEN_DIALOG) {
+			returnVal = fileChooser.showOpenDialog(this);
+		} else {
+			returnVal = fileChooser.showSaveDialog(this);
+		}
+		if (returnVal == JFileChooser.APPROVE_OPTION) {
+			File fileSelected = fileChooser.getSelectedFile();
+			return fileSelected;
+		} else {
 			return null;
-
+		}
 	}
 
 	/**
@@ -244,21 +239,38 @@ class BookLibGuiFrame extends JFrame {
 		// Set up all Action Listeners for each **File** menu item as an anonymous class
 		newItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
-				dataFile = saveOrLoadFileDialog(FileDialog.SAVE);
-				bookLibrary = new BookLibrary();
-				currentDisplayBookList = null;
-				dataModified = true;
-				toggleMenuItems(true);
-				exportCSVItem.setEnabled(true);
-				exportHtmlItem.setEnabled(true);
-				setVisible(true);
+				dataFile = saveOrLoadFileDialog(JFileChooser.OPEN_DIALOG);
+				if (dataFile == null) {
+					JOptionPane.showMessageDialog(
+							null,
+							"Action cancelled. No new file spefified.",
+							"Information",
+							JOptionPane.INFORMATION_MESSAGE);
+						return;
+				} else {
+					if (dataFile.exists()) {
+						JOptionPane.showMessageDialog(
+							null,
+							"File already exists. Must specify a new file.",
+							"Error",
+							JOptionPane.ERROR_MESSAGE);
+					} else {
+						bookLibrary = new BookLibrary();
+						currentDisplayBookList = null;
+						dataModified = true;
+						toggleMenuItems(true);
+						exportCSVItem.setEnabled(true);
+						exportHtmlItem.setEnabled(true);
+						setVisible(true);
+					}
+				}
 
 			}
 		});
 
 		openItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
-				dataFile = saveOrLoadFileDialog(FileDialog.LOAD);
+				dataFile = saveOrLoadFileDialog(JFileChooser.OPEN_DIALOG);
 				try {
 					if (dataFile == null) {
 						JOptionPane.showMessageDialog(
@@ -297,11 +309,16 @@ class BookLibGuiFrame extends JFrame {
 				// we need to get a file name. If we get null, save
 				// operation cancelled in dialog
 				if (dataFile == null)
-					dataFile = saveOrLoadFileDialog(FileDialog.SAVE);
+					dataFile = saveOrLoadFileDialog(JFileChooser.SAVE_DIALOG);
 				if (dataFile != null) {
 					try {
 						bookLibrary.writeXML(dataFile);
 						dataModified = false;
+						JOptionPane.showMessageDialog(
+							null,
+							"Successfully wrote library database to " + dataFile.toString() + ".",
+							"Information",
+							JOptionPane.INFORMATION_MESSAGE);
 					} catch (Exception e) {
 						JOptionPane.showMessageDialog(
 							null,
@@ -312,6 +329,12 @@ class BookLibGuiFrame extends JFrame {
 							JOptionPane.ERROR_MESSAGE);
 						e.printStackTrace(System.err);
 					};
+				} else {
+					JOptionPane.showMessageDialog(
+						null,
+						"Action cancelled. No file was selected so nothing was saved to a file.",
+						"Information",
+						JOptionPane.INFORMATION_MESSAGE);
 				}
 			}
 		});
@@ -372,6 +395,11 @@ class BookLibGuiFrame extends JFrame {
 					try {
 						bookLibrary.writeXML(dataFile);
 						dataModified = false;
+						JOptionPane.showMessageDialog(
+							null,
+							"Successfully wrote library database to " + dataFile.toString() + ".",
+							"Information",
+							JOptionPane.INFORMATION_MESSAGE);
 					} catch (Exception e) {
 						JOptionPane.showMessageDialog(
 							null,
@@ -382,6 +410,12 @@ class BookLibGuiFrame extends JFrame {
 							JOptionPane.ERROR_MESSAGE);
 						e.printStackTrace(System.err);
 					};
+				} else {
+					JOptionPane.showMessageDialog(
+						null,
+						"Action cancelled. No file was selected so nothing saved to file.",
+						"Information",
+						JOptionPane.INFORMATION_MESSAGE);
 				}
 			}
 		});

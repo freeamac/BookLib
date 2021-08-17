@@ -41,19 +41,6 @@ public class BookLibrary {
 	private LinkedList<Book> bookList;
 	private LinkedList<Author> authorList;
 
-	//	Static Methods
-
-	/*
-	 * File filter to only show book library data files with the
-	 * appropriate extention.
-	 */
-	static public class fileNameFilter implements FilenameFilter {
-		public boolean accept(File dir, String name) {
-			return name.endsWith(EXT_BOOKLIBRARY);
-		}
-
-	}
-
 	// Constructors
 
 	/** 
