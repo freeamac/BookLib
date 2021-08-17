@@ -50,7 +50,7 @@ class BookLibGuiFrame extends JFrame {
 
 	// Currently displayed book list. This could be the complete
 	// library or a refined search list.
-	private LinkedList currentDisplayBookList;
+	private LinkedList<Book> currentDisplayBookList;
 
 	// Indicates if displaying a refined search list
 	private boolean displayingSearchList = false;
@@ -125,7 +125,6 @@ class BookLibGuiFrame extends JFrame {
 		String dialogTitle;
 		String fileName;
 		String fileDir;
-		File f;
 		if (mode == FileDialog.LOAD)
 			dialogTitle = "Load Book Library File";
 		else
@@ -212,18 +211,18 @@ class BookLibGuiFrame extends JFrame {
 		JMenu fileMenu = new JMenu("File");
 		newItem = fileMenu.add("New...");
 		newItem.setAccelerator(
-			KeyStroke.getKeyStroke(KeyEvent.VK_N, InputEvent.CTRL_MASK));
+			KeyStroke.getKeyStroke(KeyEvent.VK_N, InputEvent.CTRL_DOWN_MASK));
 		fileMenu.addSeparator();
 		openItem = fileMenu.add("Open...");
 		openItem.setAccelerator(
-			KeyStroke.getKeyStroke(KeyEvent.VK_O, InputEvent.CTRL_MASK));
+			KeyStroke.getKeyStroke(KeyEvent.VK_O, InputEvent.CTRL_DOWN_MASK));
 		saveItem = fileMenu.add("Save");
 		saveItem.setAccelerator(
-			KeyStroke.getKeyStroke(KeyEvent.VK_S, InputEvent.CTRL_MASK));
+			KeyStroke.getKeyStroke(KeyEvent.VK_S, InputEvent.CTRL_DOWN_MASK));
 		saveItem.setEnabled(false);
 		closeItem = fileMenu.add("Close");
 		closeItem.setAccelerator(
-			KeyStroke.getKeyStroke(KeyEvent.VK_W, InputEvent.CTRL_MASK));
+			KeyStroke.getKeyStroke(KeyEvent.VK_W, InputEvent.CTRL_DOWN_MASK));
 		closeItem.setEnabled(false);
 		fileMenu.addSeparator();
 		saveAsItem = fileMenu.add("Save As...");
@@ -231,7 +230,7 @@ class BookLibGuiFrame extends JFrame {
 		fileMenu.addSeparator();
 		printItem = fileMenu.add(new TestAction("Print..."));
 		printItem.setAccelerator(
-			KeyStroke.getKeyStroke(KeyEvent.VK_P, InputEvent.CTRL_MASK));
+			KeyStroke.getKeyStroke(KeyEvent.VK_P, InputEvent.CTRL_DOWN_MASK));
 		printItem.setEnabled(false);
 		fileMenu.addSeparator();
 		JMenu exportMenu = new JMenu("Export As ...");
@@ -444,15 +443,15 @@ class BookLibGuiFrame extends JFrame {
 		JMenu editMenu = new JMenu("Edit");
 		cutItem = editMenu.add(new TestAction("Cut"));
 		cutItem.setAccelerator(
-			KeyStroke.getKeyStroke(KeyEvent.VK_X, InputEvent.CTRL_MASK));
+			KeyStroke.getKeyStroke(KeyEvent.VK_X, InputEvent.CTRL_DOWN_MASK));
 		cutItem.setEnabled(false);
 		copyItem = editMenu.add(new TestAction("Copy"));
 		copyItem.setAccelerator(
-			KeyStroke.getKeyStroke(KeyEvent.VK_C, InputEvent.CTRL_MASK));
+			KeyStroke.getKeyStroke(KeyEvent.VK_C, InputEvent.CTRL_DOWN_MASK));
 		copyItem.setEnabled(false);
 		pasteItem = editMenu.add(new TestAction("Paste"));
 		pasteItem.setAccelerator(
-			KeyStroke.getKeyStroke(KeyEvent.VK_V, InputEvent.CTRL_MASK));
+			KeyStroke.getKeyStroke(KeyEvent.VK_V, InputEvent.CTRL_DOWN_MASK));
 		pasteItem.setEnabled(false);
 		editMenu.addSeparator();
 
@@ -460,8 +459,9 @@ class BookLibGuiFrame extends JFrame {
 		// This should only be enabled when the entire book list is viewed.
 		addBookItem = editMenu.add("Add Book...");
 		addBookItem.setAccelerator(
-			KeyStroke.getKeyStroke(KeyEvent.VK_A, InputEvent.SHIFT_MASK));
+			KeyStroke.getKeyStroke(KeyEvent.VK_A, InputEvent.SHIFT_DOWN_MASK));
 		addBookItem.setEnabled(false);
+
 		addBookItem.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent event) {
@@ -471,7 +471,6 @@ class BookLibGuiFrame extends JFrame {
 						new AddModifyBookDialog(
 							BookLibGuiFrame.this,
 							AddModifyBookDialog.ADD_BOOK);
-				boolean modifed = false;
 				try {
 					if (addModifyBookDialog
 						.showDialog(
@@ -504,7 +503,7 @@ class BookLibGuiFrame extends JFrame {
 		// Modify a book in the library
 		modifyBookItem = editMenu.add("Modify Book...");
 		modifyBookItem.setAccelerator(
-			KeyStroke.getKeyStroke(KeyEvent.VK_M, InputEvent.SHIFT_MASK));
+			KeyStroke.getKeyStroke(KeyEvent.VK_M, InputEvent.SHIFT_DOWN_MASK));
 		modifyBookItem.setEnabled(false);
 		modifyBookItem.addActionListener(new ActionListener() {
 
@@ -549,7 +548,7 @@ class BookLibGuiFrame extends JFrame {
 		// Delete a book in the library
 		deleteBookItem = editMenu.add("Delete Book...");
 		deleteBookItem.setAccelerator(
-			KeyStroke.getKeyStroke(KeyEvent.VK_D, InputEvent.SHIFT_MASK));
+			KeyStroke.getKeyStroke(KeyEvent.VK_D, InputEvent.SHIFT_DOWN_MASK));
 		deleteBookItem.setEnabled(false);
 		deleteBookItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
@@ -672,7 +671,7 @@ class BookLibGuiFrame extends JFrame {
 		allBooksItem = viewMenu.add("All Books");
 		allBooksItem.setEnabled(false);
 		allBooksItem.setAccelerator(
-			KeyStroke.getKeyStroke(KeyEvent.VK_L, InputEvent.CTRL_MASK));
+			KeyStroke.getKeyStroke(KeyEvent.VK_L, InputEvent.CTRL_DOWN_MASK));
 		allBooksItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
 				if (bookLibrary != null) {
@@ -971,7 +970,6 @@ class BookLibPanel extends JPanel {
 		// data in the panel
 		bookList = booklist;
 		bookData = new Object[bookList.size()][6];
-		int j = 0;
 		for (int i = 0; i < booklist.size(); i++) {
 			Book book = (Book) booklist.get(i);
 			bookData[i][0] = book.getTitle();
@@ -1275,7 +1273,7 @@ class AddModifyBookDialog extends JDialog {
 
 	// Widget elements and data fields
 	private JTextField title, series, isbn, dateStr;
-	private JComboBox coverCombo;
+	private JComboBox<String> coverCombo;
 	private boolean ok;
 	private Book book;
 	private JTextField authorTitle[];
@@ -1399,7 +1397,7 @@ class AddModifyBookDialog extends JDialog {
 		panel.add(new JLabel("Date:"));
 		panel.add(dateStr = new JTextField(""));
 		panel.add(new JLabel("Book Cover Type:"));
-		coverCombo = new JComboBox();
+		coverCombo = new JComboBox<String>();
 		coverCombo.setEditable(false);
 		for (int i = 0; i < Book.MAXREALCOVERS; i++)
 			coverCombo.addItem(Book.COVERNAME[i]);
@@ -1564,8 +1562,8 @@ class AddModifyBookDialog extends JDialog {
 		if (bookdate == Book.BADDATE)
 			dateStr.setText("");
 		else
-			dateStr.setText((new Integer(bookdate)).toString());
-		LinkedList auths = book.getAuthors();
+			dateStr.setText(String.valueOf(bookdate));
+		LinkedList<Author> auths = book.getAuthors();
 		for (int i = 0; i < auths.size(); i++) {
 			authorTitle[i].setText(((Author) auths.get(i)).getTitle());
 			authorFirst[i].setText(((Author) auths.get(i)).getFirstName());
@@ -1584,7 +1582,7 @@ class AddModifyBookDialog extends JDialog {
 	private boolean createBook() {
 		String b_title, b_series, b_isbn, b_dateStr;
 		int b_date, b_cover;
-		LinkedList auth_list = new LinkedList();
+		LinkedList<Author> auth_list = new LinkedList<>();
 
 		b_title = title.getText();
 		if (b_title.toString().equals("")) {
@@ -1604,7 +1602,7 @@ class AddModifyBookDialog extends JDialog {
 		if (b_dateStr.toString().equals(""))
 			b_date = Book.BADDATE;
 		else
-			b_date = (new Integer(b_dateStr.toString())).intValue();
+			b_date = Integer.parseInt(b_dateStr);
 
 		b_cover = coverCombo.getSelectedIndex();
 
@@ -1787,7 +1785,7 @@ class AuthorSearchDialog extends JDialog {
  */
 class BookSearchDialog extends JDialog {
 	private JTextField title, lastname, isbn, date;
-	private JComboBox coverCombo;
+	private JComboBox<String> coverCombo;
 	private boolean ok;
 	private BookSearchObject searchObj;
 	private boolean caseInsensitive;
@@ -1813,7 +1811,7 @@ class BookSearchDialog extends JDialog {
 		panel.add(new JLabel("Publish Date:"));
 		panel.add(date = new JTextField(""));
 		panel.add(new JLabel("Book Cover:"));
-		coverCombo = new JComboBox();
+		coverCombo = new JComboBox<String>();
 		coverCombo.setEditable(false);
 		for (int i = 0; i < Book.COVERNAME.length; i++)
 			coverCombo.addItem(Book.COVERNAME[i]);
@@ -1913,7 +1911,7 @@ class BookSearchDialog extends JDialog {
 		if (dateStr.equals(""))
 			searchObj.setDate(Book.BADDATE);
 		else
-			searchObj.setDate((new Integer(dateStr)).intValue());
+			searchObj.setDate(Integer.parseInt(dateStr));
 		searchObj.setCoverType(coverCombo.getSelectedIndex());
 	}
 

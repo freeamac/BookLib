@@ -69,7 +69,7 @@ public class Book implements Comparable, Comparator {
 
 	// Book properties
 	protected String title;
-	protected LinkedList authors;
+	protected LinkedList<Author> authors;
 	protected String ISBN;
 	protected String series;
 	protected int publishYear;
@@ -124,7 +124,7 @@ public class Book implements Comparable, Comparator {
 
 		initBookData(booktitle, series, isbn, publishyear, cover);
 
-		authors = new LinkedList();
+		authors = new LinkedList<Author>();
 		Author bookauthor = new Author(author);
 		authors.add(bookauthor);
 
@@ -154,12 +154,12 @@ public class Book implements Comparable, Comparator {
 		if (bookauthors.length > MAXAUTHORS)
 			throw new IndexOutOfBoundsException(
 				"A Book cannot have more than "
-					+ (new Integer(MAXAUTHORS)).toString()
+					+ String.valueOf(MAXAUTHORS)
 					+ " authors");
 
 		initBookData(booktitle, series, isbn, publishyear, cover);
 
-		authors = new LinkedList();
+		authors = new LinkedList<Author>();
 		Author bookauthor;
 		for (int i = 0; i < bookauthors.length; i++) {
 			bookauthor = new Author(bookauthors[i]);
@@ -178,7 +178,7 @@ public class Book implements Comparable, Comparator {
 	public Book(
 		String booktitle,
 		String series,
-		LinkedList bookauthors,
+		LinkedList<Author> bookauthors,
 		String isbn,
 		int publishyear,
 		int cover) {
@@ -190,12 +190,12 @@ public class Book implements Comparable, Comparator {
 		if (bookauthors.size() > MAXAUTHORS)
 			throw new IndexOutOfBoundsException(
 				"A Book cannot have more than "
-					+ (new Integer(MAXAUTHORS)).toString()
+					+ String.valueOf(MAXAUTHORS)
 					+ " authors");
 
 		initBookData(booktitle, series, isbn, publishyear, cover);
 
-		authors = new LinkedList(bookauthors);
+		authors = new LinkedList<Author>(bookauthors);
 
 	};
 
@@ -208,7 +208,7 @@ public class Book implements Comparable, Comparator {
 	 */
 	public Book(Node bookNode) throws DOMException {
 
-		authors = new LinkedList();
+		authors = new LinkedList<Author>();
 		NodeList childNodes = bookNode.getChildNodes();
 		for (int i = 0; i < childNodes.getLength();) {
 			Node n = childNodes.item(i);
@@ -300,7 +300,7 @@ public class Book implements Comparable, Comparator {
 	 * Get the list of authors of a book
 	 * @return The complete list of authors of this book
 	 */
-	public LinkedList getAuthors() {
+	public LinkedList<Author> getAuthors() {
 		return authors;
 	};
 	/**
@@ -375,7 +375,7 @@ public class Book implements Comparable, Comparator {
 		}
 		// Now need to check the author lists against each other. 
 		// true if found in original author list
-		LinkedList auth_list = modbook.getAuthors();
+		LinkedList<Author> auth_list = modbook.getAuthors();
 		boolean[] new_list = new boolean[auth_list.size()];
 		for (int i = 0; i < new_list.length; i++)
 			new_list[i] = false;

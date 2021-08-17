@@ -36,7 +36,7 @@ public class Author {
 	protected String middlename;
 	protected String lastname;
 	protected String surtitle;
-	protected LinkedList books;
+	protected LinkedList<Book> books;
 
 	// Constructors
 	/**
@@ -77,7 +77,7 @@ public class Author {
 				lastname = new String(tokedstr.nextToken());
 			}
 		};
-		books = new LinkedList();
+		books = new LinkedList<Book>();
 	};
 
 	/**
@@ -96,7 +96,7 @@ public class Author {
 		this.firstname = firstname;
 		this.lastname = lastname;
 		title = middlename = surtitle = null;
-		books = new LinkedList();
+		books = new LinkedList<Book>();
 	};
 
 	/**
@@ -141,7 +141,7 @@ public class Author {
 			this.surtitle = null;
 		else
 			this.surtitle = surtitle;
-		books = new LinkedList();
+		books = new LinkedList<Book>();
 	};
 
 	/**
@@ -154,7 +154,7 @@ public class Author {
 	 */
 	public Author(Node authorNode) throws DOMException {
 		title = firstname = middlename = lastname = surtitle = null;
-		books = new LinkedList();
+		books = new LinkedList<Book>();
 		NodeList childNodes = authorNode.getChildNodes();
 		for (int i = 0; i < childNodes.getLength();) {
 			Node n = childNodes.item(i);
@@ -242,7 +242,7 @@ public class Author {
 	 * Returns the list of books authored by this author
 	 * @return The list of books authored
 	 */
-	public LinkedList getBooks() {
+	public LinkedList<Book> getBooks() {
 		return books;
 	}
 

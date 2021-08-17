@@ -38,8 +38,8 @@ public class BookLibrary {
 	public static final String EXT_BOOKLIBRARY_BACKUP = "bak";
 
 	// Book Library Members
-	private LinkedList bookList;
-	private LinkedList authorList;
+	private LinkedList<Book> bookList;
+	private LinkedList<Author> authorList;
 
 	//	Static Methods
 
@@ -60,8 +60,8 @@ public class BookLibrary {
 	 * Create a blank book library object.
 	 */
 	public BookLibrary() {
-		bookList = new LinkedList();
-		authorList = new LinkedList();
+		bookList = new LinkedList<Book>();
+		authorList = new LinkedList<Author>();
 	};
 
 	/**
@@ -73,8 +73,8 @@ public class BookLibrary {
 	 * @param f File descriptor of the file containing the
 	 */
 	public BookLibrary(File f) throws DOMException {
-		bookList = new LinkedList();
-		authorList = new LinkedList();
+		bookList = new LinkedList<Book>();
+		authorList = new LinkedList<Author>();
 
 		Document doc = null;
 		try {
@@ -110,7 +110,7 @@ public class BookLibrary {
 	 * @param booklist A linked list of book objects
 	 * @param authorlist A linked list of author objects
 	 */
-	public BookLibrary(LinkedList booklist, LinkedList authorlist) {
+	public BookLibrary(LinkedList<Book> booklist, LinkedList<Author> authorlist) {
 		bookList = booklist;
 		authorList = authorlist;
 		Collections.sort(bookList);
@@ -125,10 +125,9 @@ public class BookLibrary {
 	 * @param lastname The last name of the author to find.
 	 */
 	public Author[] findAuthorByLastName(String lastname) {
-		LinkedList auths = null;
+		LinkedList<Author> auths = new LinkedList<>();
 		Author a;
 		String lname;
-		int index = 0;
 		for (int i = 0; i < authorList.size(); i++) {
 			a = (Author) authorList.get(i);
 			lname = a.getLastName();
@@ -187,7 +186,7 @@ public class BookLibrary {
 	 * 
 	 * @return Linked list of book objects in the library
 	 */
-	public LinkedList getBookList() {
+	public LinkedList<Book> getBookList() {
 		return this.bookList;
 	};
 
@@ -205,7 +204,7 @@ public class BookLibrary {
 	 * 
 	 * @return Iterator over list of books in the library
 	 */
-	public ListIterator booklistIterator() {
+	public ListIterator<Book> booklistIterator() {
 		return bookList.listIterator();
 	}
 
@@ -240,7 +239,7 @@ public class BookLibrary {
 				i++;
 		}
 		bookList.add(i, newbook);
-		LinkedList auths = newbook.getAuthors();
+		LinkedList<Author> auths = newbook.getAuthors();
 		for (i = 0; i < auths.size(); i++) {
 			Author a = (Author) auths.get(i);
 			a.addBook(newbook);
@@ -260,7 +259,7 @@ public class BookLibrary {
 	public void removeBook(Book delbook) throws IllegalStateException {
 		if (bookList != null) {
 			if (bookList.contains(delbook)) {
-				LinkedList auths = delbook.getAuthors();
+				LinkedList<Author> auths = delbook.getAuthors();
 				//dumpAuthors();
 				for (int i = 0; i < auths.size(); i++) {
 					Author auth = (Author) auths.get(i);
@@ -319,7 +318,7 @@ public class BookLibrary {
 	 * @param caseInsensitive If we should use a case insensitive search
 	 * @return Linked list of books matching the search criteria
 	 */
-	public LinkedList searchResults(BookSearchObject searchObject, boolean caseInsensitive) {
+	public LinkedList<Book> searchResults(BookSearchObject searchObject, boolean caseInsensitive) {
 
 		// Farm the search off to the appropriate private method based
 		// on the type of search in the search object
@@ -343,8 +342,8 @@ public class BookLibrary {
 	 * @param caseInsensitive If we should use a case insensitive search
 	 * @return Linked list of books matching the book information search criteria
 	 */
-	private LinkedList bookSearchResults(BookSearchObject searchObject, boolean caseInsensitive) {
-		LinkedList resultList = new LinkedList();
+	private LinkedList<Book> bookSearchResults(BookSearchObject searchObject, boolean caseInsensitive) {
+		LinkedList<Book> resultList = new LinkedList<>();
 		for (int i = 0; i < bookList.size(); i++) {
 
 			// If anything in the book search object does not
@@ -387,8 +386,8 @@ public class BookLibrary {
 	 * @param caseInsensitive If we should use a case insensitive search
 	 * @return Linked list of books matching the book series search criteria
 	 */
-	private LinkedList seriesSearchResults(BookSearchObject searchObject, boolean caseInsensitive) {
-		LinkedList resultList = new LinkedList();
+	private LinkedList<Book> seriesSearchResults(BookSearchObject searchObject, boolean caseInsensitive) {
+		LinkedList<Book> resultList = new LinkedList<>();
 		for (int i = 0; i < bookList.size(); i++) {
 
 			// If anything in the book search object does not
@@ -418,14 +417,14 @@ public class BookLibrary {
 	 * @param caseInsensitive If we should use a case insensitive search
 	 * @return Linked list of books matching the book author search criteria
 	 */
-	private LinkedList authorSearchResults(BookSearchObject searchObject, boolean caseInsensitive) {
-		LinkedList resultList = new LinkedList();
+	private LinkedList<Book> authorSearchResults(BookSearchObject searchObject, boolean caseInsensitive) {
+		LinkedList<Book> resultList = new LinkedList<>();
 		for (int i = 0; i < bookList.size(); i++) {
 
 			// If any Author in the author list of the book matches,
 			// the book is added to the list
 			Book b = (Book) bookList.get(i);
-			LinkedList auth_list = b.getAuthors();
+			LinkedList<Author> auth_list = b.getAuthors();
 			boolean authorFound = false;
 			for (int j = 0;(!authorFound) && (j < auth_list.size()); j++) {
 				boolean foundFirst = true;
@@ -538,7 +537,7 @@ public class BookLibrary {
 		for (int i = 0; i < authorList.size(); i++) {
 			Author a = (Author) authorList.get(i);
 			System.out.println(a.toString());
-			LinkedList bookl = a.getBooks();
+			LinkedList<Book> bookl = a.getBooks();
 			System.out.println("--HAS " + bookl.size() + " BOOKS");
 			System.out.println("--++++++++++++");
 			for (int j = 0; j < bookl.size(); j++) {
@@ -865,7 +864,7 @@ class BookSearchObject {
  * The primary purpose of this class is to allow the sorting of a list
  * of books by author.
  */
-class AuthorListCompare implements Comparator {
+class AuthorListCompare implements Comparator<Object> {
 	public int compare(Object a, Object b) {
 		int less = -1;
 		int equal = 0;
@@ -873,8 +872,8 @@ class AuthorListCompare implements Comparator {
 
 		Book book_a = (Book) a;
 		Book book_b = (Book) b;
-		LinkedList auths_a = book_a.getAuthors();
-		LinkedList auths_b = book_b.getAuthors();
+		LinkedList<Author> auths_a = book_a.getAuthors();
+		LinkedList<Author> auths_b = book_b.getAuthors();
 
 		// Only check the first author in the list even if the book
 		// has multiple authors. But the book with the least authors
@@ -909,7 +908,7 @@ class AuthorListCompare implements Comparator {
  * The primary purpose of this class is to allow the sorting of a list
  * of books by publish date.
  */
-class PublishDateListCompare implements Comparator {
+class PublishDateListCompare implements Comparator<Object> {
 	public int compare(Object a, Object b) {
 		int less = -1;
 		int greater = 1;
