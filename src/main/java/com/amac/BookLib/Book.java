@@ -13,7 +13,8 @@ import org.w3c.dom.DOMException;
  * @version 1.0
  *
  */
-public class Book implements Comparable, Comparator {
+//public class Book implements Comparable, Comparator {
+public class Book {
 
 	/*
 	 * A "hardcover" book
@@ -481,26 +482,11 @@ public class Book implements Comparable, Comparator {
 	 * @return 0 if equal. -1 if current book is less than passed book. 1 if current
 	 *           book is greater than the passed book.
 	*/
-	public int compareTo(Object obj) {
-		if (this.equals((Book) obj))
+  	public int compareTo(Book obj) {
+		if (this.equals(obj))
 			return 0;
 		else
-			return title.compareTo(((Book) obj).getTitle());
-	}
-
-	/**
-	 * Compares the two passed book objects. Calls the equals method for equality. 
-	 * Otherwise, the title strings are compared and result returned.
-	 * 
-	 * @param obj The two book objects to compare
-	 * @return 0 if equal. -1 if first book is less than second book. 1 if first
-	 *           book is greater than the second book.
-	*/
-	public int compare(Object A, Object B) {
-		if (((Book) A).equals((Book) B))
-			return 0;
-		else
-			return ((Book) A).getTitle().compareTo(((Book) B).getTitle());
+			return title.compareTo(obj.getTitle());
 	}
 
 	// Output methods

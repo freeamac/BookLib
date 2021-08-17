@@ -699,7 +699,7 @@ class BookLibGuiFrame extends JFrame {
 						bookTitleAscendingSort = true;
 						authorAscendingSort = false;
 						publishDateAscendingSort = false;
-						Collections.sort(currentDisplayBookList);
+						Collections.sort(currentDisplayBookList, new BookListCompare());
 					} else {
 						bookTitleAscendingSort = false;
 						Collections.sort(currentDisplayBookList, Collections.reverseOrder());

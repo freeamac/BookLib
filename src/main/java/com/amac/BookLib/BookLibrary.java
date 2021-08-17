@@ -113,7 +113,7 @@ public class BookLibrary {
 	public BookLibrary(LinkedList<Book> booklist, LinkedList<Author> authorlist) {
 		bookList = booklist;
 		authorList = authorlist;
-		Collections.sort(bookList);
+		Collections.sort(bookList, new BookListCompare());
 	};
 
 	// Accessor Methods
@@ -864,14 +864,15 @@ class BookSearchObject {
  * The primary purpose of this class is to allow the sorting of a list
  * of books by author.
  */
-class AuthorListCompare implements Comparator<Object> {
-	public int compare(Object a, Object b) {
+class AuthorListCompare implements Comparator<Book> {
+	@Override
+	public int compare(Book a, Book b) {
 		int less = -1;
 		int equal = 0;
 		int greater = 1;
 
-		Book book_a = (Book) a;
-		Book book_b = (Book) b;
+		Book book_a = a;
+		Book book_b = b;
 		LinkedList<Author> auths_a = book_a.getAuthors();
 		LinkedList<Author> auths_b = book_b.getAuthors();
 
@@ -908,13 +909,14 @@ class AuthorListCompare implements Comparator<Object> {
  * The primary purpose of this class is to allow the sorting of a list
  * of books by publish date.
  */
-class PublishDateListCompare implements Comparator<Object> {
-	public int compare(Object a, Object b) {
+class PublishDateListCompare implements Comparator<Book> {
+	@Override
+	public int compare(Book a, Book b) {
 		int less = -1;
 		int greater = 1;
 
-		Book book_a = (Book) a;
-		Book book_b = (Book) b;
+		Book book_a = a;
+		Book book_b = b;
 		int publishDate_a = book_a.getPublishYear();
 		int publishDate_b = book_b.getPublishYear();
 
@@ -930,3 +932,20 @@ class PublishDateListCompare implements Comparator<Object> {
 	}
 }
 
+/**
+* Compares the two passed book objects. Calls the equals method for equality. 
+* Otherwise, the title strings are compared and result returned.
+* 
+* @param obj The two book objects to compare
+* @return 0 if equal. -1 if first book is less than second book. 1 if first
+*           book is greater than the second book.
+*/
+class BookListCompare implements Comparator<Book> {
+	@Override
+	public int compare(Book A, Book B) {
+		if (A.equals(B))
+			return 0;
+		else
+			return A.getTitle().compareTo(B.getTitle());
+	}
+}
