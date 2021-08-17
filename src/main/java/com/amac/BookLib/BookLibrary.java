@@ -222,8 +222,7 @@ public class BookLibrary {
 	 */
 	public void addBook(Book newbook) throws IllegalStateException {
 		if ((bookList != null) && (bookList.contains(newbook))) {
-			consoleOutput();
-			System.out.println(newbook.getISBN());
+			//consoleOutput();
 			throw new IllegalStateException(
 				"Book already exists in library: " + newbook.getTitle());
 		}

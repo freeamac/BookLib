@@ -340,7 +340,6 @@ public class Author {
 	 * @return True is equal. False otherwise.
 	 */
 	public boolean equals(Author y) {
-		System.out.println("Calling equals on " + y.toString());
 		if (firstname.equalsIgnoreCase(y.getFirstName())
 			&& lastname.equalsIgnoreCase(y.getLastName()))
 			return true;

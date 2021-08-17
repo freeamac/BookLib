@@ -1009,7 +1009,6 @@ class BookLibPanel extends JPanel {
 		bookTable.setRowSelectionAllowed(true);
 		bookTable.setCellSelectionEnabled(false);
 		add(scrollPane);
-		System.out.println("We have #books: " + booklist.size());
 	}
 
 	// Accessor methods
