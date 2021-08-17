@@ -116,7 +116,7 @@ public class BookLibrary {
 		Author a;
 		String lname;
 		for (int i = 0; i < authorList.size(); i++) {
-			a = (Author) authorList.get(i);
+			a = authorList.get(i);
 			lname = a.getLastName();
 			if (lastname.equalsIgnoreCase(lname)) {
 				auths.add(a);
@@ -138,7 +138,7 @@ public class BookLibrary {
 		if (index < 0) {
 			return null;
 		} else {
-			return (Author) authorList.get(index);
+			return authorList.get(index);
 		}
 	};
 
@@ -154,7 +154,7 @@ public class BookLibrary {
 		if (index < 0) {
 			return null;
 		} else {
-			return (Author) authorList.get(index);
+			return authorList.get(index);
 		}
 	};
 
@@ -165,7 +165,7 @@ public class BookLibrary {
 	 * @return The Book object at that index
 	 */
 	public Book getBook(int i) {
-		return (Book) bookList.get(i);
+		return bookList.get(i);
 	}
 
 	/**
@@ -218,7 +218,7 @@ public class BookLibrary {
 		int i = 0;
 		boolean found = false;
 		while ((i < bookList.size()) && (!found)) {
-			Book b = (Book) bookList.get(i);
+			Book b = bookList.get(i);
 			if (b.compareTo(newbook) == 1)
 				found = true;
 			else
@@ -227,7 +227,7 @@ public class BookLibrary {
 		bookList.add(i, newbook);
 		LinkedList<Author> auths = newbook.getAuthors();
 		for (i = 0; i < auths.size(); i++) {
-			Author a = (Author) auths.get(i);
+			Author a = auths.get(i);
 			a.addBook(newbook);
 			if (!authorList.contains(a))
 				authorList.add(a);
@@ -248,7 +248,7 @@ public class BookLibrary {
 				LinkedList<Author> auths = delbook.getAuthors();
 				//dumpAuthors();
 				for (int i = 0; i < auths.size(); i++) {
-					Author auth = (Author) auths.get(i);
+					Author auth = auths.get(i);
 					if (!auth.removeBook(delbook))
 						throw new IllegalStateException(
 							"Book not found for author " + auth.toString());
@@ -277,7 +277,7 @@ public class BookLibrary {
 			newauthor.addBook(newbook);
 			authorList.add(newauthor);
 		} else {
-			Author a = (Author) authorList.get(index);
+			Author a = authorList.get(index);
 			a.addBook(newbook);
 		}
 
@@ -337,7 +337,7 @@ public class BookLibrary {
 			// returned result list
 			boolean addToList = true;
 
-			Book b = (Book) bookList.get(i);
+			Book b = bookList.get(i);
 
 			if ((searchObject.getCoverType() != Book.BADCOVER)
 				&& (searchObject.getCoverType() != Book.ANYCOVER))
@@ -381,7 +381,7 @@ public class BookLibrary {
 			// returned result list
 			boolean addToList = true;
 
-			Book b = (Book) bookList.get(i);
+			Book b = bookList.get(i);
 			if (!searchObject.getSeries().equals(""))
 				if (!BookSearchObject
 					.WildCardMatch(searchObject.getSeries(), b.getSeries(), caseInsensitive))
@@ -409,13 +409,13 @@ public class BookLibrary {
 
 			// If any Author in the author list of the book matches,
 			// the book is added to the list
-			Book b = (Book) bookList.get(i);
+			Book b = bookList.get(i);
 			LinkedList<Author> auth_list = b.getAuthors();
 			boolean authorFound = false;
 			for (int j = 0;(!authorFound) && (j < auth_list.size()); j++) {
 				boolean foundFirst = true;
 				boolean foundLast = true;
-				Author auth = (Author) auth_list.get(j);
+				Author auth = auth_list.get(j);
 				if (!searchObject.getFirstName().equals(""))
 					if (!BookSearchObject
 						.WildCardMatch(
@@ -479,7 +479,7 @@ public class BookLibrary {
 		// Loop through each book and have it write out it's xml definition
 		// to the file
 		for (int i = 0; i < bookList.size(); i++) {
-			Book b = (Book) bookList.get(i);
+			Book b = bookList.get(i);
 			b.writeXML(bufwriter, "  ");
 			bufwriter.flush();
 		}
@@ -499,13 +499,13 @@ public class BookLibrary {
 		System.out.println("AUTHORS");
 		System.out.println("+++++++");
 		for (int i = 0; i < authorList.size(); i++) {
-			a = (Author) authorList.get(i);
+			a = authorList.get(i);
 			a.consoleOutput();
 		}
 		System.out.println("BOOKS");
 		System.out.println("+++++");
 		for (int i = 0; i < bookList.size(); i++) {
-			b = (Book) bookList.get(i);
+			b = bookList.get(i);
 			b.consoleOutput();
 
 		}
@@ -521,13 +521,13 @@ public class BookLibrary {
 		System.out.println("Dumping Library Author List");
 		System.out.println("+++++++++++++++++++++++++++");
 		for (int i = 0; i < authorList.size(); i++) {
-			Author a = (Author) authorList.get(i);
+			Author a = authorList.get(i);
 			System.out.println(a.toString());
 			LinkedList<Book> bookl = a.getBooks();
 			System.out.println("--HAS " + bookl.size() + " BOOKS");
 			System.out.println("--++++++++++++");
 			for (int j = 0; j < bookl.size(); j++) {
-				Book b = (Book) bookl.get(j);
+				Book b = bookl.get(j);
 				System.out.println("--" + b.getTitle());
 			}
 		}
@@ -865,8 +865,8 @@ class AuthorListCompare implements Comparator<Book> {
 		// Only check the first author in the list even if the book
 		// has multiple authors. But the book with the least authors
 		// has precedence when the first author matches.
-		Author auth_a = (Author) auths_a.get(0);
-		Author auth_b = (Author) auths_b.get(0);
+		Author auth_a = auths_a.get(0);
+		Author auth_b = auths_b.get(0);
 		String lastname_a = auth_a.getLastName();
 		String lastname_b = auth_b.getLastName();
 		if (lastname_a.equals(lastname_b)) {

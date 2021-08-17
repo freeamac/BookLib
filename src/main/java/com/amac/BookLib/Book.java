@@ -386,11 +386,11 @@ public class Book {
 			orig_list[i] = false;
 		// Loop over the new list
 		for (int i = 0; i < auth_list.size(); i++) {
-			Author new_auth = (Author) auth_list.get(i);
+			Author new_auth = auth_list.get(i);
 			// Find this author in the old list and update that author's
 			// information if necessary
 			for (int k = 0; k < authors.size(); k++) {
-				Author orig_auth = (Author) authors.get(k);
+				Author orig_auth = authors.get(k);
 				if (new_auth.equals(orig_auth)) {
 					new_list[i] = true;
 					orig_list[k] = true;
@@ -589,7 +589,7 @@ public class Book {
 					+ TAGNAME_SERIES
 					+ ">\n";
 		for (int i = 0; i < authors.size(); i++) {
-			Author bookauthor = (Author) authors.get(i);
+			Author bookauthor = authors.get(i);
 			xmlString = xmlString + bookauthor.toXML(indent1);
 		};
 		xmlString =

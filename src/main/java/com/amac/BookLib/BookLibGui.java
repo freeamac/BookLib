@@ -1005,12 +1005,12 @@ class BookLibPanel extends JPanel {
 		bookList = booklist;
 		bookData = new Object[bookList.size()][6];
 		for (int i = 0; i < booklist.size(); i++) {
-			Book book = (Book) booklist.get(i);
+			Book book = booklist.get(i);
 			bookData[i][0] = book.getTitle();
 			LinkedList<Author> book_auths = book.getAuthors();
 			String authors = null;
 			for (int k = 0; k < book_auths.size(); k++) {
-				Author auth = (Author) book_auths.get(k);
+				Author auth = book_auths.get(k);
 				if (authors == null)
 					authors = auth.getFullName();
 				else
@@ -1057,7 +1057,7 @@ class BookLibPanel extends JPanel {
 		if (row == -1)
 			return null;
 		else
-			return (Book) bookList.get(row);
+			return bookList.get(row);
 	}
 
 	// Export methods
@@ -1598,11 +1598,11 @@ class AddModifyBookDialog extends JDialog {
 			dateStr.setText(String.valueOf(bookdate));
 		LinkedList<Author> auths = book.getAuthors();
 		for (int i = 0; i < auths.size(); i++) {
-			authorTitle[i].setText(((Author) auths.get(i)).getTitle());
-			authorFirst[i].setText(((Author) auths.get(i)).getFirstName());
-			authorMiddle[i].setText(((Author) auths.get(i)).getMiddleName());
-			authorLast[i].setText(((Author) auths.get(i)).getLastName());
-			authorSur[i].setText(((Author) auths.get(i)).getSurTitle());
+			authorTitle[i].setText((auths.get(i)).getTitle());
+			authorFirst[i].setText((auths.get(i)).getFirstName());
+			authorMiddle[i].setText((auths.get(i)).getMiddleName());
+			authorLast[i].setText((auths.get(i)).getLastName());
+			authorSur[i].setText((auths.get(i)).getSurTitle());
 		}
 		coverCombo.setSelectedIndex(book.getCoverType());
 		this.book = book;
