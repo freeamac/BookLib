@@ -1219,6 +1219,17 @@
    <isbn>1-4127-2182-2</isbn>
   </book>
   <book>
+   <title>Cookies</title>
+   <covertype>Soft Cover</covertype>
+   <series>The Cook's Encyclopedia</series>
+   <author>
+    <first>Hilaire</first>
+    <last>Walden</last>
+   </author>
+   <year>2002</year>
+   <isbn>07607-3095-4</isbn>
+  </book>
+  <book>
    <title>Coptic Museum</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -1315,6 +1326,16 @@
    </author>
    <year>2003</year>
    <isbn>0-312-86459-0</isbn>
+  </book>
+  <book>
+   <title>Cheese</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>Juliet</first>
+    <last>Harbutt</last>
+   </author>
+   <year>1999</year>
+   <isbn>1-57223-200-5</isbn>
   </book>
   <book>
    <title>Dagger Magic</title>
@@ -1681,6 +1702,22 @@
    <year>1988</year>
   </book>
   <book>
+   <title>Easy Entertaining</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>George</first>
+    <last>Dolese</last>
+    <surtitle>(Recipes)</surtitle>
+   </author>
+   <author>
+    <first>Steve</first>
+    <last>Siegelman</last>
+    <surtitle>(Text)</surtitle>
+   </author>
+   <year>2005</year>
+   <isbn>978-0-7432-7852-2</isbn>
+  </book>
+  <book>
    <title>Faded Steel Heat</title>
    <covertype>Soft Cover</covertype>
    <series>Garrett P. I.</series>
@@ -1939,6 +1976,20 @@
    </author>
    <year>1978</year>
    <isbn>0-914894-22-6</isbn>
+  </book>
+  <book>
+   <title>Firehouse Food</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>George</first>
+    <last>Dolese</last>
+   </author>
+   <author>
+    <first>Steve</first>
+    <last>Siegelman</last>
+   </author>
+   <year>2003</year>
+   <isbn>0-8118-3988-5</isbn>
   </book>
   <book>
    <title>Gardening With Color</title>
@@ -2497,6 +2548,17 @@
    <isbn>0-7407-1908-4</isbn>
   </book>
   <book>
+   <title>Italian Cooking</title>
+   <covertype>Soft Cover</covertype>
+   <series>The Cook's Encyclopedia</series>
+   <author>
+    <first>Carla</first>
+    <last>Capalbo</last>
+   </author>
+   <year>2000</year>
+   <isbn>0-7607-2079-7</isbn>
+  </book>
+  <book>
    <title>JOB:  A Comedy Of Justice</title>
    <covertype>Hard Cover</covertype>
    <author>
@@ -2593,6 +2655,22 @@
    <isbn>0-06-105047-4</isbn>
   </book>
   <book>
+   <title>Joy Of Cooking</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>Irma</first>
+    <middle>S.</middle>
+    <last>Rombauer</last>
+   </author>
+   <author>
+    <first>Marion</first>
+    <middle>Rombauer</middle>
+    <last>Becker</last>
+   </author>
+   <year>1995</year>
+   <isbn>0-02-604570-2</isbn>
+  </book>
+  <book>
    <title>Kejimkujik National Park A Guide</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -2683,6 +2761,16 @@
    </author>
    <year>1998</year>
    <isbn>0-380-97715-X</isbn>
+  </book>
+  <book>
+   <title>Keo's Thai Cuisine Revised</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Keo</first>
+    <last>Sananikone</last>
+   </author>
+   <year>1999</year>
+   <isbn>1-58008-081-2</isbn>
   </book>
   <book>
    <title>Lassen Volcanic National Park A Complete Hiker's Guide</title>
@@ -3541,6 +3629,17 @@
    <year>2008</year>
   </book>
   <book>
+   <title>Risotto</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>Pamela</first>
+    <middle>Sheldon</middle>
+    <last>Johns</last>
+   </author>
+   <year>2002</year>
+   <isbn>0-7432-2680-1</isbn>
+  </book>
+  <book>
    <title>Sandworms Of Dune</title>
    <covertype>Hard Cover</covertype>
    <series>Dune</series>
@@ -3895,6 +3994,16 @@
    </author>
    <year>2010</year>
    <isbn>978-0-7653-0686-9</isbn>
+  </book>
+  <book>
+   <title>Sangria - Fun And Festive Recipes</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>Mittie</first>
+    <last>Hellmich</last>
+   </author>
+   <year>2004</year>
+   <isbn>0-8118-4290-8</isbn>
   </book>
   <book>
    <title>Telecommunications A Beginner's Guide</title>
@@ -5256,6 +5365,36 @@
    <isbn>978-1-77276-109-2</isbn>
   </book>
   <book>
+   <title>The New Bread Book</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>Ursula</first>
+    <last>Ferrigno</last>
+   </author>
+   <year>2008</year>
+   <isbn>978-1-4351-0435-8</isbn>
+  </book>
+  <book>
+   <title>The Naked Chef Takes Off</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>Jamie</first>
+    <last>Oliver</last>
+   </author>
+   <year>2000</year>
+   <isbn>0-7868-6755-8</isbn>
+  </book>
+  <book>
+   <title>The Naked Chef</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>Jamie</first>
+    <last>Oliver</last>
+   </author>
+   <year>2000</year>
+   <isbn>0-7868-6617-9</isbn>
+  </book>
+  <book>
    <title>UML Distilled</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -5512,6 +5651,16 @@
    <isbn>0-451-45012-4</isbn>
   </book>
   <book>
+   <title>West Coast Seafood</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Jay</first>
+    <last>Harlow</last>
+   </author>
+   <year>1999</year>
+   <isbn>1-57061-170-4</isbn>
+  </book>
+  <book>
    <title>XML By Example</title>
    <covertype>Soft Cover</covertype>
    <series>By Example</series>
@@ -5611,5 +5760,25 @@
    </author>
    <year>2014</year>
    <isbn>978-1-61628-673-6</isbn>
+  </book>
+  <book>
+   <title>Perfect Panini</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>Jodi</first>
+    <last>Liano</last>
+   </author>
+   <year>2013</year>
+   <isbn>978-1-61628-543-2</isbn>
+  </book>
+  <book>
+   <title>30 Minute Meals 2</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Rachael</first>
+    <last>Ray</last>
+   </author>
+   <year>2003</year>
+   <isbn>1-891105-10-8</isbn>
   </book>
 </booklibrary>
