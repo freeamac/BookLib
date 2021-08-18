@@ -362,6 +362,17 @@
    <isbn>1-56865-904-0</isbn>
   </book>
   <book>
+   <title>All Star Game Program</title>
+   <covertype>Soft Cover</covertype>
+   <series>MLB</series>
+   <author>
+    <first>Major</first>
+    <middle>League</middle>
+    <last>Baseball</last>
+   </author>
+   <year>1982</year>
+  </book>
+  <book>
    <title>American League Chanpionship Series</title>
    <covertype>Soft Cover</covertype>
    <series>Toronto Blue Jays Scorebook Magazine</series>
@@ -2050,6 +2061,16 @@
    <isbn>0-7394-2454-8</isbn>
   </book>
   <book>
+   <title>Frankenstein</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Mary</first>
+    <last>Shelley</last>
+   </author>
+   <year>1991</year>
+   <isbn>0-553-21247-8</isbn>
+  </book>
+  <book>
    <title>From The Earth To The Moon and Round The Moon</title>
    <covertype>Hard Cover</covertype>
    <author>
@@ -2074,6 +2095,26 @@
    <isbn>0-02-861638-3</isbn>
   </book>
   <book>
+   <title>Frommer's Newfoundland &amp; Labrador</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Andrew</first>
+    <last>Hempstead</last>
+   </author>
+   <year>2010</year>
+   <isbn>978-0-470-73678-4</isbn>
+  </book>
+  <book>
+   <title>Frommer's Rome Day By Day</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Sylvie</first>
+    <last>Hogg</last>
+   </author>
+   <year>2009</year>
+   <isbn>978-0-470-38172-4</isbn>
+  </book>
+  <book>
    <title>Fundamentals Of Computer Algorithms</title>
    <covertype>Hard Cover</covertype>
    <author>
@@ -2086,16 +2127,6 @@
    </author>
    <year>1978</year>
    <isbn>0-914894-22-6</isbn>
-  </book>
-  <book>
-   <title>Frankenstein</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Mary</first>
-    <last>Shelley</last>
-   </author>
-   <year>1991</year>
-   <isbn>0-553-21247-8</isbn>
   </book>
   <book>
    <title>Gardening With Color</title>
@@ -2709,6 +2740,17 @@
    <isbn>0-7607-2079-7</isbn>
   </book>
   <book>
+   <title>Italy</title>
+   <covertype>Soft Cover</covertype>
+   <series>Eyewitness Travel</series>
+   <author>
+    <last>DK</last>
+    <surtitle>(Publisher)</surtitle>
+   </author>
+   <year>2010</year>
+   <isbn>978-0-7566-6057-4</isbn>
+  </book>
+  <book>
    <title>JOB:  A Comedy Of Justice</title>
    <covertype>Hard Cover</covertype>
    <author>
@@ -2718,6 +2760,16 @@
    </author>
    <year>1984</year>
    <isbn>0-345-31357-7</isbn>
+  </book>
+  <book>
+   <title>Japan Airlines Championship Program</title>
+   <covertype>Soft Cover</covertype>
+   <series>Champions Tour</series>
+   <author>
+    <first>PGA</first>
+    <last>Tour</last>
+   </author>
+   <year>2017</year>
   </book>
   <book>
    <title>Japanese</title>
@@ -2830,6 +2882,16 @@
    </author>
    <year>2000</year>
    <isbn>0-425-17360-4</isbn>
+  </book>
+  <book>
+   <title>Kaua'i</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Lonely</first>
+    <last>Planet</last>
+   </author>
+   <year>2009</year>
+   <isbn>978-1-74104-136-1</isbn>
   </book>
   <book>
    <title>Kejimkujik National Park A Guide</title>
@@ -3000,6 +3062,17 @@
    <year>1987</year>
   </book>
   <book>
+   <title>Less Than Zero</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Bret</first>
+    <middle>Easton</middle>
+    <last>Ellis</last>
+   </author>
+   <year>1985</year>
+   <isbn>0-14-010927-7</isbn>
+  </book>
+  <book>
    <title>Lighthouses Of Atlantic Canada</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -3103,17 +3176,6 @@
    </author>
    <year>1999</year>
    <isbn>0-425-17140-X</isbn>
-  </book>
-  <book>
-   <title>Less Than Zero</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Bret</first>
-    <middle>Easton</middle>
-    <last>Ellis</last>
-   </author>
-   <year>1985</year>
-   <isbn>0-14-010927-7</isbn>
   </book>
   <book>
    <title>Macintosh Programming Primer Volume I</title>
@@ -3644,6 +3706,16 @@
    </author>
    <year>2010</year>
    <isbn>978-1-58450-586-0</isbn>
+  </book>
+  <book>
+   <title>Pro Git</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Scott</first>
+    <last>Chacon</last>
+   </author>
+   <year>2009</year>
+   <isbn>978-1-4302-1823-3</isbn>
   </book>
   <book>
    <title>Problem Solving And Structured Programming In Pascal</title>
@@ -6090,15 +6162,5 @@
    </author>
    <year>2012</year>
    <isbn>978-1-84951-546-7</isbn>
-  </book>
-  <book>
-   <title>Pro Git</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Scott</first>
-    <last>Chacon</last>
-   </author>
-   <year>2009</year>
-   <isbn>978-1-4302-1823-3</isbn>
   </book>
 </booklibrary>
