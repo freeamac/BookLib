@@ -1845,6 +1845,27 @@
    <year>1988</year>
   </book>
   <book>
+   <title>Edinburgh Castle Official Souvenir Guide</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Chris</first>
+    <last>Tabraham</last>
+   </author>
+   <year>2008</year>
+   <isbn>1-90-496655-5</isbn>
+  </book>
+  <book>
+   <title>Evangeline</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Henry</first>
+    <middle>Wadsworth</middle>
+    <last>Longfellow</last>
+   </author>
+   <year>1951</year>
+   <isbn>0-920852-13-0</isbn>
+  </book>
+  <book>
    <title>Faded Steel Heat</title>
    <covertype>Soft Cover</covertype>
    <series>Garrett P. I.</series>
@@ -2288,6 +2309,17 @@
     <last>Pratchett</last>
    </author>
    <year>1989</year>
+  </book>
+  <book>
+   <title>Gros Morne</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Brian</first>
+    <middle>C.</middle>
+    <last>Bursey</last>
+   </author>
+   <year>2007</year>
+   <isbn>978-1-55383-148-3</isbn>
   </book>
   <book>
    <title>Hatrack River</title>
@@ -3645,6 +3677,24 @@
    </author>
    <year>2005</year>
    <isbn>0-425-20426-X</isbn>
+  </book>
+  <book>
+   <title>Office Tools For Hopeless Fools</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Kevin</first>
+    <last>Reifier</last>
+   </author>
+   <author>
+    <first>Nick</first>
+    <last>Vacca</last>
+   </author>
+   <author>
+    <first>Adam</first>
+    <last>Najberg</last>
+   </author>
+   <year>2005</year>
+   <isbn>0-312-34086-9</isbn>
   </book>
   <book>
    <title>Pacific Crest Trail Northern California</title>
@@ -5937,6 +5987,27 @@
    </author>
    <year>1999</year>
    <isbn>0-89381-889-5</isbn>
+  </book>
+  <book>
+   <title>Urquhart Castle Loch Ness</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Chris</first>
+    <last>Tabraham</last>
+   </author>
+   <year>2009</year>
+   <isbn>1-903570-30-1</isbn>
+  </book>
+  <book>
+   <title>Uncle John's Bathroom Reader Plunges Into Canada</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Bathroom</first>
+    <middle>Readers'</middle>
+    <last>Institute</last>
+   </author>
+   <year>2010</year>
+   <isbn>978-1-60710-100-0</isbn>
   </book>
   <book>
    <title>Valentine Of Majipoor</title>
