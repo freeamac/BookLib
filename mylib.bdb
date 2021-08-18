@@ -338,6 +338,17 @@
    <isbn>978-0-321-65839-5</isbn>
   </book>
   <book>
+   <title>All Star Game Program</title>
+   <covertype>Soft Cover</covertype>
+   <series>MLB</series>
+   <author>
+    <first>Major</first>
+    <middle>League</middle>
+    <last>Baseball</last>
+   </author>
+   <year>1982</year>
+  </book>
+  <book>
    <title>Altered Carbon</title>
    <covertype>Hard Cover</covertype>
    <series>Takeshi Kovacs Book One</series>
@@ -360,17 +371,6 @@
    </author>
    <year>1998</year>
    <isbn>1-56865-904-0</isbn>
-  </book>
-  <book>
-   <title>All Star Game Program</title>
-   <covertype>Soft Cover</covertype>
-   <series>MLB</series>
-   <author>
-    <first>Major</first>
-    <middle>League</middle>
-    <last>Baseball</last>
-   </author>
-   <year>1982</year>
   </book>
   <book>
    <title>American League Chanpionship Series</title>
@@ -895,6 +895,16 @@
    </author>
    <year>2016</year>
    <isbn>978-0-425-27900-7</isbn>
+  </book>
+  <book>
+   <title>Bel Canto</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Ann</first>
+    <last>Patchett</last>
+   </author>
+   <year>2002</year>
+   <isbn>0-06-093441-7</isbn>
   </book>
   <book>
    <title>C Programming Techniques For The Macintosh</title>
@@ -2249,6 +2259,16 @@
    <year>1989</year>
   </book>
   <book>
+   <title>Girl With A Pearl Earring</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Tracy</first>
+    <last>Chevalier</last>
+   </author>
+   <year>2001</year>
+   <isbn>0-452-28215-2</isbn>
+  </book>
+  <book>
    <title>Hatrack River</title>
    <covertype>Hard Cover</covertype>
    <series>Alvin Maker</series>
@@ -3006,6 +3026,16 @@
    <isbn>0-380-97715-X</isbn>
   </book>
   <book>
+   <title>Kitchen Confidential</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Anthony</first>
+    <last>Bourdain</last>
+   </author>
+   <year>2000</year>
+   <isbn>0-06-093491-3</isbn>
+  </book>
+  <book>
    <title>Lassen Volcanic National Park A Complete Hiker's Guide</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -3584,6 +3614,16 @@
    </author>
    <year>2005</year>
    <isbn>0-425-20426-X</isbn>
+  </book>
+  <book>
+   <title>On The Road</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Jack</first>
+    <last>Kerouac</last>
+   </author>
+   <year>1976</year>
+   <isbn>0-14-004259-8</isbn>
   </book>
   <book>
    <title>Pacific Crest Trail Northern California</title>
@@ -4538,6 +4578,18 @@
    </author>
    <year>1998</year>
    <isbn>1-56865-807-9</isbn>
+  </book>
+  <book>
+   <title>The Best American Travel Writing</title>
+   <covertype>Soft Cover</covertype>
+   <series>The Best American Series</series>
+   <author>
+    <first>Anthony</first>
+    <last>Bourdain</last>
+    <surtitle>(Editor)</surtitle>
+   </author>
+   <year>2008</year>
+   <isbn>978-0-618-85864-4</isbn>
   </book>
   <book>
    <title>The C Programming Language</title>
@@ -5783,6 +5835,16 @@
     <last>Zelazny</last>
    </author>
    <year>1985</year>
+  </book>
+  <book>
+   <title>The Poisonwood Bible</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Barbara</first>
+    <last>Kingsolver</last>
+   </author>
+   <year>1999</year>
+   <isbn>0-06-093053-5</isbn>
   </book>
   <book>
    <title>UML Distilled</title>
