@@ -373,6 +373,16 @@
    <isbn>1-56865-904-0</isbn>
   </book>
   <book>
+   <title>American League Championship Series Scorebook</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Major</first>
+    <middle>League</middle>
+    <last>Baseball</last>
+   </author>
+   <year>1991</year>
+  </book>
+  <book>
    <title>American League Chanpionship Series</title>
    <covertype>Soft Cover</covertype>
    <series>Toronto Blue Jays Scorebook Magazine</series>
@@ -729,6 +739,16 @@
    <isbn>0-425-07558-3</isbn>
   </book>
   <book>
+   <title>Bel Canto</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Ann</first>
+    <last>Patchett</last>
+   </author>
+   <year>2002</year>
+   <isbn>0-06-093441-7</isbn>
+  </book>
+  <book>
    <title>Belgarath The Sorcerer</title>
    <covertype>Hard Cover</covertype>
    <series>Belgariad</series>
@@ -897,14 +917,15 @@
    <isbn>978-0-425-27900-7</isbn>
   </book>
   <book>
-   <title>Bel Canto</title>
+   <title>BIO Review 25th Anniversary Issue</title>
    <covertype>Soft Cover</covertype>
    <author>
-    <first>Ann</first>
-    <last>Patchett</last>
+    <first>Bedford </first>
+    <middle>Institute of</middle>
+    <last>Oceanography</last>
    </author>
-   <year>2002</year>
-   <isbn>0-06-093441-7</isbn>
+   <year>1986</year>
+   <isbn>0-662-15629-3</isbn>
   </book>
   <book>
    <title>C Programming Techniques For The Macintosh</title>
@@ -2185,6 +2206,16 @@
    <isbn>0-7432-0093-4</isbn>
   </book>
   <book>
+   <title>Girl With A Pearl Earring</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Tracy</first>
+    <last>Chevalier</last>
+   </author>
+   <year>2001</year>
+   <isbn>0-452-28215-2</isbn>
+  </book>
+  <book>
    <title>Glory In Death</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -2257,16 +2288,6 @@
     <last>Pratchett</last>
    </author>
    <year>1989</year>
-  </book>
-  <book>
-   <title>Girl With A Pearl Earring</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Tracy</first>
-    <last>Chevalier</last>
-   </author>
-   <year>2001</year>
-   <isbn>0-452-28215-2</isbn>
   </book>
   <book>
    <title>Hatrack River</title>
@@ -2956,6 +2977,16 @@
    <year>1987</year>
   </book>
   <book>
+   <title>Kitchen Confidential</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Anthony</first>
+    <last>Bourdain</last>
+   </author>
+   <year>2000</year>
+   <isbn>0-06-093491-3</isbn>
+  </book>
+  <book>
    <title>Knife Of Dreams</title>
    <covertype>Hard Cover</covertype>
    <series>The Wheel Of Tine Book Eleven</series>
@@ -3024,16 +3055,6 @@
    </author>
    <year>1998</year>
    <isbn>0-380-97715-X</isbn>
-  </book>
-  <book>
-   <title>Kitchen Confidential</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Anthony</first>
-    <last>Bourdain</last>
-   </author>
-   <year>2000</year>
-   <isbn>0-06-093491-3</isbn>
   </book>
   <book>
    <title>Lassen Volcanic National Park A Complete Hiker's Guide</title>
@@ -3605,6 +3626,16 @@
    <isbn>978-0-312-54152-1</isbn>
   </book>
   <book>
+   <title>On The Road</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Jack</first>
+    <last>Kerouac</last>
+   </author>
+   <year>1976</year>
+   <isbn>0-14-004259-8</isbn>
+  </book>
+  <book>
    <title>Origin In Death</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -3614,16 +3645,6 @@
    </author>
    <year>2005</year>
    <isbn>0-425-20426-X</isbn>
-  </book>
-  <book>
-   <title>On The Road</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Jack</first>
-    <last>Kerouac</last>
-   </author>
-   <year>1976</year>
-   <isbn>0-14-004259-8</isbn>
   </book>
   <book>
    <title>Pacific Crest Trail Northern California</title>
@@ -4550,6 +4571,18 @@
    <year>1984</year>
   </book>
   <book>
+   <title>The Best American Travel Writing</title>
+   <covertype>Soft Cover</covertype>
+   <series>The Best American Series</series>
+   <author>
+    <first>Anthony</first>
+    <last>Bourdain</last>
+    <surtitle>(Editor)</surtitle>
+   </author>
+   <year>2008</year>
+   <isbn>978-0-618-85864-4</isbn>
+  </book>
+  <book>
    <title>The Best Of Damon Knight</title>
    <covertype>Hard Cover</covertype>
    <author>
@@ -4578,18 +4611,6 @@
    </author>
    <year>1998</year>
    <isbn>1-56865-807-9</isbn>
-  </book>
-  <book>
-   <title>The Best American Travel Writing</title>
-   <covertype>Soft Cover</covertype>
-   <series>The Best American Series</series>
-   <author>
-    <first>Anthony</first>
-    <last>Bourdain</last>
-    <surtitle>(Editor)</surtitle>
-   </author>
-   <year>2008</year>
-   <isbn>978-0-618-85864-4</isbn>
   </book>
   <book>
    <title>The C Programming Language</title>
@@ -5337,6 +5358,16 @@
    <year>1907</year>
   </book>
   <book>
+   <title>The Poisonwood Bible</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Barbara</first>
+    <last>Kingsolver</last>
+   </author>
+   <year>1999</year>
+   <isbn>0-06-093053-5</isbn>
+  </book>
+  <book>
    <title>The Positronic Man</title>
    <covertype>Hard Cover</covertype>
    <series>Robot</series>
@@ -5835,16 +5866,6 @@
     <last>Zelazny</last>
    </author>
    <year>1985</year>
-  </book>
-  <book>
-   <title>The Poisonwood Bible</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Barbara</first>
-    <last>Kingsolver</last>
-   </author>
-   <year>1999</year>
-   <isbn>0-06-093053-5</isbn>
   </book>
   <book>
    <title>UML Distilled</title>
