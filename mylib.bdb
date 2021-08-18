@@ -80,6 +80,16 @@
    <year>1987</year>
   </book>
   <book>
+   <title>30 Minute Meals 2</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Rachael</first>
+    <last>Ray</last>
+   </author>
+   <year>2003</year>
+   <isbn>1-891105-10-8</isbn>
+  </book>
+  <book>
    <title>3001 The Final Odyssey</title>
    <covertype>Hard Cover</covertype>
    <series>2001</series>
@@ -529,6 +539,17 @@
    <isbn>978-1-55407-398-6</isbn>
   </book>
   <book>
+   <title>Apprentice In Death</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>J.</first>
+    <middle>D.</middle>
+    <last>Robb</last>
+   </author>
+   <year>2016</year>
+   <isbn>978-1-101-98799-5</isbn>
+  </book>
+  <book>
    <title>Artemis</title>
    <covertype>Hard Cover</covertype>
    <author>
@@ -618,6 +639,17 @@
    <isbn>0-06-463204-0</isbn>
   </book>
   <book>
+   <title>Basic Japanese Grammar</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Everett</first>
+    <middle>F.</middle>
+    <last>Bleiler</last>
+   </author>
+   <year>2011</year>
+   <isbn>978-4-8053-1143-1</isbn>
+  </book>
+  <book>
    <title>Basic Techniques Of Photography</title>
    <covertype>Soft Cover</covertype>
    <series>The Ansel Adams Guide</series>
@@ -628,17 +660,6 @@
    </author>
    <year>1999</year>
    <isbn>0-8212-2575-8</isbn>
-  </book>
-  <book>
-   <title>Basic Japanese Grammar</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Everett</first>
-    <middle>F.</middle>
-    <last>Bleiler</last>
-   </author>
-   <year>2011</year>
-   <isbn>978-4-8053-1143-1</isbn>
   </book>
   <book>
    <title>Bathrooms</title>
@@ -810,6 +831,17 @@
    <isbn>0-553-10144-7</isbn>
   </book>
   <book>
+   <title>Born In Death</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>J.</first>
+    <middle>D.</middle>
+    <last>Robb</last>
+   </author>
+   <year>2006</year>
+   <isbn>978-0-425-21568-5</isbn>
+  </book>
+  <book>
    <title>Born To Run</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -841,6 +873,17 @@
    </author>
    <year>2003</year>
    <isbn>0-7394-4220-1</isbn>
+  </book>
+  <book>
+   <title>Brotherhood In Death</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>J.</first>
+    <middle>D.</middle>
+    <last>Robb</last>
+   </author>
+   <year>2016</year>
+   <isbn>978-0-425-27900-7</isbn>
   </book>
   <book>
    <title>C Programming Techniques For The Macintosh</title>
@@ -1040,6 +1083,16 @@
    <isbn>978-0-441-01721-8</isbn>
   </book>
   <book>
+   <title>Cheese</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>Juliet</first>
+    <last>Harbutt</last>
+   </author>
+   <year>1999</year>
+   <isbn>1-57223-200-5</isbn>
+  </book>
+  <book>
    <title>Chess In A Nutshell</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -1209,16 +1262,6 @@
    <isbn>0-442-01746-4</isbn>
   </book>
   <book>
-   <title>Cooking With Beer</title>
-   <covertype>Hard Cover</covertype>
-   <author>
-    <first>Louis</first>
-    <last>Weber</last>
-   </author>
-   <year>2005</year>
-   <isbn>1-4127-2182-2</isbn>
-  </book>
-  <book>
    <title>Cookies</title>
    <covertype>Soft Cover</covertype>
    <series>The Cook's Encyclopedia</series>
@@ -1228,6 +1271,16 @@
    </author>
    <year>2002</year>
    <isbn>07607-3095-4</isbn>
+  </book>
+  <book>
+   <title>Cooking With Beer</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>Louis</first>
+    <last>Weber</last>
+   </author>
+   <year>2005</year>
+   <isbn>1-4127-2182-2</isbn>
   </book>
   <book>
    <title>Coptic Museum</title>
@@ -1281,6 +1334,16 @@
    <isbn>0-9664769-4-8</isbn>
   </book>
   <book>
+   <title>Cover Of Night</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Linda</first>
+    <last>Howard</last>
+   </author>
+   <year>2007</year>
+   <isbn>978-0-345-48651-6</isbn>
+  </book>
+  <book>
    <title>Craddle</title>
    <covertype>Hard Cover</covertype>
    <author>
@@ -1326,16 +1389,6 @@
    </author>
    <year>2003</year>
    <isbn>0-312-86459-0</isbn>
-  </book>
-  <book>
-   <title>Cheese</title>
-   <covertype>Hard Cover</covertype>
-   <author>
-    <first>Juliet</first>
-    <last>Harbutt</last>
-   </author>
-   <year>1999</year>
-   <isbn>1-57223-200-5</isbn>
   </book>
   <book>
    <title>Dagger Magic</title>
@@ -1574,6 +1627,22 @@
    <isbn>1-56865-037-X</isbn>
   </book>
   <book>
+   <title>Easy Entertaining</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>George</first>
+    <last>Dolese</last>
+    <surtitle>(Recipes)</surtitle>
+   </author>
+   <author>
+    <first>Steve</first>
+    <last>Siegelman</last>
+    <surtitle>(Text)</surtitle>
+   </author>
+   <year>2005</year>
+   <isbn>978-0-7432-7852-2</isbn>
+  </book>
+  <book>
    <title>Eclipse Distilled</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -1702,22 +1771,6 @@
    <year>1988</year>
   </book>
   <book>
-   <title>Easy Entertaining</title>
-   <covertype>Hard Cover</covertype>
-   <author>
-    <first>George</first>
-    <last>Dolese</last>
-    <surtitle>(Recipes)</surtitle>
-   </author>
-   <author>
-    <first>Steve</first>
-    <last>Siegelman</last>
-    <surtitle>(Text)</surtitle>
-   </author>
-   <year>2005</year>
-   <isbn>978-0-7432-7852-2</isbn>
-  </book>
-  <book>
    <title>Faded Steel Heat</title>
    <covertype>Soft Cover</covertype>
    <series>Garrett P. I.</series>
@@ -1738,6 +1791,17 @@
    </author>
    <year>1996</year>
    <isbn>0-06-105250-7</isbn>
+  </book>
+  <book>
+   <title>Festive In Death</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>J.</first>
+    <middle>D.</middle>
+    <last>Robb</last>
+   </author>
+   <year>2014</year>
+   <isbn>978-0-515-15415-3</isbn>
   </book>
   <book>
    <title>Fifty Shades Darker</title>
@@ -1774,6 +1838,20 @@
    </author>
    <year>2011</year>
    <isbn>978-0-345-80350-4</isbn>
+  </book>
+  <book>
+   <title>Firehouse Food</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>George</first>
+    <last>Dolese</last>
+   </author>
+   <author>
+    <first>Steve</first>
+    <last>Siegelman</last>
+   </author>
+   <year>2003</year>
+   <isbn>0-8118-3988-5</isbn>
   </book>
   <book>
    <title>Fires Of Eden</title>
@@ -1978,20 +2056,6 @@
    <isbn>0-914894-22-6</isbn>
   </book>
   <book>
-   <title>Firehouse Food</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>George</first>
-    <last>Dolese</last>
-   </author>
-   <author>
-    <first>Steve</first>
-    <last>Siegelman</last>
-   </author>
-   <year>2003</year>
-   <isbn>0-8118-3988-5</isbn>
-  </book>
-  <book>
    <title>Gardening With Color</title>
    <covertype>Hard Cover</covertype>
    <author>
@@ -2036,6 +2100,17 @@
    </author>
    <year>2002</year>
    <isbn>0-7432-0093-4</isbn>
+  </book>
+  <book>
+   <title>Glory In Death</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>J.</first>
+    <middle>D.</middle>
+    <last>Robb</last>
+   </author>
+   <year>1995</year>
+   <isbn>0-425-15098-4</isbn>
   </book>
   <book>
    <title>God Emperor Of Dune</title>
@@ -2122,6 +2197,16 @@
    </author>
    <year>2005</year>
    <isbn>1-889708-00-3</isbn>
+  </book>
+  <book>
+   <title>Heart Of Darkness</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Joseph</first>
+    <last>Conrad</last>
+   </author>
+   <year>2020</year>
+   <isbn>978-1-67330-305-6</isbn>
   </book>
   <book>
    <title>Heaven's Reach</title>
@@ -2223,6 +2308,17 @@
    <isbn>0-06-105046-6</isbn>
   </book>
   <book>
+   <title>Holiday In Death</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>J.</first>
+    <middle>D.</middle>
+    <last>Robb</last>
+   </author>
+   <year>1998</year>
+   <isbn>0-425-16371-7</isbn>
+  </book>
+  <book>
    <title>Homecoming Earth</title>
    <covertype>Hard Cover</covertype>
    <series>Harmony</series>
@@ -2304,16 +2400,6 @@
    <year>1990</year>
   </book>
   <book>
-   <title>Heart Of Darkness</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Joseph</first>
-    <last>Conrad</last>
-   </author>
-   <year>2020</year>
-   <isbn>978-1-67330-305-6</isbn>
-  </book>
-  <book>
    <title>IBM A Special Company</title>
    <covertype>Soft Cover</covertype>
    <series>IBM Think Magazine</series>
@@ -2360,6 +2446,17 @@
    <isbn>1-56799-693-0</isbn>
   </book>
   <book>
+   <title>Immortal In Death</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>J.</first>
+    <middle>D.</middle>
+    <last>Robb</last>
+   </author>
+   <year>1996</year>
+   <isbn>0-425-15378-9</isbn>
+  </book>
+  <book>
    <title>In Enemy Hands</title>
    <covertype>Hard Cover</covertype>
    <series>Honor Harrington</series>
@@ -2397,6 +2494,17 @@
    </author>
    <year>1996</year>
    <isbn>0-553-10173-0</isbn>
+  </book>
+  <book>
+   <title>Innocent In Death</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>J.</first>
+    <middle>D.</middle>
+    <last>Robb</last>
+   </author>
+   <year>2007</year>
+   <isbn>978-0-425-21754-2</isbn>
   </book>
   <book>
    <title>Inside Macintosh Volume I</title>
@@ -2671,6 +2779,17 @@
    <isbn>0-02-604570-2</isbn>
   </book>
   <book>
+   <title>Judgment In Death</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>J.</first>
+    <middle>D.</middle>
+    <last>Robb</last>
+   </author>
+   <year>2000</year>
+   <isbn>0-425-17360-4</isbn>
+  </book>
+  <book>
    <title>Kejimkujik National Park A Guide</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -2691,6 +2810,16 @@
    </author>
    <year>1982</year>
    <isbn>0-9690041-3-3</isbn>
+  </book>
+  <book>
+   <title>Keo's Thai Cuisine Revised</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Keo</first>
+    <last>Sananikone</last>
+   </author>
+   <year>1999</year>
+   <isbn>1-58008-081-2</isbn>
   </book>
   <book>
    <title>King Of The Murgos</title>
@@ -2761,16 +2890,6 @@
    </author>
    <year>1998</year>
    <isbn>0-380-97715-X</isbn>
-  </book>
-  <book>
-   <title>Keo's Thai Cuisine Revised</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Keo</first>
-    <last>Sananikone</last>
-   </author>
-   <year>1999</year>
-   <isbn>1-58008-081-2</isbn>
   </book>
   <book>
    <title>Lassen Volcanic National Park A Complete Hiker's Guide</title>
@@ -2921,6 +3040,17 @@
    </author>
    <year>1992</year>
    <isbn>0-06-109219-9</isbn>
+  </book>
+  <book>
+   <title>Loyalty In Death</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>J.</first>
+    <middle>D.</middle>
+    <last>Robb</last>
+   </author>
+   <year>1999</year>
+   <isbn>0-425-17140-X</isbn>
   </book>
   <book>
    <title>Macintosh Programming Primer Volume I</title>
@@ -3117,6 +3247,17 @@
    <year>1986</year>
   </book>
   <book>
+   <title>Naked In Death</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>J.</first>
+    <middle>D.</middle>
+    <last>Robb</last>
+   </author>
+   <year>1995</year>
+   <isbn>0-425-14829-7</isbn>
+  </book>
+  <book>
    <title>National Audubon Society Field Guide To California</title>
    <covertype>Hard Cover</covertype>
    <author>
@@ -3309,6 +3450,17 @@
    <isbn>978-0-312-54152-1</isbn>
   </book>
   <book>
+   <title>Origin In Death</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>J.</first>
+    <middle>D.</middle>
+    <last>Robb</last>
+   </author>
+   <year>2005</year>
+   <isbn>0-425-20426-X</isbn>
+  </book>
+  <book>
    <title>Pacific Crest Trail Northern California</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -3332,6 +3484,16 @@
    </author>
    <year>1999</year>
    <isbn>0-932633-43-9</isbn>
+  </book>
+  <book>
+   <title>Perfect Panini</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>Jodi</first>
+    <last>Liano</last>
+   </author>
+   <year>2013</year>
+   <isbn>978-1-61628-543-2</isbn>
   </book>
   <book>
    <title>Petty Pweter Gods</title>
@@ -3369,6 +3531,17 @@
    <isbn>0-345-41662-7</isbn>
   </book>
   <book>
+   <title>Portrait In Death</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>J.</first>
+    <middle>D.</middle>
+    <last>Robb</last>
+   </author>
+   <year>2003</year>
+   <isbn>0-425-18903-1</isbn>
+  </book>
+  <book>
    <title>Prelude To Foundation</title>
    <covertype>Hard Cover</covertype>
    <series>Foundation</series>
@@ -3377,6 +3550,16 @@
     <last>Asimov</last>
    </author>
    <year>1988</year>
+  </book>
+  <book>
+   <title>Prepare For Anything Survival Manual</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Tim</first>
+    <last>MacWelch</last>
+   </author>
+   <year>2014</year>
+   <isbn>978-1-61628-673-6</isbn>
   </book>
   <book>
    <title>Prince Of Chaos</title>
@@ -3458,6 +3641,17 @@
    </author>
    <year>2003</year>
    <isbn>0-07-138867-2</isbn>
+  </book>
+  <book>
+   <title>Purity In Death</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>J.</first>
+    <middle>D.</middle>
+    <last>Robb</last>
+   </author>
+   <year>2002</year>
+   <isbn>0-425-18630-X</isbn>
   </book>
   <book>
    <title>Pyramids</title>
@@ -3574,6 +3768,17 @@
    <isbn>0-7394-0345-1</isbn>
   </book>
   <book>
+   <title>Risotto</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>Pamela</first>
+    <middle>Sheldon</middle>
+    <last>Johns</last>
+   </author>
+   <year>2002</year>
+   <isbn>0-7432-2680-1</isbn>
+  </book>
+  <book>
    <title>Road Biking California's Sierra Nevada</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -3608,6 +3813,16 @@
    <isbn>0-312-85392-0</isbn>
   </book>
   <book>
+   <title>Rogue Lawyer</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>John</first>
+    <last>Grisham</last>
+   </author>
+   <year>2016</year>
+   <isbn>978-0-553-39348-4</isbn>
+  </book>
+  <book>
    <title>Royal Assassin</title>
    <covertype>Soft Cover</covertype>
    <series>The Farseer Trilogy Book Two</series>
@@ -3629,17 +3844,6 @@
    <year>2008</year>
   </book>
   <book>
-   <title>Risotto</title>
-   <covertype>Hard Cover</covertype>
-   <author>
-    <first>Pamela</first>
-    <middle>Sheldon</middle>
-    <last>Johns</last>
-   </author>
-   <year>2002</year>
-   <isbn>0-7432-2680-1</isbn>
-  </book>
-  <book>
    <title>Sandworms Of Dune</title>
    <covertype>Hard Cover</covertype>
    <series>Dune</series>
@@ -3654,6 +3858,16 @@
    </author>
    <year>2007</year>
    <isbn>978-0-765-31293-8</isbn>
+  </book>
+  <book>
+   <title>Sangria - Fun And Festive Recipes</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>Mittie</first>
+    <last>Hellmich</last>
+   </author>
+   <year>2004</year>
+   <isbn>0-8118-4290-8</isbn>
   </book>
   <book>
    <title>ScoreBook</title>
@@ -3848,6 +4062,16 @@
    <isbn>0-312-89057-5</isbn>
   </book>
   <book>
+   <title>Son Of The Morning</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Linda</first>
+    <last>Howard</last>
+   </author>
+   <year>1997</year>
+   <isbn>978-0-671-79938-0</isbn>
+  </book>
+  <book>
    <title>Sorcerers Of Majipoor</title>
    <covertype>Hard Cover</covertype>
    <series>The Majipoor Cycle</series>
@@ -3996,14 +4220,15 @@
    <isbn>978-0-7653-0686-9</isbn>
   </book>
   <book>
-   <title>Sangria - Fun And Festive Recipes</title>
-   <covertype>Hard Cover</covertype>
+   <title>Survivor In Death</title>
+   <covertype>Soft Cover</covertype>
    <author>
-    <first>Mittie</first>
-    <last>Hellmich</last>
+    <first>J.</first>
+    <middle>D.</middle>
+    <last>Robb</last>
    </author>
-   <year>2004</year>
-   <isbn>0-8118-4290-8</isbn>
+   <year>2005</year>
+   <isbn>0-425-20418-9</isbn>
   </book>
   <book>
    <title>Telecommunications A Beginner's Guide</title>
@@ -4054,6 +4279,16 @@
    </author>
    <year>1993</year>
    <isbn>0-8129-2241-7</isbn>
+  </book>
+  <book>
+   <title>The 9th FGirl</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Tami</first>
+    <last>Hoag</last>
+   </author>
+   <year>2014</year>
+   <isbn>978-0-451-24056-9</isbn>
   </book>
   <book>
    <title>The Adept</title>
@@ -4771,6 +5006,16 @@
    <year>1979</year>
   </book>
   <book>
+   <title>The Metamorphosis</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Franz</first>
+    <last>Kafka</last>
+   </author>
+   <year>2018</year>
+   <isbn>978-1-50529-705-8</isbn>
+  </book>
+  <book>
    <title>The Mountains Of Majipoor</title>
    <covertype>Hard Cover</covertype>
    <series>The Majipoor Cycle</series>
@@ -4794,14 +5039,34 @@
    <isbn>0-201-00650-2</isbn>
   </book>
   <book>
-   <title>The Metamorphosis</title>
-   <covertype>Soft Cover</covertype>
+   <title>The Naked Chef</title>
+   <covertype>Hard Cover</covertype>
    <author>
-    <first>Franz</first>
-    <last>Kafka</last>
+    <first>Jamie</first>
+    <last>Oliver</last>
    </author>
-   <year>2018</year>
-   <isbn>978-1-50529-705-8</isbn>
+   <year>2000</year>
+   <isbn>0-7868-6617-9</isbn>
+  </book>
+  <book>
+   <title>The Naked Chef Takes Off</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>Jamie</first>
+    <last>Oliver</last>
+   </author>
+   <year>2000</year>
+   <isbn>0-7868-6755-8</isbn>
+  </book>
+  <book>
+   <title>The New Bread Book</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>Ursula</first>
+    <last>Ferrigno</last>
+   </author>
+   <year>2008</year>
+   <isbn>978-1-4351-0435-8</isbn>
   </book>
   <book>
    <title>The New Hugo Winners Volume II</title>
@@ -4823,6 +5088,16 @@
     <last>Scott</last>
    </author>
    <year>-1</year>
+  </book>
+  <book>
+   <title>The Nova Scotia Book Of Lists</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Vernon</first>
+    <last>Oickle</last>
+   </author>
+   <year>2018</year>
+   <isbn>978-1-77276-109-2</isbn>
   </book>
   <book>
    <title>The Paladin</title>
@@ -5042,6 +5317,16 @@
    <isbn>0-7869-1418-1</isbn>
   </book>
   <book>
+   <title>The Spoon Stealer</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Lesley</first>
+    <last>Crewe</last>
+   </author>
+   <year>2020</year>
+   <isbn>978-1-77108-881-7</isbn>
+  </book>
+  <book>
    <title>The Stainless Steel Rat For President</title>
    <covertype>Hard Cover</covertype>
    <series>Stainless Steel Rat</series>
@@ -5072,6 +5357,27 @@
    <year>1979</year>
   </book>
   <book>
+   <title>The Star Trek Compendium</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Allan</first>
+    <last>Asherman</last>
+   </author>
+   <year>1989</year>
+   <isbn>0-671-68440-X</isbn>
+  </book>
+  <book>
+   <title>The Star Wars Album</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Ballantine</first>
+    <last>Books</last>
+    <surtitle>(Publisher)</surtitle>
+   </author>
+   <year>1977</year>
+   <isbn>0-345-27591-8</isbn>
+  </book>
+  <book>
    <title>The Sword Of Shanara Trilogy</title>
    <covertype>Hard Cover</covertype>
    <series>The Sword Of Shanara</series>
@@ -5100,37 +5406,6 @@
    </author>
    <year>1990</year>
    <isbn>0-812-53330-5</isbn>
-  </book>
-  <book>
-   <title>The Star Trek Compendium</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Allan</first>
-    <last>Asherman</last>
-   </author>
-   <year>1989</year>
-   <isbn>0-671-68440-X</isbn>
-  </book>
-  <book>
-   <title>The Star Wars Album</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Ballantine</first>
-    <last>Books</last>
-    <surtitle>(Publisher)</surtitle>
-   </author>
-   <year>1977</year>
-   <isbn>0-345-27591-8</isbn>
-  </book>
-  <book>
-   <title>The Spoon Stealer</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Lesley</first>
-    <last>Crewe</last>
-   </author>
-   <year>2020</year>
-   <isbn>978-1-77108-881-7</isbn>
   </book>
   <book>
    <title>The Telling</title>
@@ -5355,46 +5630,6 @@
    <year>1985</year>
   </book>
   <book>
-   <title>The Nova Scotia Book Of Lists</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Vernon</first>
-    <last>Oickle</last>
-   </author>
-   <year>2018</year>
-   <isbn>978-1-77276-109-2</isbn>
-  </book>
-  <book>
-   <title>The New Bread Book</title>
-   <covertype>Hard Cover</covertype>
-   <author>
-    <first>Ursula</first>
-    <last>Ferrigno</last>
-   </author>
-   <year>2008</year>
-   <isbn>978-1-4351-0435-8</isbn>
-  </book>
-  <book>
-   <title>The Naked Chef Takes Off</title>
-   <covertype>Hard Cover</covertype>
-   <author>
-    <first>Jamie</first>
-    <last>Oliver</last>
-   </author>
-   <year>2000</year>
-   <isbn>0-7868-6755-8</isbn>
-  </book>
-  <book>
-   <title>The Naked Chef</title>
-   <covertype>Hard Cover</covertype>
-   <author>
-    <first>Jamie</first>
-    <last>Oliver</last>
-   </author>
-   <year>2000</year>
-   <isbn>0-7868-6617-9</isbn>
-  </book>
-  <book>
    <title>UML Distilled</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -5487,6 +5722,17 @@
    <isbn>90-6630-492-8</isbn>
   </book>
   <book>
+   <title>Vengeance In Death</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>J.</first>
+    <middle>D.</middle>
+    <last>Robb</last>
+   </author>
+   <year>1997</year>
+   <isbn>0-425-16039-4</isbn>
+  </book>
+  <book>
    <title>Venus, Inc.</title>
    <covertype>Hard Cover</covertype>
    <author>
@@ -5498,6 +5744,17 @@
     <last>Kornbluth</last>
    </author>
    <year>1984</year>
+  </book>
+  <book>
+   <title>Visions In Death</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>J.</first>
+    <middle>D.</middle>
+    <last>Robb</last>
+   </author>
+   <year>2005</year>
+   <isbn>0-425-20300-X</isbn>
   </book>
   <book>
    <title>Volcanoes Of The Cascades - Their Rise And Their Risks</title>
@@ -5565,6 +5822,16 @@
    </author>
    <year>1996</year>
    <isbn>0-02-861318-X</isbn>
+  </book>
+  <book>
+   <title>West Coast Seafood</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Jay</first>
+    <last>Harlow</last>
+   </author>
+   <year>1999</year>
+   <isbn>1-57061-170-4</isbn>
   </book>
   <book>
    <title>What The Numbers Say</title>
@@ -5649,16 +5916,6 @@
    </author>
    <year>1988</year>
    <isbn>0-451-45012-4</isbn>
-  </book>
-  <book>
-   <title>West Coast Seafood</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Jay</first>
-    <last>Harlow</last>
-   </author>
-   <year>1999</year>
-   <isbn>1-57061-170-4</isbn>
   </book>
   <book>
    <title>XML By Example</title>
@@ -5750,35 +6007,5 @@
    </author>
    <year>2012</year>
    <isbn>978-1-84951-546-7</isbn>
-  </book>
-  <book>
-   <title>Prepare For Anything Survival Manual</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Tim</first>
-    <last>MacWelch</last>
-   </author>
-   <year>2014</year>
-   <isbn>978-1-61628-673-6</isbn>
-  </book>
-  <book>
-   <title>Perfect Panini</title>
-   <covertype>Hard Cover</covertype>
-   <author>
-    <first>Jodi</first>
-    <last>Liano</last>
-   </author>
-   <year>2013</year>
-   <isbn>978-1-61628-543-2</isbn>
-  </book>
-  <book>
-   <title>30 Minute Meals 2</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Rachael</first>
-    <last>Ray</last>
-   </author>
-   <year>2003</year>
-   <isbn>1-891105-10-8</isbn>
   </book>
 </booklibrary>
