@@ -923,6 +923,16 @@
    <isbn>0-07-882476-1</isbn>
   </book>
   <book>
+   <title>Cabinets, Bookcases And Closets</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Tom</first>
+    <last>Philbin</last>
+   </author>
+   <year>1980</year>
+   <isbn>0-932944-22-1</isbn>
+  </book>
+  <book>
    <title>Calculus And Analytic Geometry Volume One</title>
    <covertype>Hard Cover</covertype>
    <author>
@@ -1152,6 +1162,18 @@
    <isbn>0-399-13717-3</isbn>
   </book>
   <book>
+   <title>Cholesterol Cures</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Rodale</first>
+    <middle>Health</middle>
+    <last>Books</last>
+    <surtitle>(Editors)</surtitle>
+   </author>
+   <year>2008</year>
+   <isbn>1-59486-735-6</isbn>
+  </book>
+  <book>
    <title>Chronicles Of The Lensmen Vol. 1</title>
    <covertype>Hard Cover</covertype>
    <series>Chronicles Of The Lensmen</series>
@@ -1283,6 +1305,16 @@
    <isbn>1-4127-2182-2</isbn>
   </book>
   <book>
+   <title>Cool Crochet</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Melissa</first>
+    <last>Leapman</last>
+   </author>
+   <year>2005</year>
+   <isbn>0-8230-1124-0</isbn>
+  </book>
+  <book>
    <title>Coptic Museum</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -1389,18 +1421,6 @@
    </author>
    <year>2003</year>
    <isbn>0-312-86459-0</isbn>
-  </book>
-  <book>
-   <title>Cholesterol Cures</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Rodale</first>
-    <middle>Health</middle>
-    <last>Books</last>
-    <surtitle>(Editors)</surtitle>
-   </author>
-   <year>2008</year>
-   <isbn>1-59486-735-6</isbn>
   </book>
   <book>
    <title>Dagger Magic</title>
@@ -2066,6 +2086,16 @@
    </author>
    <year>1978</year>
    <isbn>0-914894-22-6</isbn>
+  </book>
+  <book>
+   <title>Frankenstein</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Mary</first>
+    <last>Shelley</last>
+   </author>
+   <year>1991</year>
+   <isbn>0-553-21247-8</isbn>
   </book>
   <book>
    <title>Gardening With Color</title>
@@ -2866,6 +2896,16 @@
    <isbn>0-688-08726-4</isbn>
   </book>
   <book>
+   <title>Knitting Basics</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>Betty</first>
+    <last>Barnden</last>
+   </author>
+   <year>2002</year>
+   <isbn>0-7641-5546-6</isbn>
+  </book>
+  <book>
    <title>Kotlin In Action</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -3063,6 +3103,17 @@
    </author>
    <year>1999</year>
    <isbn>0-425-17140-X</isbn>
+  </book>
+  <book>
+   <title>Less Than Zero</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Bret</first>
+    <middle>Easton</middle>
+    <last>Ellis</last>
+   </author>
+   <year>1985</year>
+   <isbn>0-14-010927-7</isbn>
   </book>
   <book>
    <title>Macintosh Programming Primer Volume I</title>
@@ -5143,6 +5194,16 @@
    <isbn>0-312-85769-1</isbn>
   </book>
   <book>
+   <title>The Pelican Brief</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>John</first>
+    <last>Grisham</last>
+   </author>
+   <year>1992</year>
+   <isbn>0-385-42198-2</isbn>
+  </book>
+  <book>
    <title>The Poems Of Alfred Tennyson</title>
    <covertype>Hard Cover</covertype>
    <author>
@@ -5390,6 +5451,16 @@
    <isbn>0-345-27591-8</isbn>
   </book>
   <book>
+   <title>The Summons</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>John</first>
+    <last>Grisham</last>
+   </author>
+   <year>2002</year>
+   <isbn>0-385-50382-2</isbn>
+  </book>
+  <book>
    <title>The Sword Of Shanara Trilogy</title>
    <covertype>Hard Cover</covertype>
    <series>The Sword Of Shanara</series>
@@ -5418,16 +5489,6 @@
    </author>
    <year>1990</year>
    <isbn>0-812-53330-5</isbn>
-  </book>
-  <book>
-   <title>The Summons</title>
-   <covertype>Hard Cover</covertype>
-   <author>
-    <first>John</first>
-    <last>Grisham</last>
-   </author>
-   <year>2002</year>
-   <isbn>0-385-50382-2</isbn>
   </book>
   <book>
    <title>The Telling</title>
@@ -5565,13 +5626,13 @@
    <title>Threads Primer</title>
    <covertype>Soft Cover</covertype>
    <author>
-    <first>Bil</first>
-    <last>Lewis</last>
-   </author>
-   <author>
     <first>Daniel</first>
     <middle>J.</middle>
     <last>Berg</last>
+   </author>
+   <author>
+    <first>Bill</first>
+    <last>Lewis</last>
    </author>
    <year>1996</year>
    <isbn>0-13-443698-9</isbn>
@@ -5650,16 +5711,6 @@
     <last>Zelazny</last>
    </author>
    <year>1985</year>
-  </book>
-  <book>
-   <title>The Pelican Brief</title>
-   <covertype>Hard Cover</covertype>
-   <author>
-    <first>John</first>
-    <last>Grisham</last>
-   </author>
-   <year>1992</year>
-   <isbn>0-385-42198-2</isbn>
   </book>
   <book>
    <title>UML Distilled</title>
@@ -6039,5 +6090,15 @@
    </author>
    <year>2012</year>
    <isbn>978-1-84951-546-7</isbn>
+  </book>
+  <book>
+   <title>Pro Git</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Scott</first>
+    <last>Chacon</last>
+   </author>
+   <year>2009</year>
+   <isbn>978-1-4302-1823-3</isbn>
   </book>
 </booklibrary>
