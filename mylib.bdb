@@ -44,19 +44,6 @@
    <year>1968</year>
   </book>
   <book>
-   <title>2004 Standard Catalog Of US Stamps</title>
-   <covertype>Soft Cover</covertype>
-   <series>Krause - Minkus Stamp Catalog</series>
-   <author>
-    <first>Steven</first>
-    <middle>R.</middle>
-    <last>Unkrich</last>
-    <surtitle>(Editor)</surtitle>
-   </author>
-   <year>2004</year>
-   <isbn>0-87349-706-6</isbn>
-  </book>
-  <book>
    <title>2010: Odyssey Two</title>
    <covertype>Hard Cover</covertype>
    <series>2001</series>
@@ -257,7 +244,7 @@
   <book>
    <title>A Private Cosmos</title>
    <covertype>Soft Cover</covertype>
-   <series>World Of Tiers Series Book Three</series>
+   <series>World Of Tiers Series Book Three - Delete?</series>
    <author>
     <first>Philip</first>
     <middle>Jose</middle>
@@ -318,7 +305,7 @@
   <book>
    <title>Adventuring In The San Francisco Bay Area</title>
    <covertype>Soft Cover</covertype>
-   <series>Sierra Club Travel Guide</series>
+   <series>Sierra Club Travel Guide - Delete?</series>
    <author>
     <first>Peggy</first>
     <last>Wayburn</last>
@@ -416,7 +403,7 @@
   <book>
    <title>An Ill Fate Marshalling</title>
    <covertype>Soft Cover</covertype>
-   <series>Dread Empire</series>
+   <series>Dread Empire - Delete?</series>
    <author>
     <first>Glen</first>
     <last>Cook</last>
@@ -436,18 +423,9 @@
    <isbn>0-534-98012-0</isbn>
   </book>
   <book>
-   <title>An Introduction To Mathematical Models In The Social And Life Sciences</title>
-   <covertype>Hard Cover</covertype>
-   <author>
-    <first>Michael</first>
-    <last>Olinick</last>
-   </author>
-   <year>1978</year>
-   <isbn>0-201-05448-5</isbn>
-  </book>
-  <book>
    <title>An Introduction To Operating Systems</title>
    <covertype>Hard Cover</covertype>
+   <series>Delete?</series>
    <author>
     <first>Harvey</first>
     <middle>M.</middle>
@@ -459,6 +437,7 @@
   <book>
    <title>Anachronisms</title>
    <covertype>Soft Cover</covertype>
+   <series>Delete?</series>
    <author>
     <first>Christopher</first>
     <last>Hinz</last>
@@ -493,7 +472,7 @@
   <book>
    <title>Angry Lead Skies</title>
    <covertype>Soft Cover</covertype>
-   <series>Garrett P. I.</series>
+   <series>Garrett P. I. - Delete?</series>
    <author>
     <first>Glen</first>
     <last>Cook</last>
@@ -536,17 +515,6 @@
    </author>
    <year>1965</year>
    <isbn>1-56865-106-6</isbn>
-  </book>
-  <book>
-   <title>Ant The Definitive Guide</title>
-   <covertype>Soft Cover</covertype>
-   <series>O'Reily</series>
-   <author>
-    <first>Steve</first>
-    <last>Holzner</last>
-   </author>
-   <year>2005</year>
-   <isbn>978-0-596-00609-9</isbn>
   </book>
   <book>
    <title>Antarctica</title>
@@ -630,7 +598,7 @@
   <book>
    <title>Assassin's Apprentice</title>
    <covertype>Soft Cover</covertype>
-   <series>The Farseer Trilogy Book One</series>
+   <series>The Farseer Trilogy Book One - Delete?</series>
    <author>
     <first>Robin</first>
     <last>Hobb</last>
@@ -658,6 +626,17 @@
    </author>
    <year>1958</year>
    <isbn>0-06-463204-0</isbn>
+  </book>
+  <book>
+   <title>BIO Review 25th Anniversary Issue</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Bedford </first>
+    <middle>Institute of</middle>
+    <last>Oceanography</last>
+   </author>
+   <year>1986</year>
+   <isbn>0-662-15629-3</isbn>
   </book>
   <book>
    <title>Basic Japanese Grammar</title>
@@ -696,6 +675,7 @@
   <book>
    <title>Beer-Can Chicken</title>
    <covertype>Soft Cover</covertype>
+   <series>Delete?</series>
    <author>
     <first>Steven</first>
     <last>Raichlen</last>
@@ -706,6 +686,7 @@
   <book>
    <title>Begin Chess</title>
    <covertype>Soft Cover</covertype>
+   <series>Delete?</series>
    <author>
     <first>D. B.</first>
     <last>Pritchard</last>
@@ -713,23 +694,9 @@
    <year>1973</year>
   </book>
   <book>
-   <title>Beginning MySql</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Robert</first>
-    <last>Sheldon</last>
-   </author>
-   <author>
-    <first>Geoff</first>
-    <last>Moes</last>
-   </author>
-   <year>2005</year>
-   <isbn>0-7645-7950-9</isbn>
-  </book>
-  <book>
    <title>Behind The Walls Of Terra</title>
    <covertype>Soft Cover</covertype>
-   <series>World Of Tiers Series Book Four</series>
+   <series>World Of Tiers Series Book Four - Delete?</series>
    <author>
     <first>Philip</first>
     <middle>Jose</middle>
@@ -777,6 +744,7 @@
   <book>
    <title>Best American Beers</title>
    <covertype>Soft Cover</covertype>
+   <series>Delete?</series>
    <author>
     <first>Benjamin</first>
     <last>Myers</last>
@@ -788,6 +756,7 @@
   <book>
    <title>Best Kept Secrets Of Peer Code Review</title>
    <covertype>Soft Cover</covertype>
+   <series>Delete?</series>
    <author>
     <first>Jason</first>
     <last>Cohen</last>
@@ -917,17 +886,6 @@
    <isbn>978-0-425-27900-7</isbn>
   </book>
   <book>
-   <title>BIO Review 25th Anniversary Issue</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Bedford </first>
-    <middle>Institute of</middle>
-    <last>Oceanography</last>
-   </author>
-   <year>1986</year>
-   <isbn>0-662-15629-3</isbn>
-  </book>
-  <book>
    <title>C Programming Techniques For The Macintosh</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -942,17 +900,6 @@
    </author>
    <year>1986</year>
    <isbn>0-672-22461-5</isbn>
-  </book>
-  <book>
-   <title>C++ Primer</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Stanley</first>
-    <middle>B.</middle>
-    <last>Lippman</last>
-   </author>
-   <year>1992</year>
-   <isbn>0-201-54848-8</isbn>
   </book>
   <book>
    <title>C++ The Complete Reference</title>
@@ -1000,19 +947,6 @@
    <isbn>0-8465-9021-9</isbn>
   </book>
   <book>
-   <title>California</title>
-   <covertype>Soft Cover</covertype>
-   <series>Eyewitness Travel Guide</series>
-   <author>
-    <first>Louise</first>
-    <middle>Bostock</middle>
-    <last>Lang</last>
-    <surtitle>(Managing Editor)</surtitle>
-   </author>
-   <year>1997</year>
-   <isbn>0-7513-0403-4</isbn>
-  </book>
-  <book>
    <title>California Fishing</title>
    <covertype>Soft Cover</covertype>
    <series>Foghorn Outdoors</series>
@@ -1040,18 +974,6 @@
    <isbn>978-61238-163-3</isbn>
   </book>
   <book>
-   <title>Campbell's Microwave Cooking</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Flora</first>
-    <middle>E.</middle>
-    <last>Szatkowski</last>
-    <surtitle>(Editor)</surtitle>
-   </author>
-   <year>1987</year>
-   <isbn>0-88176-611-9</isbn>
-  </book>
-  <book>
    <title>Camping &amp; Wilderness Survival</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -1060,19 +982,6 @@
    </author>
    <year>2006</year>
    <isbn>978-0-9740820-2-8</isbn>
-  </book>
-  <book>
-   <title>Canadian Coins</title>
-   <covertype>Soft Cover</covertype>
-   <series>Charlton Standard Coin Catalogue</series>
-   <author>
-    <first>W.</first>
-    <middle>K.</middle>
-    <last>Cross</last>
-    <surtitle>(Editor)</surtitle>
-   </author>
-   <year>2003</year>
-   <isbn>0-88968-278-X</isbn>
   </book>
   <book>
    <title>Cards Of Grief</title>
@@ -1115,7 +1024,7 @@
   <book>
    <title>Ceremony</title>
    <covertype>Soft Cover</covertype>
-   <series>Darkwar Trilogy Book Three</series>
+   <series>Darkwar Trilogy Book Three - Delete?</series>
    <author>
     <first>Glen</first>
     <last>Cook</last>
@@ -1147,6 +1056,7 @@
   <book>
    <title>Chess In A Nutshell</title>
    <covertype>Soft Cover</covertype>
+   <series>Delete?</series>
    <author>
     <first>Fred</first>
     <last>Reinfeld</last>
@@ -1155,19 +1065,9 @@
    <isbn>671-75498-X</isbn>
   </book>
   <book>
-   <title>Chess Made Simple</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Milton</first>
-    <middle>L.</middle>
-    <last>Hanauer</last>
-   </author>
-   <year>1957</year>
-   <isbn>0-385-01215-2</isbn>
-  </book>
-  <book>
    <title>Chess The Easy Way</title>
    <covertype>Soft Cover</covertype>
+   <series>Delete?</series>
    <author>
     <first>Reuben</first>
     <last>Fine</last>
@@ -1238,16 +1138,6 @@
    </author>
    <year>1998</year>
    <isbn>0-7394-0262-5</isbn>
-  </book>
-  <book>
-   <title>Class Contrustion In C And C++</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Roger</first>
-    <last>Sessions</last>
-   </author>
-   <year>1992</year>
-   <isbn>0-13-630104-5</isbn>
   </book>
   <book>
    <title>Cocktail Parties</title>
@@ -1337,16 +1227,6 @@
    <isbn>07607-3095-4</isbn>
   </book>
   <book>
-   <title>Cooking With Beer</title>
-   <covertype>Hard Cover</covertype>
-   <author>
-    <first>Louis</first>
-    <last>Weber</last>
-   </author>
-   <year>2005</year>
-   <isbn>1-4127-2182-2</isbn>
-  </book>
-  <book>
    <title>Cool Crochet</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -1359,6 +1239,7 @@
   <book>
    <title>Coptic Museum</title>
    <covertype>Soft Cover</covertype>
+   <series>Delete?</series>
    <author>
     <first>Amal</first>
     <middle>M. Safwat</middle>
@@ -1467,7 +1348,7 @@
   <book>
    <title>Dagger Magic</title>
    <covertype>Soft Cover</covertype>
-   <series>Adept Series Book Four</series>
+   <series>Adept Series Book Four - Delete</series>
    <author>
     <first>Katherine</first>
     <last>Kurtz</last>
@@ -1481,14 +1362,14 @@
    <isbn>0-441-00304-4</isbn>
   </book>
   <book>
-   <title>Dalhousie University A Time To Remember</title>
-   <covertype>Hard Cover</covertype>
+   <title>Darnell Stamps Of Canada Catalogue</title>
+   <covertype>Soft Cover</covertype>
    <author>
-    <first>Brian</first>
-    <last>Smith</last>
-    <surtitle>(Photography By)</surtitle>
+    <first>Lyse</first>
+    <last>Rousseau</last>
    </author>
-   <year>-1</year>
+   <year>2003</year>
+   <isbn>2-920734-26-1</isbn>
   </book>
   <book>
    <title>Day Hiker's Guide To California's State Parks</title>
@@ -1513,7 +1394,7 @@
   <book>
    <title>Death Of An Adept</title>
    <covertype>Soft Cover</covertype>
-   <series>The Adept Series Book Five</series>
+   <series>The Adept Series Book Five - Delete?</series>
    <author>
     <first>Katherine</first>
     <last>Kurtz</last>
@@ -1580,16 +1461,6 @@
    <isbn>0-201-63361-2</isbn>
   </book>
   <book>
-   <title>Designing The Perfect Resume</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Pat</first>
-    <last>Criscito</last>
-   </author>
-   <year>2000</year>
-   <isbn>0-7641-1268-6</isbn>
-  </book>
-  <book>
    <title>Disapora</title>
    <covertype>Hard Cover</covertype>
    <author>
@@ -1639,19 +1510,9 @@
    <isbn>0-19-853266-0</isbn>
   </book>
   <book>
-   <title>Dive Into Python</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Mark</first>
-    <last>Pilgrim</last>
-   </author>
-   <year>2004</year>
-   <isbn>1-59059-356-1</isbn>
-  </book>
-  <book>
    <title>Doomstalker</title>
    <covertype>Soft Cover</covertype>
-   <series>Darkwar Trilogy Book One</series>
+   <series>Darkwar Trilogy Book One - Delete?</series>
    <author>
     <first>Glen</first>
     <last>Cook</last>
@@ -1717,16 +1578,6 @@
    <isbn>978-0-7432-7852-2</isbn>
   </book>
   <book>
-   <title>Eclipse Distilled</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>David</first>
-    <last>Carlson</last>
-   </author>
-   <year>2005</year>
-   <isbn>0-32-128815-7</isbn>
-  </book>
-  <book>
    <title>Eclipse Rich Client Platform</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -1743,6 +1594,16 @@
    </author>
    <year>2010</year>
    <isbn>978-0-321-60378-4</isbn>
+  </book>
+  <book>
+   <title>Edinburgh Castle Official Souvenir Guide</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Chris</first>
+    <last>Tabraham</last>
+   </author>
+   <year>2008</year>
+   <isbn>1-90-496655-5</isbn>
   </book>
   <book>
    <title>Edinburgh Castle The Souvenir Guide</title>
@@ -1769,7 +1630,7 @@
   <book>
    <title>Ender's Shadow</title>
    <covertype>Soft Cover</covertype>
-   <series>Ender</series>
+   <series>Ender - Delete?</series>
    <author>
     <first>Orson</first>
     <middle>Scott</middle>
@@ -1836,25 +1697,6 @@
    <isbn>978-0-07-148300-1</isbn>
   </book>
   <book>
-   <title>Exile's Gate</title>
-   <covertype>Hard Cover</covertype>
-   <author>
-    <first>C.J.</first>
-    <last>Cherryh</last>
-   </author>
-   <year>1988</year>
-  </book>
-  <book>
-   <title>Edinburgh Castle Official Souvenir Guide</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Chris</first>
-    <last>Tabraham</last>
-   </author>
-   <year>2008</year>
-   <isbn>1-90-496655-5</isbn>
-  </book>
-  <book>
    <title>Evangeline</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -1866,9 +1708,18 @@
    <isbn>0-920852-13-0</isbn>
   </book>
   <book>
+   <title>Exile's Gate</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>C.J.</first>
+    <last>Cherryh</last>
+   </author>
+   <year>1988</year>
+  </book>
+  <book>
    <title>Faded Steel Heat</title>
    <covertype>Soft Cover</covertype>
-   <series>Garrett P. I.</series>
+   <series>Garrett P. I. - Delete?</series>
    <author>
     <first>Glen</first>
     <last>Cook</last>
@@ -1969,21 +1820,9 @@
    <isbn>978-1-491-99173-2</isbn>
   </book>
   <book>
-   <title>Fodor's 94 Eastern Europe</title>
-   <covertype>Soft Cover</covertype>
-   <series>Fodor's Travel Guide</series>
-   <author>
-    <first>Scott</first>
-    <last>McNeely</last>
-    <surtitle>(Editor)</surtitle>
-   </author>
-   <year>1993</year>
-   <isbn>0-679-02513-8</isbn>
-  </book>
-  <book>
    <title>Fodor's Egypt</title>
    <covertype>Soft Cover</covertype>
-   <series>Fodor's Travel Guide</series>
+   <series>Fodor's Travel Guide - Delete?</series>
    <author>
     <first>Kay</first>
     <last>Showker</last>
@@ -1994,7 +1833,7 @@
   <book>
    <title>Fodor's Turkey</title>
    <covertype>Soft Cover</covertype>
-   <series>Fodor's Travel Guide</series>
+   <series>Fodor's Travel Guide - Delete?</series>
    <author>
     <first>Aaron</first>
     <last>Sugarman</last>
@@ -2132,21 +1971,6 @@
    <year>-1</year>
   </book>
   <book>
-   <title>Frommer's 98 Arizona</title>
-   <covertype>Soft Cover</covertype>
-   <series>Frommer's Travel</series>
-   <author>
-    <first>Karl</first>
-    <last>Samson</last>
-   </author>
-   <author>
-    <first>Jane</first>
-    <last>Aukshunas</last>
-   </author>
-   <year>1998</year>
-   <isbn>0-02-861638-3</isbn>
-  </book>
-  <book>
    <title>Frommer's Newfoundland &amp; Labrador</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -2213,20 +2037,6 @@
    <isbn>0-312-85391-2</isbn>
   </book>
   <book>
-   <title>George Foreman's Big Book Of Grilling, Barbecue, And Rotisserie</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>George</first>
-    <last>Foreman</last>
-   </author>
-   <author>
-    <first>Barbara</first>
-    <last>Witt</last>
-   </author>
-   <year>2002</year>
-   <isbn>0-7432-0093-4</isbn>
-  </book>
-  <book>
    <title>Girl With A Pearl Earring</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -2271,6 +2081,7 @@
   <book>
    <title>Golf The Early Days</title>
    <covertype>Hard Cover</covertype>
+   <series>Delete?</series>
    <author>
     <first>Dale</first>
     <last>Concannon</last>
@@ -2288,6 +2099,17 @@
    </author>
    <year>1994</year>
    <isbn>0-553-09640-0</isbn>
+  </book>
+  <book>
+   <title>Gros Morne</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Brian</first>
+    <middle>C.</middle>
+    <last>Bursey</last>
+   </author>
+   <year>2007</year>
+   <isbn>978-1-55383-148-3</isbn>
   </book>
   <book>
    <title>Guardians Of The West</title>
@@ -2309,17 +2131,6 @@
     <last>Pratchett</last>
    </author>
    <year>1989</year>
-  </book>
-  <book>
-   <title>Gros Morne</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Brian</first>
-    <middle>C.</middle>
-    <last>Bursey</last>
-   </author>
-   <year>2007</year>
-   <isbn>978-1-55383-148-3</isbn>
   </book>
   <book>
    <title>Hatrack River</title>
@@ -2385,28 +2196,6 @@
    </author>
    <year>2009</year>
    <isbn>978-0-441-01677-8</isbn>
-  </book>
-  <book>
-   <title>Hidden Southwest</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Richard</first>
-    <last>Harris</last>
-   </author>
-   <author>
-    <first>Laura</first>
-    <last>Daily</last>
-   </author>
-   <author>
-    <first>Madeleine</first>
-    <last>Osberger</last>
-   </author>
-   <author>
-    <first>Steve</first>
-    <last>Cohen</last>
-   </author>
-   <year>2000</year>
-   <isbn>1-56975-203-6</isbn>
   </book>
   <book>
    <title>Hiking Death Valley</title>
@@ -2491,23 +2280,13 @@
   <book>
    <title>Homeworld</title>
    <covertype>Soft Cover</covertype>
-   <series>To The Stars Trilogy Book One</series>
+   <series>To The Stars Trilogy Book One - Delete?</series>
    <author>
     <first>Harry</first>
     <last>Harrison</last>
    </author>
    <year>1980</year>
    <isbn>0-553-13917-7</isbn>
-  </book>
-  <book>
-   <title>How The Scot's Invented The Modern World</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Arthur</first>
-    <last>Herman</last>
-   </author>
-   <year>2001</year>
-   <isbn>0-609-80999-7</isbn>
   </book>
   <book>
    <title>How To Say It</title>
@@ -2580,6 +2359,7 @@
   <book>
    <title>Images Of The Blues</title>
    <covertype>Hard Cover</covertype>
+   <series>Delete?</series>
    <author>
     <first>Lee</first>
     <last>Tanner</last>
@@ -2774,15 +2554,6 @@
    <isbn>0-07-048845-2</isbn>
   </book>
   <book>
-   <title>Introduction To Telecom: Voice And Data</title>
-   <covertype>Soft Cover</covertype>
-   <series>Business Communications Review</series>
-   <author>
-    <last>Business Communications Review</last>
-   </author>
-   <year>2004</year>
-  </book>
-  <book>
    <title>Irregular Openings</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -2892,20 +2663,6 @@
    </author>
    <year>2001</year>
    <isbn>1-58880-097-0</isbn>
-  </book>
-  <book>
-   <title>Java 2 Programmer's Reference</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Herb</first>
-    <last>Schildt</last>
-   </author>
-   <author>
-    <first>Joe</first>
-    <last>O'Neil</last>
-   </author>
-   <year>2000</year>
-   <isbn>0-07-212354-0</isbn>
   </book>
   <book>
    <title>JavaScript The Definitive Guide</title>
@@ -3164,26 +2921,6 @@
    </author>
    <year>2000</year>
    <isbn>1-895983-03-7</isbn>
-  </book>
-  <book>
-   <title>Linear Algebra</title>
-   <covertype>Hard Cover</covertype>
-   <author>
-    <first>Michael</first>
-    <last>O'Nan</last>
-   </author>
-   <year>1976</year>
-   <isbn>0-15-518560-8</isbn>
-  </book>
-  <book>
-   <title>Linear Programming</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Vasek</first>
-    <last>Chvatal</last>
-   </author>
-   <year>1983</year>
-   <isbn>0-7167-1587-2</isbn>
   </book>
   <book>
    <title>Lord Darcy</title>
@@ -3554,6 +3291,7 @@
   <book>
    <title>Night Watch</title>
    <covertype>Hard Cover</covertype>
+   <series>Delete?</series>
    <author>
     <first>Terence</first>
     <last>Dickinson</last>
@@ -3613,6 +3351,7 @@
   <book>
    <title>Object-Oriented Programming</title>
    <covertype>Hard Cover</covertype>
+   <series>Delete?</series>
    <author>
     <first>Peter</first>
     <last>Coad</last>
@@ -3623,6 +3362,24 @@
    </author>
    <year>1993</year>
    <isbn>0-13-032616-X</isbn>
+  </book>
+  <book>
+   <title>Office Tools For Hopeless Fools</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Kevin</first>
+    <last>Reifier</last>
+   </author>
+   <author>
+    <first>Nick</first>
+    <last>Vacca</last>
+   </author>
+   <author>
+    <first>Adam</first>
+    <last>Najberg</last>
+   </author>
+   <year>2005</year>
+   <isbn>0-312-34086-9</isbn>
   </book>
   <book>
    <title>Old Skye Tails - Traditions, Reflections And Memories</title>
@@ -3679,24 +3436,6 @@
    <isbn>0-425-20426-X</isbn>
   </book>
   <book>
-   <title>Office Tools For Hopeless Fools</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Kevin</first>
-    <last>Reifier</last>
-   </author>
-   <author>
-    <first>Nick</first>
-    <last>Vacca</last>
-   </author>
-   <author>
-    <first>Adam</first>
-    <last>Najberg</last>
-   </author>
-   <year>2005</year>
-   <isbn>0-312-34086-9</isbn>
-  </book>
-  <book>
    <title>Pacific Crest Trail Northern California</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -3734,7 +3473,7 @@
   <book>
    <title>Petty Pweter Gods</title>
    <covertype>Soft Cover</covertype>
-   <series>Garrett P. I.</series>
+   <series>Garrett P. I. - Delete?</series>
    <author>
     <first>Glen</first>
     <last>Cook</last>
@@ -3831,6 +3570,7 @@
   <book>
    <title>Problem Solving And Structured Programming In Pascal</title>
    <covertype>Soft Cover</covertype>
+   <series>Delete?</series>
    <author>
     <first>Elliot</first>
     <middle>B.</middle>
@@ -3910,17 +3650,6 @@
    <year>1989</year>
   </book>
   <book>
-   <title>Python In A Nutshell</title>
-   <covertype>Soft Cover</covertype>
-   <series>O'Reilly</series>
-   <author>
-    <first>Alex</first>
-    <last>Martelli</last>
-   </author>
-   <year>2003</year>
-   <isbn>0-596-00188-6</isbn>
-  </book>
-  <book>
    <title>RESTful Web Services</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -3962,7 +3691,7 @@
   <book>
    <title>Reap The East Wind</title>
    <covertype>Soft Cover</covertype>
-   <series>Dread Empire Series Book One</series>
+   <series>Dread Empire Series Book One - Delete?</series>
    <author>
     <first>Glen</first>
     <last>Cook</last>
@@ -4071,7 +3800,7 @@
   <book>
    <title>Royal Assassin</title>
    <covertype>Soft Cover</covertype>
-   <series>The Farseer Trilogy Book Two</series>
+   <series>The Farseer Trilogy Book Two - Delete</series>
    <author>
     <first>Robin</first>
     <last>Hobb</last>
@@ -4243,26 +3972,6 @@
    <year>1984</year>
   </book>
   <book>
-   <title>Software Architecture And Design Principles, Models, And Methods</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Bernard</first>
-    <middle>I.</middle>
-    <last>Witt</last>
-   </author>
-   <author>
-    <first>F. Terry</first>
-    <last>Baker</last>
-   </author>
-   <author>
-    <first>Everett</first>
-    <middle>W.</middle>
-    <last>Merritt</last>
-   </author>
-   <year>1994</year>
-   <isbn>0-442-01556-9</isbn>
-  </book>
-  <book>
    <title>Software Project Survival Guide</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -4289,7 +3998,7 @@
   <book>
    <title>Solaris System Performance Management</title>
    <covertype>Soft Cover</covertype>
-   <series>Sun Educational Services</series>
+   <series>Sun Educational Services - Delete?</series>
    <author>
     <first>Sun</first>
     <last>Microsystems</last>
@@ -4362,6 +4071,21 @@
    <isbn>486-21477-X</isbn>
   </book>
   <book>
+   <title>Standard Grading Guide To Canadian Decimal Coins</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>James</first>
+    <middle>E.</middle>
+    <last>Charlton</last>
+   </author>
+   <author>
+    <first>Robert</first>
+    <middle>C.</middle>
+    <last>Willey</last>
+   </author>
+   <year>1965</year>
+  </book>
+  <book>
    <title>Starburst</title>
    <covertype>Hard Cover</covertype>
    <author>
@@ -4384,6 +4108,7 @@
   <book>
    <title>Starship Troopers</title>
    <covertype>Hard Cover</covertype>
+   <series>Delete?</series>
    <author>
     <first>Robert</first>
     <middle>A.</middle>
@@ -4395,7 +4120,7 @@
   <book>
    <title>Starworld</title>
    <covertype>Soft Cover</covertype>
-   <series>To The Stars Trilogy Book Three</series>
+   <series>To The Stars Trilogy Book Three - Delete?</series>
    <author>
     <first>Harry</first>
     <last>Harrison</last>
@@ -4412,37 +4137,6 @@
     <last>Euwe</last>
    </author>
    <year>1973</year>
-  </book>
-  <book>
-   <title>Succesful Manager's Handbook</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Brian</first>
-    <middle>L.</middle>
-    <last>Davis</last>
-   </author>
-   <author>
-    <first>Carol</first>
-    <middle>J.</middle>
-    <last>Skube</last>
-   </author>
-   <author>
-    <first>Lowell</first>
-    <middle>W.</middle>
-    <last>Hellervik</last>
-   </author>
-   <author>
-    <first>Susan</first>
-    <middle>H.</middle>
-    <last>Gebelein</last>
-   </author>
-   <author>
-    <first>James</first>
-    <middle>L.</middle>
-    <last>Sheard</last>
-   </author>
-   <year>1992</year>
-   <isbn>0-9938529-02-1</isbn>
   </book>
   <book>
    <title>Sung In Blood</title>
@@ -4539,7 +4233,7 @@
   <book>
    <title>The Adept</title>
    <covertype>Soft Cover</covertype>
-   <series>Adept Series Book One</series>
+   <series>Adept Series Book One - Delete?</series>
    <author>
     <first>Katherine</first>
     <last>Kurtz</last>
@@ -4681,6 +4375,7 @@
   <book>
    <title>The Carpet People</title>
    <covertype>Soft Cover</covertype>
+   <series>Delete?</series>
    <author>
     <first>Terry</first>
     <last>Pratchett</last>
@@ -4698,15 +4393,6 @@
    </author>
    <year>1975</year>
    <isbn>0-8019-5949-7</isbn>
-  </book>
-  <book>
-   <title>The Chess-Players Handbook</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Howard</first>
-    <last>Staunton</last>
-   </author>
-   <year>1980</year>
   </book>
   <book>
    <title>The Chronicles Of Amber Volume I</title>
@@ -4862,7 +4548,7 @@
    <series>Elric Saga</series>
    <author>
     <first>Michael</first>
-    <last>Morcock</last>
+    <last>Moorcock</last>
    </author>
    <year>1977</year>
    <isbn>1-56865-040-X</isbn>
@@ -4989,7 +4675,7 @@
   <book>
    <title>The Gates Of Creation</title>
    <covertype>Soft Cover</covertype>
-   <series>World Of Tiers Series Book Two</series>
+   <series>World Of Tiers Series Book Two - Delete?</series>
    <author>
     <first>Philip</first>
     <middle>Jose</middle>
@@ -5022,31 +4708,6 @@
     <surtitle>(Compiled By)</surtitle>
    </author>
    <year>-1</year>
-  </book>
-  <book>
-   <title>The Golfer's Course Guide The Official National Canadian Golf Guidebook</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Nancy</first>
-    <middle>J.</middle>
-    <last>Knox</last>
-   </author>
-   <year>1994</year>
-  </book>
-  <book>
-   <title>The Great Golf Courses Of Canada</title>
-   <covertype>Hard Cover</covertype>
-   <author>
-    <first>John</first>
-    <last>Gordon</last>
-   </author>
-   <author>
-    <first>Michael</first>
-    <last>French</last>
-    <surtitle>(Photography)</surtitle>
-   </author>
-   <year>1991</year>
-   <isbn>0-07-551105-3</isbn>
   </book>
   <book>
    <title>The Great Hunt</title>
@@ -5127,7 +4788,7 @@
   <book>
    <title>The Lavalite World</title>
    <covertype>Soft Cover</covertype>
-   <series>World Of Tiers Series Book Five</series>
+   <series>World Of Tiers Series Book Five - Delete?</series>
    <author>
     <first>Philip</first>
     <middle>Jose</middle>
@@ -5176,19 +4837,9 @@
    <year>1987</year>
   </book>
   <book>
-   <title>The Legend Of Bagger Vance</title>
-   <covertype>Hard Cover</covertype>
-   <author>
-    <first>Steven</first>
-    <last>Pressfield</last>
-   </author>
-   <year>1995</year>
-   <isbn>0-688-14048-3</isbn>
-  </book>
-  <book>
    <title>The Lodge Of The Lynx</title>
    <covertype>Soft Cover</covertype>
-   <series>Adept Series Book Two</series>
+   <series>Adept Series Book Two - Delete?</series>
    <author>
     <first>Katherine</first>
     <last>Kurtz</last>
@@ -5431,15 +5082,6 @@
    </author>
    <year>1993</year>
    <isbn>0-385-26342-2</isbn>
-  </book>
-  <book>
-   <title>The Prince</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Niccolo</first>
-    <last>Machiavelli</last>
-   </author>
-   <year>1999</year>
   </book>
   <book>
    <title>The Reluctant King</title>
@@ -5688,6 +5330,7 @@
   <book>
    <title>The Swordbearer</title>
    <covertype>Soft Cover</covertype>
+   <series>Delete?</series>
    <author>
     <first>Glen</first>
     <last>Cook</last>
@@ -5709,7 +5352,7 @@
   <book>
    <title>The Templar Treasure</title>
    <covertype>Soft Cover</covertype>
-   <series>Adept Series Book Three</series>
+   <series>Adept Series Book Three - Delete?</series>
    <author>
     <first>Katherine</first>
     <last>Kurtz</last>
@@ -5725,6 +5368,7 @@
   <book>
    <title>The Tower Of Fear</title>
    <covertype>Soft Cover</covertype>
+   <series>Delete?</series>
    <author>
     <first>Glen</first>
     <last>Cook</last>
@@ -5768,17 +5412,6 @@
    <isbn>0-765-30684-0</isbn>
   </book>
   <book>
-   <title>The Unabridged Edgar Allan Poe</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Edgar</first>
-    <middle>Allan</middle>
-    <last>Poe</last>
-   </author>
-   <year>1983</year>
-   <isbn>0-89471-233-0</isbn>
-  </book>
-  <book>
    <title>The Winds Of Change</title>
    <covertype>Hard Cover</covertype>
    <author>
@@ -5805,16 +5438,6 @@
     <last>Horowitz</last>
    </author>
    <year>1973</year>
-  </book>
-  <book>
-   <title>The World Chess Championship Korchnoi Vs. Karpov</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Raymond</first>
-    <last>Keene</last>
-   </author>
-   <year>1978</year>
-   <isbn>0-671-24648-8</isbn>
   </book>
   <book>
    <title>The Years Best Fantasy Stories 13</title>
@@ -5943,36 +5566,15 @@
    <isbn>0-86442-117-6</isbn>
   </book>
   <book>
-   <title>Unforgettable Things To Do Before You Die</title>
+   <title>Uncle John's Bathroom Reader Plunges Into Canada</title>
    <covertype>Soft Cover</covertype>
    <author>
-    <first>Steve</first>
-    <last>Watkins</last>
+    <first>Bathroom</first>
+    <middle>Readers'</middle>
+    <last>Institute</last>
    </author>
-   <author>
-    <first>Clare</first>
-    <last>Jones</last>
-   </author>
-   <year>2005</year>
-   <isbn>978-1-55407-064-0</isbn>
-  </book>
-  <book>
-   <title>Unix Networking</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Stephen</first>
-    <middle>G.</middle>
-    <last>Kochan</last>
-    <surtitle>(Editor)</surtitle>
-   </author>
-   <author>
-    <first>Patrick</first>
-    <middle>H.</middle>
-    <last>Wood</last>
-    <surtitle>(Editor)</surtitle>
-   </author>
-   <year>1990</year>
-   <isbn>0-672-48440-4</isbn>
+   <year>2010</year>
+   <isbn>978-1-60710-100-0</isbn>
   </book>
   <book>
    <title>Upstream</title>
@@ -5997,17 +5599,6 @@
    </author>
    <year>2009</year>
    <isbn>1-903570-30-1</isbn>
-  </book>
-  <book>
-   <title>Uncle John's Bathroom Reader Plunges Into Canada</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Bathroom</first>
-    <middle>Readers'</middle>
-    <last>Institute</last>
-   </author>
-   <year>2010</year>
-   <isbn>978-1-60710-100-0</isbn>
   </book>
   <book>
    <title>Valentine Of Majipoor</title>
@@ -6077,18 +5668,9 @@
    <isbn>0-7627-3072-2</isbn>
   </book>
   <book>
-   <title>Wal-Mart Store #3184 Cookbook</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Wal-Mart</first>
-    <last>Store #3184</last>
-   </author>
-   <year>2003</year>
-  </book>
-  <book>
    <title>Warlock</title>
    <covertype>Soft Cover</covertype>
-   <series>Darkwar Trilogy Book Two</series>
+   <series>Darkwar Trilogy Book Two - Delete?</series>
    <author>
     <first>Glen</first>
     <last>Cook</last>
@@ -6159,6 +5741,7 @@
   <book>
    <title>What To Expect When You Are Expecting</title>
    <covertype>Soft Cover</covertype>
+   <series>Delete?</series>
    <author>
     <first>Heidi</first>
     <last>Murkoff</last>
@@ -6173,7 +5756,7 @@
   <book>
    <title>Wheelworld</title>
    <covertype>Soft Cover</covertype>
-   <series>To The Stars Trilogy Book Two</series>
+   <series>To The Stars Trilogy Book Two - Delete?</series>
    <author>
     <first>Harry</first>
     <last>Harrison</last>
@@ -6225,17 +5808,6 @@
    </author>
    <year>1988</year>
    <isbn>0-451-45012-4</isbn>
-  </book>
-  <book>
-   <title>XML By Example</title>
-   <covertype>Soft Cover</covertype>
-   <series>By Example</series>
-   <author>
-    <first>Benoit</first>
-    <last>Marchal</last>
-   </author>
-   <year>2000</year>
-   <isbn>0-7897-2242-9</isbn>
   </book>
   <book>
    <title>Yokai Attack</title>
