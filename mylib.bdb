@@ -4467,6 +4467,17 @@
    <year>1982</year>
   </book>
   <book>
+   <title>The Crown Jewels</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <title>Colonel Sir</title>
+    <first>Thomas</first>
+    <last>Butler</last>
+   </author>
+   <year>1970</year>
+   <isbn>85372-084-3</isbn>
+  </book>
+  <book>
    <title>The Dark Elf Trilogy</title>
    <covertype>Hard Cover</covertype>
    <series>Dark Elf Trilogy Forgotten Realms</series>
@@ -5888,5 +5899,16 @@
    </author>
    <year>2012</year>
    <isbn>978-1-84951-546-7</isbn>
+  </book>
+  <book>
+   <title>Winchester Cathedral</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <title>The Very Reverend</title>
+    <first>N.</first>
+    <last>Sykes</last>
+   </author>
+   <year>1976</year>
+   <isbn>85372-216-1</isbn>
   </book>
 </booklibrary>
