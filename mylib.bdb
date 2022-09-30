@@ -5901,4 +5901,22 @@
    <year>1976</year>
    <isbn>85372-216-1</isbn>
   </book>
+  <book>
+   <title>Practical Deep Learning for Cloud, Mobile &amp; Edge</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Anirudh</first>
+    <last>Koul</last>
+   </author>
+   <author>
+    <first>Siddha</first>
+    <last>Ganju</last>
+   </author>
+   <author>
+    <first>Mecher</first>
+    <last>Kasam</last>
+   </author>
+   <year>2020</year>
+   <isbn>978-1-492-03486-5</isbn>
+  </book>
 </booklibrary>
