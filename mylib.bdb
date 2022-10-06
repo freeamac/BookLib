@@ -1004,24 +1004,6 @@
    <isbn>0-06-105158-6</isbn>
   </book>
   <book>
-   <title>Cellular And PCS</title>
-   <covertype>Hard Cover</covertype>
-   <author>
-    <first>Lawrence</first>
-    <last>Harte</last>
-   </author>
-   <author>
-    <first>Steve</first>
-    <last>Prokup</last>
-   </author>
-   <author>
-    <first>Richard</first>
-    <last>Levine</last>
-   </author>
-   <year>1997</year>
-   <isbn>0-07-026944-0</isbn>
-  </book>
-  <book>
    <title>Ceremony</title>
    <covertype>Soft Cover</covertype>
    <series>Darkwar Trilogy Book Three - Delete?</series>
@@ -1189,33 +1171,6 @@
    <year>1910</year>
   </book>
   <book>
-   <title>Computer Networks And Internets</title>
-   <covertype>Hard Cover</covertype>
-   <author>
-    <first>Douglas</first>
-    <middle>E.</middle>
-    <last>Comer</last>
-   </author>
-   <year>1999</year>
-   <isbn>0-13-083617-6</isbn>
-  </book>
-  <book>
-   <title>Configuration Management For Software</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Stephen</first>
-    <middle>B.</middle>
-    <last>Compton</last>
-   </author>
-   <author>
-    <first>Guy</first>
-    <middle>R.</middle>
-    <last>Conner</last>
-   </author>
-   <year>1994</year>
-   <isbn>0-442-01746-4</isbn>
-  </book>
-  <book>
    <title>Cookies</title>
    <covertype>Soft Cover</covertype>
    <series>The Cook's Encyclopedia</series>
@@ -1312,27 +1267,6 @@
    </author>
    <year>1988</year>
    <isbn>0-446-51379-2</isbn>
-  </book>
-  <book>
-   <title>Creativity</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Mihaly</first>
-    <last>Csikszentmihalyi</last>
-   </author>
-   <year>1997</year>
-   <isbn>0-06-092820-4</isbn>
-  </book>
-  <book>
-   <title>Creativity Beyond The Myth Of Genius</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Robert</first>
-    <middle>W.</middle>
-    <last>Weisberg</last>
-   </author>
-   <year>1993</year>
-   <isbn>0-7167-2367-0</isbn>
   </book>
   <book>
    <title>Crossroads Of Twilight</title>
@@ -2394,23 +2328,6 @@
    <isbn>0-671-87793-3</isbn>
   </book>
   <book>
-   <title>In Search Of Excellence</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Thomas</first>
-    <middle>J.</middle>
-    <last>Peters</last>
-   </author>
-   <author>
-    <first>Robert</first>
-    <middle>H.</middle>
-    <last>Waterman</last>
-    <surtitle>Jr.</surtitle>
-   </author>
-   <year>1982</year>
-   <isbn>0-446-37844-5</isbn>
-  </book>
-  <book>
    <title>Infinity's Shore</title>
    <covertype>Hard Cover</covertype>
    <series>Uplift</series>
@@ -3043,18 +2960,6 @@
    <isbn>0-553-10333-4</isbn>
   </book>
   <book>
-   <title>Managing Internetworks With SNMP</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Mark</first>
-    <middle>A.</middle>
-    <last>Miller</last>
-    <surtitle>P.E.</surtitle>
-   </author>
-   <year>1997</year>
-   <isbn>1-55851-561-5</isbn>
-  </book>
-  <book>
    <title>Manual For A Happy Home</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -3291,7 +3196,6 @@
   <book>
    <title>Night Watch</title>
    <covertype>Hard Cover</covertype>
-   <series>Delete?</series>
    <author>
     <first>Terence</first>
     <last>Dickinson</last>
@@ -5390,16 +5294,6 @@
    </author>
    <year>2005</year>
    <isbn>1-552797-952-0</isbn>
-  </book>
-  <book>
-   <title>The Tree Of Time</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Kathy</first>
-    <last>Baron</last>
-   </author>
-   <year>1994</year>
-   <isbn>978-0-939666-73-7</isbn>
   </book>
   <book>
    <title>The Tyranny Of The Night</title>
