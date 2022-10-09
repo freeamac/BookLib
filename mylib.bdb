@@ -1631,17 +1631,6 @@
    <isbn>978-0-07-148300-1</isbn>
   </book>
   <book>
-   <title>Evangeline</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Henry</first>
-    <middle>Wadsworth</middle>
-    <last>Longfellow</last>
-   </author>
-   <year>1951</year>
-   <isbn>0-920852-13-0</isbn>
-  </book>
-  <book>
    <title>Exile's Gate</title>
    <covertype>Hard Cover</covertype>
    <author>
