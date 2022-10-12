@@ -638,7 +638,7 @@ class BookLibGuiFrame extends JFrame {
 						new AuthorSearchDialog(BookLibGuiFrame.this);
 				if (authorSearchDialog.showDialog()) {
 					searchObj = authorSearchDialog.getSearchObject();
-					searchObj.consoleOutput();
+					//searchObj.consoleOutput();
 					currentDisplayBookList =
 						bookLibrary.searchResults(searchObj, authorSearchDialog.getCaseInsensitiveSearch());
 					displayingSearchList = true;
@@ -662,7 +662,7 @@ class BookLibGuiFrame extends JFrame {
 						new BookSearchDialog(BookLibGuiFrame.this);
 				if (bookSearchDialog.showDialog()) {
 					searchObj = bookSearchDialog.getSearchObject();
-					searchObj.consoleOutput();
+					//searchObj.consoleOutput();
 					currentDisplayBookList =
 						bookLibrary.searchResults(searchObj, bookSearchDialog.getCaseInsensitiveSearch());
 					displayingSearchList = true;
@@ -685,7 +685,7 @@ class BookLibGuiFrame extends JFrame {
 						new SeriesSearchDialog(BookLibGuiFrame.this);
 				if (seriesSearchDialog.showDialog()) {
 					searchObj = seriesSearchDialog.getBookSearchObject();
-					searchObj.consoleOutput();
+					//searchObj.consoleOutput();
 					currentDisplayBookList =
 						bookLibrary.searchResults(searchObj, seriesSearchDialog.getCaseInsensitiveSearch());
 					displayingSearchList = true;
@@ -1663,7 +1663,7 @@ class AddModifyBookDialog extends JDialog {
 		};
 
 		book = new Book(b_title, b_series, auth_list, b_isbn, b_date, b_cover);
-		book.consoleOutput();
+		//book.consoleOutput();
 		return true;
 	}
 
