@@ -276,22 +276,6 @@
    <isbn>0-553-10663-5</isbn>
   </book>
   <book>
-   <title>ATM And Multiprotocol Networking</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>George</first>
-    <middle>C.</middle>
-    <last>Sackett</last>
-   </author>
-   <author>
-    <first>Christopher</first>
-    <middle>Y.</middle>
-    <last>Metz</last>
-   </author>
-   <year>1997</year>
-   <isbn>0-07-057724-2</isbn>
-  </book>
-  <book>
    <title>Advanced C++ Programming Styles And Idioms</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -1307,16 +1291,6 @@
    <isbn>0-441-00484-9</isbn>
   </book>
   <book>
-   <title>Decline &amp; Fall Of The American Programmer</title>
-   <covertype>Hard Cover</covertype>
-   <author>
-    <first>Edward</first>
-    <last>Yourdon</last>
-   </author>
-   <year>1992</year>
-   <isbn>0-13-203670-3</isbn>
-  </book>
-  <book>
    <title>Demon Lord Of Karanda</title>
    <covertype>Hard Cover</covertype>
    <series>The Malloreon Book Three</series>
@@ -1841,16 +1815,6 @@
    <year>-1</year>
   </book>
   <book>
-   <title>Frommer's Newfoundland &amp; Labrador</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Andrew</first>
-    <last>Hempstead</last>
-   </author>
-   <year>2010</year>
-   <isbn>978-0-470-73678-4</isbn>
-  </book>
-  <book>
    <title>Frommer's Rome Day By Day</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -2159,16 +2123,6 @@
    <isbn>0-553-13917-7</isbn>
   </book>
   <book>
-   <title>How To Say It</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Rosalie</first>
-    <last>Maggio</last>
-   </author>
-   <year>1990</year>
-   <isbn>0-13-424375-7</isbn>
-  </book>
-  <book>
    <title>Hunters Of Dune</title>
    <covertype>Hard Cover</covertype>
    <series>Dune</series>
@@ -2203,17 +2157,6 @@
     <last>Corporation</last>
    </author>
    <year>1989</year>
-  </book>
-  <book>
-   <title>IP Routing Fundamentals</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Mark</first>
-    <middle>A.</middle>
-    <last>Sportack</last>
-   </author>
-   <year>1999</year>
-   <isbn>1-57870-071-X</isbn>
   </book>
   <book>
    <title>Ilium</title>
@@ -2555,16 +2498,6 @@
    </author>
    <year>2000</year>
    <isbn>0-425-17360-4</isbn>
-  </book>
-  <book>
-   <title>Kaua'i</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Lonely</first>
-    <last>Planet</last>
-   </author>
-   <year>2009</year>
-   <isbn>978-1-74104-136-1</isbn>
   </book>
   <book>
    <title>Kejimkujik National Park A Guide</title>
@@ -3090,16 +3023,6 @@
    <year>1982</year>
   </book>
   <book>
-   <title>Network+ Guide To Networks</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Tamara</first>
-    <last>Dean</last>
-   </author>
-   <year>2006</year>
-   <isbn>0-619-21743-X</isbn>
-  </book>
-  <book>
    <title>Neuromancer</title>
    <covertype>Hard Cover</covertype>
    <author>
@@ -3162,21 +3085,6 @@
    </author>
    <year>2008</year>
    <isbn>978-0-9784784-3-8</isbn>
-  </book>
-  <book>
-   <title>Nova Scotia, New Brunswick &amp; Prince Edward Island</title>
-   <covertype>Soft Cover</covertype>
-   <series>Lonely Planet</series>
-   <author>
-    <first>Karla</first>
-    <last>Zimmerman</last>
-   </author>
-   <author>
-    <first>Celeste</first>
-    <last>Brash</last>
-   </author>
-   <year>2007</year>
-   <isbn>978-1-74104-881-0</isbn>
   </book>
   <book>
    <title>Object-Oriented Programming</title>
@@ -3342,16 +3250,6 @@
    </author>
    <year>1991</year>
    <isbn>0-688-08727-2</isbn>
-  </book>
-  <book>
-   <title>Principles Of Software Development Leadership</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Ken</first>
-    <last>Whitaker</last>
-   </author>
-   <year>2010</year>
-   <isbn>978-1-58450-586-0</isbn>
   </book>
   <book>
    <title>Pro Git</title>
@@ -3758,16 +3656,6 @@
    <year>1984</year>
   </book>
   <book>
-   <title>Software Project Survival Guide</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Steve</first>
-    <last>McConnell</last>
-   </author>
-   <year>1998</year>
-   <isbn>1-57231-621-7</isbn>
-  </book>
-  <book>
    <title>Solaris Internals</title>
    <covertype>Hard Cover</covertype>
    <author>
@@ -3955,32 +3843,6 @@
    </author>
    <year>2005</year>
    <isbn>0-425-20418-9</isbn>
-  </book>
-  <book>
-   <title>Telecommunications A Beginner's Guide</title>
-   <covertype>Soft Cover</covertype>
-   <series>Network Professional's Library</series>
-   <author>
-    <first>Mitchell</first>
-    <middle>S.</middle>
-    <last>Moore</last>
-   </author>
-   <author>
-    <first>N.</first>
-    <middle>Todd</middle>
-    <last>Pritsky</last>
-   </author>
-   <author>
-    <first>Cliff</first>
-    <last>Riggs</last>
-   </author>
-   <author>
-    <first>Peter</first>
-    <middle>V.</middle>
-    <last>Southwick</last>
-   </author>
-   <year>2002</year>
-   <isbn>0-07-219356-5</isbn>
   </book>
   <book>
    <title>Ten Tiips To Winning Chess</title>
