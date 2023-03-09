@@ -612,6 +612,16 @@
    <isbn>0-06-463204-0</isbn>
   </book>
   <book>
+   <title>A Matter Of Time</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Glen</first>
+    <last>Cook</last>
+   </author>
+   <year>1985</year>
+   <isbn>0-441-52213-0</isbn>
+  </book>
+  <book>
    <title>BIO Review 25th Anniversary Issue</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -2147,6 +2157,18 @@
     <last>Simmons</last>
    </author>
    <year>1990</year>
+  </book>
+  <book>
+   <title>Hawaii's Birds And Their Habitats</title>
+   <covertype>Soft Cover</covertype>
+   <series>A Pocket Guide To</series>
+   <author>
+    <first>H.</first>
+    <middle>Douglas</middle>
+    <last>Pratt</last>
+   </author>
+   <year>2013</year>
+   <isbn>978-1-56647-145-9</isbn>
   </book>
   <book>
    <title>IBM A Special Company</title>
@@ -5179,6 +5201,27 @@
    <year>1985</year>
   </book>
   <book>
+   <title>Tasting Paradise</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Karen</first>
+    <last>Bacon</last>
+   </author>
+   <year>2000</year>
+   <isbn>0-9644327-1-4</isbn>
+  </book>
+  <book>
+   <title>The Painted Province</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Joy</first>
+    <middle>Snihur Wyatt</middle>
+    <last>Laking</last>
+   </author>
+   <year>2020</year>
+   <isbn>978-1-989725-25-2</isbn>
+  </book>
+  <book>
    <title>UML Distilled</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -5555,5 +5598,16 @@
    </author>
    <year>2020</year>
    <isbn>978-1-492-03486-5</isbn>
+  </book>
+  <book>
+   <title>Park Ranger</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Nancy</first>
+    <middle>Eileen</middle>
+    <last>Muleady-Mecham</last>
+   </author>
+   <year>2009</year>
+   <isbn>978-0-9674595-4-7</isbn>
   </book>
 </booklibrary>
