@@ -1129,7 +1129,11 @@ class BookLibPanel extends JPanel {
 		while (booklistIterator.hasNext()) {
 			Book nextBook = booklistIterator.next();
 			//String[] csvEntries = new String[6];
-			String[] csvEntries = {nextBook.title, nextBook.getAuthorsString(",\n"), nextBook.series, String.valueOf(nextBook.publishYear), Book.COVERNAME[nextBook.coverType], nextBook.ISBN};
+			String year = " ";
+			if (nextBook.publishYear != Book.BADDATE) {
+				year = String.valueOf((nextBook.publishYear));
+			}
+			String[] csvEntries = {nextBook.title, nextBook.getAuthorsString(",\n"), nextBook.series, year, Book.COVERNAME[nextBook.coverType], nextBook.ISBN};
 			csvWriter.writeNext(csvEntries);
 
 		}
@@ -1253,7 +1257,11 @@ class BookLibPanel extends JPanel {
 				fileWriter.write("    <td width=\"25%\">" + nextBook.title + "</td>\n");
 				fileWriter.write("    <td width=\"20%\">" + nextBook.getAuthorsString(",</br>") + "</td>\n");
 				fileWriter.write("    <td width=\"25%\">" + BookLibPanel.nullToBlank(nextBook.series) + "</td>\n");
-				fileWriter.write("    <td width=\"10%\">" + String.valueOf(nextBook.publishYear) + "</td>\n");
+				if (nextBook.publishYear == Book.BADDATE) {
+					fileWriter.write("    <td width=\"10%\"> </td>\n");
+				} else {
+					fileWriter.write("    <td width=\"10%\">" + String.valueOf(nextBook.publishYear) + "</td>\n");
+				}
 				fileWriter.write("    <td width=\"10%\">" + Book.COVERNAME[nextBook.coverType] + "</td>\n");
 				fileWriter.write("    <td width=\"10%\">" + BookLibPanel.nullToBlank(nextBook.ISBN) + "</td>\n");
 				fileWriter.write("  <tr>\n");
