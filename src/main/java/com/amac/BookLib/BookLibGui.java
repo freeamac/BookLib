@@ -46,6 +46,9 @@ class BookLibGuiFrame extends JFrame {
 	private static final int DEFAULT_HEIGHT = 600;
 	private static final int BORDER_WIDTH = 30;
 
+	// Extension for book library database files
+	private static final String BOOKLIBRARYEXTENSION = "bdb";
+
 	// Current open book library
 	private BookLibrary bookLibrary;
 
@@ -112,6 +115,16 @@ class BookLibGuiFrame extends JFrame {
 	final JMenuItem allBooksItem, sortByBookTitlesItem, sortByBookAuthorsItem, sortByBookPubslishDateItem;
 
 	/**
+	 * Return the file name extension if it exists.
+	*/
+	public String getExtensionByStringHandling(String filename) {
+		String extension = "";
+		if (filename.contains("."))
+			extension = filename.substring(filename.lastIndexOf(".") + 1);
+		return extension;
+	}
+
+	/**
 	 * Opens the Save or Load file dialog based on the passed mode. The 
 	 * book library file filter is applied to refine the dialog only to
 	 * files with the approved extension. The file or null (indicating
@@ -126,7 +139,7 @@ class BookLibGuiFrame extends JFrame {
 		int returnVal;
 
 		JFileChooser fileChooser = new JFileChooser();
-		FileNameExtensionFilter fileNameExtensionFilter = new FileNameExtensionFilter("Book Library Database", "bdb");
+		FileNameExtensionFilter fileNameExtensionFilter = new FileNameExtensionFilter("Book Library Database", BOOKLIBRARYEXTENSION);
 		fileChooser.setCurrentDirectory(new File(""));
 		fileChooser.addChoosableFileFilter(fileNameExtensionFilter);
 		fileChooser.setFileFilter(fileNameExtensionFilter);
@@ -313,6 +326,10 @@ class BookLibGuiFrame extends JFrame {
 		newItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
 				dataFile = saveOrLoadFileDialog(JFileChooser.OPEN_DIALOG);
+				String extension = getExtensionByStringHandling(dataFile.getName());
+				if (!BOOKLIBRARYEXTENSION.equals(extension))
+					// Add book library database file extension
+					dataFile = new File(dataFile.getName() + "." + BOOKLIBRARYEXTENSION);
 				if (dataFile == null) {
 					JOptionPane.showMessageDialog(
 							null,
@@ -387,8 +404,13 @@ class BookLibGuiFrame extends JFrame {
 				// Case where a new library created and never saved
 				// we need to get a file name. If we get null, save
 				// operation cancelled in dialog
-				if (dataFile == null)
+				if (dataFile == null) {
 					dataFile = saveOrLoadFileDialog(JFileChooser.SAVE_DIALOG);
+					String extension = getExtensionByStringHandling(dataFile.getName());
+					if (!BOOKLIBRARYEXTENSION.equals(extension))
+						// Add book library database file extension
+						dataFile = new File(dataFile.getName() + "." + BOOKLIBRARYEXTENSION);
+				}
 				if (dataFile != null) {
 					try {
 						writeSortedXML(dataFile);
@@ -434,6 +456,10 @@ class BookLibGuiFrame extends JFrame {
 							options[0]);
 					if (choice == 0) {
 						dataFile = saveOrLoadFileDialog(FileDialog.SAVE);
+						String extension = getExtensionByStringHandling(dataFile.getName());
+						if (!BOOKLIBRARYEXTENSION.equals(extension))
+							// Add book library database file extension
+							dataFile = new File(dataFile.getName() + "." + BOOKLIBRARYEXTENSION);
 						if (dataFile != null) {
 							try {
 								writeSortedXML(dataFile);
@@ -469,6 +495,10 @@ class BookLibGuiFrame extends JFrame {
 				File tempf;
 				tempf = saveOrLoadFileDialog(FileDialog.SAVE);
 				if (tempf != null) {
+					String extension = getExtensionByStringHandling(tempf.getName());
+					if (!BOOKLIBRARYEXTENSION.equals(extension))
+						// Add book library database file extension
+						tempf = new File(tempf.getName() + "." + BOOKLIBRARYEXTENSION);
 					if (!tempf.equals(dataFile))
 						dataFile = tempf;
 					try {
