@@ -327,10 +327,6 @@ class BookLibGuiFrame extends JFrame {
 		newItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
 				dataFile = saveOrLoadFileDialog(JFileChooser.OPEN_DIALOG);
-				String extension = getExtensionByStringHandling(dataFile.getName());
-				if (!BOOKLIBRARYEXTENSION.equals(extension))
-					// Add book library database file extension
-					dataFile = new File(dataFile.getName() + "." + BOOKLIBRARYEXTENSION);
 				if (dataFile == null) {
 					JOptionPane.showMessageDialog(
 							bookLibPanel,
@@ -339,6 +335,10 @@ class BookLibGuiFrame extends JFrame {
 							JOptionPane.INFORMATION_MESSAGE);
 						return;
 				} else {
+					String extension = getExtensionByStringHandling(dataFile.getName());
+					if (!BOOKLIBRARYEXTENSION.equals(extension))
+						// Add book library database file extension
+						dataFile = new File(dataFile.getName() + "." + BOOKLIBRARYEXTENSION);
 					if (dataFile.exists()) {
 						JOptionPane.showMessageDialog(
 							bookLibPanel,
@@ -1165,19 +1165,21 @@ class BookLibPanel extends JPanel {
 		File file;
 		// Set up file dialog to save csv values and ensure correct extension and
 		// non-existence
-		String filename = JOptionPane.showInputDialog("New CSV file to export to");
+		String filename = JOptionPane.showInputDialog(this, "New CSV file to export to");
 		if (!filename.endsWith(".csv"))  {
 			file = new File(filename + ".csv");
-			if (file.exists()) {
-				JOptionPane.showMessageDialog(
-					this,
-					"File already exisits: " + file.getName() + " .",
-					"Error",
-					JOptionPane.ERROR_MESSAGE);
-				return;
-			}
 		} else {
 			file = new File(filename);
+		}
+		if (file.exists()) {
+			int returnVal = JOptionPane.showConfirmDialog(
+								this,
+								"Overwrite existing file " + file + "?",
+								"Overwrite warning",
+								JOptionPane.OK_CANCEL_OPTION,
+								JOptionPane.WARNING_MESSAGE);
+			if (returnVal == JOptionPane.CANCEL_OPTION)
+					return;
 		}
 
 		// Create new file
@@ -1274,19 +1276,21 @@ class BookLibPanel extends JPanel {
 		File file;
 		// Set up file dialog to save html values and ensure correct extension and
 		// non-existence
-		String filename = JOptionPane.showInputDialog("New HTML file to export to");
+		String filename = JOptionPane.showInputDialog(this, "New HTML file to export to");
 		if (!filename.endsWith(".html"))  {
 			file = new File(filename + ".html");
-			if (file.exists()) {
-				JOptionPane.showMessageDialog(
-					this,
-					"File already exisits: " + file.getName() + " .",
-					"Error",
-					JOptionPane.ERROR_MESSAGE);
-				return;
-			}
 		} else {
 			file = new File(filename);
+		}
+		if (file.exists()) {
+			int returnVal = JOptionPane.showConfirmDialog(
+								this,
+								"Overwrite existing file " + file + "?",
+								"Overwrite warning",
+								JOptionPane.OK_CANCEL_OPTION,
+								JOptionPane.WARNING_MESSAGE);
+			if (returnVal == JOptionPane.CANCEL_OPTION)
+					return;
 		}
 
 		// Create new file
