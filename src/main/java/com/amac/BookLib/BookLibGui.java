@@ -6,19 +6,20 @@ import javax.swing.table.*;
 import java.util.*;
 import java.io.*;
 
+import com.google.j2objc.annotations.J2ObjCIncompatible;
 import com.opencsv.CSVWriter;
 
 /**
  * The <code>BookLibGui</code> is the graphical interface allowing
  * the manipulation of <code>BookLibrary</code> objects. A main
- * window displays the contents of a book library. From this 
+ * window displays the contents of a book library. From this
  * window, using menu options, you can add, modify, delete or search
  * for specific books and authours in the library.
- * 
+ *
  * @author amac
  * @version 1.0
  *
- * 
+ *
  */
 
 public class BookLibGui {
@@ -37,7 +38,7 @@ public class BookLibGui {
 
 /**
  * Main window of the interface.
- * 
+ *
  */
 class BookLibGuiFrame extends JFrame {
 
@@ -86,7 +87,7 @@ class BookLibGuiFrame extends JFrame {
 	// Panels displaying data
 	private BookLibPanel bookLibPanel;
 
-	//	**File** Menu Items		 
+	//	**File** Menu Items
 	private final JMenuItem newItem,
 		openItem,
 		closeItem,
@@ -125,11 +126,11 @@ class BookLibGuiFrame extends JFrame {
 	}
 
 	/**
-	 * Opens the Save or Load file dialog based on the passed mode. The 
+	 * Opens the Save or Load file dialog based on the passed mode. The
 	 * book library file filter is applied to refine the dialog only to
 	 * files with the approved extension. The file or null (indicating
 	 * a cancelled selection) is returned.
-	 * 
+	 *
 	 * @param mode JFileChooser.OPEN_DIALOG for loading a book library file into the
 	 *             GUI or FileDialog.SAVE to select a file to save the current
 	 *             book library file into
@@ -160,7 +161,7 @@ class BookLibGuiFrame extends JFrame {
 	* Toggles menu items which are enabled/disabled based on whether a book library
 	* is now open. Items which can only be used when a book library is open should
 	* only be enabled when a book library is open and disabled otherwise.
-	* 
+	*
 	* @param libraryopen Indicate if a book library is open (true).
 	*/
 	private void toggleMenuItems(boolean libraryopen) {
@@ -279,8 +280,8 @@ class BookLibGuiFrame extends JFrame {
 	}
 
 	/**
-	 * Constructor of the main window which creates the menus, key 
-	 * board short cuts and associated event action handlers. 
+	 * Constructor of the main window which creates the menus, key
+	 * board short cuts and associated event action handlers.
 	 *
 	 */
 	public BookLibGuiFrame() {
@@ -332,7 +333,7 @@ class BookLibGuiFrame extends JFrame {
 					dataFile = new File(dataFile.getName() + "." + BOOKLIBRARYEXTENSION);
 				if (dataFile == null) {
 					JOptionPane.showMessageDialog(
-							null,
+							bookLibPanel,
 							"Action cancelled. No new file spefified.",
 							"Information",
 							JOptionPane.INFORMATION_MESSAGE);
@@ -340,7 +341,7 @@ class BookLibGuiFrame extends JFrame {
 				} else {
 					if (dataFile.exists()) {
 						JOptionPane.showMessageDialog(
-							null,
+							bookLibPanel,
 							"File already exists. Must specify a new file.",
 							"Error",
 							JOptionPane.ERROR_MESSAGE);
@@ -366,7 +367,7 @@ class BookLibGuiFrame extends JFrame {
 				try {
 					if (dataFile == null) {
 						JOptionPane.showMessageDialog(
-							null,
+							bookLibPanel,
 							"Action cancelled. No file selected.",
 							"Information",
 							JOptionPane.INFORMATION_MESSAGE);
@@ -375,7 +376,7 @@ class BookLibGuiFrame extends JFrame {
 					bookLibrary = new BookLibrary(dataFile);
 				} catch (Exception e) {
 					JOptionPane.showMessageDialog(
-						null,
+						bookLibPanel,
 						"Unable to read file selected: "
 							+ e.getMessage()
 							+ "\nSee console output for debugging information.",
@@ -416,13 +417,13 @@ class BookLibGuiFrame extends JFrame {
 						writeSortedXML(dataFile);
 						dataModified = false;
 						JOptionPane.showMessageDialog(
-							null,
+							bookLibPanel,
 							"Successfully wrote library database to " + dataFile.toString() + ".",
 							"Information",
 							JOptionPane.INFORMATION_MESSAGE);
 					} catch (Exception e) {
 						JOptionPane.showMessageDialog(
-							null,
+							bookLibPanel,
 							"Unable to write book libray to file: "
 								+ e.getMessage()
 								+ "\nSee console output for debugging information.",
@@ -432,7 +433,7 @@ class BookLibGuiFrame extends JFrame {
 					};
 				} else {
 					JOptionPane.showMessageDialog(
-						null,
+						bookLibPanel,
 						"Action cancelled. No file was selected so nothing was saved to a file.",
 						"Information",
 						JOptionPane.INFORMATION_MESSAGE);
@@ -446,7 +447,7 @@ class BookLibGuiFrame extends JFrame {
 					Object[] options = { "SAVE", "CLOSE" };
 					int choice =
 						JOptionPane.showOptionDialog(
-							null,
+							bookLibPanel,
 							"Book Library changed. Do you want to save the changes?",
 							"Warning",
 							JOptionPane.DEFAULT_OPTION,
@@ -465,7 +466,7 @@ class BookLibGuiFrame extends JFrame {
 								writeSortedXML(dataFile);
 							} catch (Exception e) {
 								JOptionPane.showMessageDialog(
-									null,
+									bookLibPanel,
 									"Unable to write book libray to file: "
 										+ e.getMessage()
 										+ "\nSee console output for debugging information.",
@@ -499,20 +500,30 @@ class BookLibGuiFrame extends JFrame {
 					if (!BOOKLIBRARYEXTENSION.equals(extension))
 						// Add book library database file extension
 						tempf = new File(tempf.getName() + "." + BOOKLIBRARYEXTENSION);
+					if (tempf.exists()) {
+						 int returnVal = JOptionPane.showConfirmDialog(
+											bookLibPanel,
+											"Overwrite existing file " + tempf + "?",
+											"Overwrite warning",
+											JOptionPane.OK_CANCEL_OPTION,
+											JOptionPane.WARNING_MESSAGE);
+						if (returnVal == JOptionPane.CANCEL_OPTION)
+							return;
+					}
 					if (!tempf.equals(dataFile))
 						dataFile = tempf;
 					try {
 						writeSortedXML(dataFile);
 						dataModified = false;
 						JOptionPane.showMessageDialog(
-							null,
+							bookLibPanel,
 							"Successfully wrote library database to " + dataFile.toString() + ".",
 							"Information",
 							JOptionPane.INFORMATION_MESSAGE);
 
 					} catch (Exception e) {
 						JOptionPane.showMessageDialog(
-							null,
+							bookLibPanel,
 							"Unable to write book libray to file: "
 								+ e.getMessage()
 								+ "\nSee console output for debugging information.",
@@ -522,7 +533,7 @@ class BookLibGuiFrame extends JFrame {
 					};
 				} else {
 					JOptionPane.showMessageDialog(
-						null,
+						bookLibPanel,
 						"Action cancelled. No file was selected so nothing saved to file.",
 						"Information",
 						JOptionPane.INFORMATION_MESSAGE);
@@ -550,7 +561,7 @@ class BookLibGuiFrame extends JFrame {
 					Object[] options = { "EXIT", "SAVE AND EXIT", "CANCEL" };
 					int choice =
 						JOptionPane.showOptionDialog(
-							null,
+							bookLibPanel,
 							"Book Library changed. Do you want to save the changes before exiting?",
 							"Warning",
 							JOptionPane.DEFAULT_OPTION,
@@ -567,7 +578,7 @@ class BookLibGuiFrame extends JFrame {
 								writeSortedXML(dataFile);
 							} catch (Exception e) {
 								JOptionPane.showMessageDialog(
-									null,
+									bookLibPanel,
 									"Unable to write book libray to file: "
 										+ e.getMessage()
 										+ "\nSee console output for debugging information.",
@@ -638,7 +649,7 @@ class BookLibGuiFrame extends JFrame {
 					}
 				} catch (IllegalStateException e) {
 					JOptionPane.showMessageDialog(
-						null,
+						bookLibPanel,
 						"Book already exists in the book library.\n Addition cancelled.",
 						"Error",
 						JOptionPane.ERROR_MESSAGE);
@@ -658,7 +669,7 @@ class BookLibGuiFrame extends JFrame {
 				Book bookselected = bookLibPanel.getBookSelected();
 				if (bookselected == null)
 					JOptionPane.showMessageDialog(
-						null,
+						bookLibPanel,
 						"No book selected",
 						"Book modify Error",
 						JOptionPane.ERROR_MESSAGE);
@@ -675,7 +686,7 @@ class BookLibGuiFrame extends JFrame {
 							modified))
 						if (modified.toString().equals("NO"))
 							JOptionPane.showMessageDialog(
-								null,
+								bookLibPanel,
 								"No data in book was modified",
 								"Book modify Warning",
 								JOptionPane.WARNING_MESSAGE);
@@ -702,7 +713,7 @@ class BookLibGuiFrame extends JFrame {
 				Book bookselected = bookLibPanel.getBookSelected();
 				if (bookselected == null)
 					JOptionPane.showMessageDialog(
-						null,
+						bookLibPanel,
 						"No book selected",
 						"Book delete Error",
 						JOptionPane.ERROR_MESSAGE);
@@ -710,7 +721,7 @@ class BookLibGuiFrame extends JFrame {
 					Object[] options = { "OK", "CANCEL" };
 					int choice =
 						JOptionPane.showOptionDialog(
-							null,
+							bookLibPanel,
 							"Click OK to delete the book '"
 								+ bookselected.getTitle()
 								+ "'?",
@@ -904,7 +915,7 @@ class BookLibGuiFrame extends JFrame {
 
 /**
  * Dummy action class used as a filler until real actions defined.
- * 
+ *
  */
 class TestAction extends AbstractAction {
 	public TestAction(String name) {
@@ -923,7 +934,7 @@ class TestAction extends AbstractAction {
  */
 class BookLibPanel extends JPanel {
 
-	// Display layout values and widgets 
+	// Display layout values and widgets
 	private JLabel searchHeading;
 	private static final String[] columnNames =
 		{ "Book Title", "Authors", "Series", "Publish Date", "Cover", "ISBN" };
@@ -937,7 +948,7 @@ class BookLibPanel extends JPanel {
 
 	/**
 	 * Used by the library panel to define the tabular layout and
-	 * properties of books being displayed as part of the 
+	 * properties of books being displayed as part of the
 	 * <code>JScrollPane</code> widget.
 	 */
 	class readOnlyTableModel extends AbstractTableModel {
@@ -960,7 +971,7 @@ class BookLibPanel extends JPanel {
 		}
 
 		/**
-		 * Return the value at the selected location which is done 
+		 * Return the value at the selected location which is done
 		 * by mapping the row and column value into the 2D array
 		 * of book data
 		 */
@@ -985,7 +996,7 @@ class BookLibPanel extends JPanel {
 	 * Create the panel for displaying the book library. The panel will
 	 * reside in the calling frame with at least a buffer of size
 	 * <code>border</code> around the panel.
-	 * 
+	 *
 	 * @param setBorder The size of the buffer border around the book library
 	 *                  display panel and the enclosing frame
 	 */
@@ -1055,7 +1066,7 @@ class BookLibPanel extends JPanel {
 	/**
 	 * Updates the books displayed in the panel based on the passed booklist. If this
 	 * is a refined search book list, an indication of that is also displayed.
-	 * 
+	 *
 	 * @param booklist The new list of books to display
 	 * @param searchlist True if this is a refined list and that should be indicated
 	 */
@@ -1128,7 +1139,7 @@ class BookLibPanel extends JPanel {
 
 	/**
 	 * Get and return the book selected in the in book library panel display
-	 * 
+	 *
 	 * @return Book selected in book library panel display
 	 */
 	public Book getBookSelected() {
@@ -1141,12 +1152,12 @@ class BookLibPanel extends JPanel {
 
 	// Export methods
 
-	/** 
+	/**
 	 * Export the current panel displayed to a file in CSV format.
-	 * 
-	 * The file must have a ".csv" extension. If the user does not 
-	 * provide one, the extension is added. 
-	 * 
+	 *
+	 * The file must have a ".csv" extension. If the user does not
+	 * provide one, the extension is added.
+	 *
 	 * The file cannot already exist or an error message is given.
 	 */
 	public void exportToCSV() {
@@ -1159,12 +1170,12 @@ class BookLibPanel extends JPanel {
 			file = new File(filename + ".csv");
 			if (file.exists()) {
 				JOptionPane.showMessageDialog(
-					null,
+					this,
 					"File already exisits: " + file.getName() + " .",
 					"Error",
 					JOptionPane.ERROR_MESSAGE);
 				return;
-			} 
+			}
 		} else {
 			file = new File(filename);
 		}
@@ -1174,7 +1185,7 @@ class BookLibPanel extends JPanel {
 			file.createNewFile();
 		} catch (IOException e) {
 			JOptionPane.showMessageDialog(
-				null,
+				this,
 				"Unable to open " + file.getName() + " for writing:"
 				+ e.getMessage()
 				+ "\nSee console output for debugging information.",
@@ -1190,7 +1201,7 @@ class BookLibPanel extends JPanel {
 			fileWriter = new BufferedWriter(new OutputStreamWriter( new FileOutputStream(file), "UTF-8"));
 		} catch (IOException e) {
 			JOptionPane.showMessageDialog(
-				null,
+				this,
 				"Unable to open " + file.getName() + " for writing:"
 				+ e.getMessage()
 				+ "\nSee console output for debugging information.",
@@ -1221,13 +1232,13 @@ class BookLibPanel extends JPanel {
 			csvWriter.close();
 			fileWriter.close();
 			JOptionPane.showMessageDialog(
-				null,
+				this,
 				"Book Information exported to " + file.getAbsolutePath(),
 				"Information",
 				JOptionPane.INFORMATION_MESSAGE);
 		} catch (IOException e) {
 			JOptionPane.showMessageDialog(
-				null,
+				this,
 				"Unable to write to and close " + file.getName() + " :"
 				+ e.getMessage()
 				+ "\nSee console output for debugging information.",
@@ -1239,7 +1250,7 @@ class BookLibPanel extends JPanel {
 	}
 
 	/** Helper method to print a blank instead of "null" for nulls.
-	 * 
+	 *
 	 * @param s The string to check for null.
 	 * @return "" or the string.
 	 */
@@ -1250,12 +1261,12 @@ class BookLibPanel extends JPanel {
 			return s;
 	}
 
-	/** 
+	/**
 	 * Export the current panel displayed to a file in HTML format.
-	 * 
-	 * The file must have a ".html" extension. If the user does not 
-	 * provide one, the extension is added. 
-	 * 
+	 *
+	 * The file must have a ".html" extension. If the user does not
+	 * provide one, the extension is added.
+	 *
 	 * The file cannot already exist or an error message is given.
 	 */
 	public void exportToHTML() {
@@ -1268,12 +1279,12 @@ class BookLibPanel extends JPanel {
 			file = new File(filename + ".html");
 			if (file.exists()) {
 				JOptionPane.showMessageDialog(
-					null,
+					this,
 					"File already exisits: " + file.getName() + " .",
 					"Error",
 					JOptionPane.ERROR_MESSAGE);
 				return;
-			} 
+			}
 		} else {
 			file = new File(filename);
 		}
@@ -1283,7 +1294,7 @@ class BookLibPanel extends JPanel {
 			file.createNewFile();
 		} catch (IOException e) {
 			JOptionPane.showMessageDialog(
-				null,
+				this,
 				"Unable to open " + file.getName() + " for writing:"
 				+ e.getMessage()
 				+ "\nSee console output for debugging information.",
@@ -1299,7 +1310,7 @@ class BookLibPanel extends JPanel {
 		    fileWriter = new BufferedWriter(new OutputStreamWriter( new FileOutputStream(file), "UTF-8"));
 		} catch (IOException e) {
 			JOptionPane.showMessageDialog(
-				null,
+				this,
 				"Unable to open " + file.getName() + " for writing:"
 				+ e.getMessage()
 				+ "\nSee console output for debugging information.",
@@ -1309,7 +1320,7 @@ class BookLibPanel extends JPanel {
 			return;
 		}
 
-		// Output in html header information 
+		// Output in html header information
 		try {
 			fileWriter.write("<HTML xmlns=\"http://www.w3.org/TR/REC-html40\">\n");
 			fileWriter.write("<HEAD>\n");
@@ -1351,17 +1362,17 @@ class BookLibPanel extends JPanel {
 			fileWriter.write("</body>\n");
 			fileWriter.write("</html>\n");
 
-			// Flush, close and notify success 
+			// Flush, close and notify success
 			fileWriter.flush();
 			fileWriter.close();
 			JOptionPane.showMessageDialog(
-				null,
+				this,
 				"Book Information exported to " + file.getAbsolutePath(),
 				"Information",
 				JOptionPane.INFORMATION_MESSAGE);
 		} catch (IOException e) {
 			JOptionPane.showMessageDialog(
-				null,
+				this,
 				"Unable to write to and close " + file.getName() + " :"
 				+ e.getMessage()
 				+ "\nSee console output for debugging information.",
@@ -1377,10 +1388,10 @@ class BookLibPanel extends JPanel {
  * Window dialog to add a new book to the library or modify a selected book
  * in the library. In the addition mode, the book object
  * will be created and held by this dialog object. In the modification mode,
- * the book to modify is passed to the dialog to display the data. You must call 
+ * the book to modify is passed to the dialog to display the data. You must call
  * <code>showDialog</code> to invoke the dialog and check the
  * boolean return code to see if a book object was created or modified. If
- * created, use <code>getBook</code> method to get the created book 
+ * created, use <code>getBook</code> method to get the created book
  * object. If modified, the passed book object is modified directly.
  *
  */
@@ -1411,11 +1422,11 @@ class AddModifyBookDialog extends JDialog {
 	// Constructors
 
 	/**
-	 * Creates an add book dialog if that is indicated by <code>dialogType</code>. 
+	 * Creates an add book dialog if that is indicated by <code>dialogType</code>.
 	 * This dialog will contain blanks fields to be filled in. Otherwise it will
 	 * create a modify book dialog pre-populating the data fields with the values
 	 * of the currently selected book.
-	 * 
+	 *
 	 * @param owner The parent window calling this dialog
 	 * @param dialogType Whether this should be an add book dialog or a modify book
 	 *                   dialog
@@ -1437,14 +1448,14 @@ class AddModifyBookDialog extends JDialog {
 	 * added, the new <code>Book</code> object is created. If a book modification dialog
 	 * is asked for, <code>modified</code> will indicate if any modifications of the book
 	 * data occurred.
-	 * 
+	 *
 	 * @param dialogType Either an add new book dialog (<code>ADD_BOOK</code>) or a modify
 	 *                   the selected book (<code>MODIFY_BOOK</code>)
-	 * @param book Will be the new <code>Book</code> object in the case of an add book 
+	 * @param book Will be the new <code>Book</code> object in the case of an add book
 	 *             dialog or the selected book to modify in a modify book dialog
 	 * @param modified Indicator if the passed book data was modified, ie. a successful
 	 *                 modify book dialog
-	 * 
+	 *
 	 * @return True unless the dialog was cancelled
 	 */
 	public boolean showDialog(
@@ -1484,7 +1495,7 @@ class AddModifyBookDialog extends JDialog {
 	// Accessor methods
 
 	/**
-	 * Return the created book object. Should be invoked by the class calling the 
+	 * Return the created book object. Should be invoked by the class calling the
 	 * dialog
 	 */
 	public Book getBook() {
@@ -1589,7 +1600,7 @@ class AddModifyBookDialog extends JDialog {
 	}
 
 	/**
-	 * Auxillary method to add the add button to the button panel and 
+	 * Auxillary method to add the add button to the button panel and
 	 * provide the appropriate action events
 	 */
 	private void addAddButton() {
@@ -1708,7 +1719,7 @@ class AddModifyBookDialog extends JDialog {
 		if (b_title.toString().equals("")) {
 
 			JOptionPane.showMessageDialog(
-				null,
+				this,
 				"A book must have a title",
 				"Book Create Error",
 				JOptionPane.ERROR_MESSAGE);
@@ -1729,7 +1740,7 @@ class AddModifyBookDialog extends JDialog {
 		if (authorLast[0].getText().equals("")) {
 
 			JOptionPane.showMessageDialog(
-				null,
+				this,
 				"A book must have at least one author with a last name",
 				"Book Create Error",
 				JOptionPane.ERROR_MESSAGE);
@@ -1778,7 +1789,7 @@ class AddModifyBookDialog extends JDialog {
 /**
  * Window dialog to get the information to search on a particular
  * author in the library. You must call <code>showDialog</code> to
- * invoke the dialog and check the boolean return code to see if 
+ * invoke the dialog and check the boolean return code to see if
  * a book search object was created. If created, use
  * <code>getSearchObject</code> to get the created search object.
  *
@@ -1851,7 +1862,7 @@ class AuthorSearchDialog extends JDialog {
 
 	/**
 	 * Display the dialog and return true if a search object gets created
-	 * 
+	 *
 	 * @return True if a search object successfully created.
 	 */
 	public boolean showDialog() {
@@ -1864,7 +1875,7 @@ class AuthorSearchDialog extends JDialog {
 
 	/**
 	 * Return the created author search object
-	 * 
+	 *
 	 * @return The search object with the author search criteria
 	 */
 	public BookSearchObject getSearchObject() {
@@ -1873,7 +1884,7 @@ class AuthorSearchDialog extends JDialog {
 
 	/**
 	 * Return if we want a case insensitive serach
-	 * 
+	 *
 	 * @return true or false
 	 */
 	public boolean getCaseInsensitiveSearch() {
@@ -1898,7 +1909,7 @@ class AuthorSearchDialog extends JDialog {
 /**
  * Window dialog to get the information to search on a particular
  * book in the library. You must call <code>showDialog</code> to
- * invoke the dialog and check the boolean return code to see if 
+ * invoke the dialog and check the boolean return code to see if
  * a book search object was created. If created, use
  * <code>getSearchObject</code> to get the created search object.
  *
@@ -1913,7 +1924,7 @@ class BookSearchDialog extends JDialog {
 	// Constructors
 
 	/**
-	 * Create and lay out dialog for a book search 
+	 * Create and lay out dialog for a book search
 	 */
 	public BookSearchDialog(JFrame owner) {
 		super(owner, "Search By Book", true);
@@ -1986,7 +1997,7 @@ class BookSearchDialog extends JDialog {
 
 	/**
 	 * Display dialog and return true if a search object gets created
-	 * 
+	 *
 	 * @return True if a search object successfully created.
 	 */
 	public boolean showDialog() {
@@ -1997,9 +2008,9 @@ class BookSearchDialog extends JDialog {
 
 	// Accessor methods
 
-	/** 
+	/**
 	 * Return the created book search object
-	 * 
+	 *
 	 * @return The search object with the book search criteria
 	 */
 	public BookSearchObject getSearchObject() {
@@ -2008,7 +2019,7 @@ class BookSearchDialog extends JDialog {
 
 	/**
 	 * Return if we want a case insensitive serach
-	 * 
+	 *
 	 * @return true or false
 	 */
 	public boolean getCaseInsensitiveSearch() {
@@ -2040,7 +2051,7 @@ class BookSearchDialog extends JDialog {
 /**
  * Window dialog to get the information to search for a book series
  * in the library. You must call <code>showDialog</code> to
- * invoke the dialog and check the boolean return code to see if 
+ * invoke the dialog and check the boolean return code to see if
  * a book search object was created. If created, use
  * <code>getSearchObject</code> to get the created search object.
  *
@@ -2110,7 +2121,7 @@ class SeriesSearchDialog extends JDialog {
 
 	/**
 	 * Display dialog and return true if the search object gets created
-	 * 
+	 *
 	 * @return Trues if search object successfully created.
 	 */
 	public boolean showDialog() {
@@ -2123,7 +2134,7 @@ class SeriesSearchDialog extends JDialog {
 
 	/**
 	 * Return the created book series search object
-	 * 
+	 *
 	 * @return The search object with the book series search criteria
 	 */
 	public BookSearchObject getBookSearchObject() {
@@ -2132,7 +2143,7 @@ class SeriesSearchDialog extends JDialog {
 
 	/**
 	 * Return if we want a case insensitive serach
-	 * 
+	 *
 	 * @return true or false
 	 */
 	public boolean getCaseInsensitiveSearch() {
