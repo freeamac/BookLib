@@ -53,6 +53,12 @@ connections like so:
     ./gradlew run
 ```
 
+## Packaging For Windows
+
+```
+    .gradlew windowsPackage
+```
+
 ## Github Workflows
 
 Upon a push to master, the code will be checked to ensure that is builds under Gradle. That is all.
