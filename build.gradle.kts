@@ -25,7 +25,6 @@ dependencies {
     // This dependency is used by the application.
     implementation("com.google.guava:guava:30.1-jre")
     implementation("com.opencsv:opencsv:5.5")
-    //implementation("javax.xml.parsers:DocumentBuilder:1.4.5")
    
 }
 
@@ -55,6 +54,19 @@ tasks.test {
 }
 
 launch4j {
-  mainClassName.set(application.mainClass.get())
-  icon.set("${projectDir}/icons/BookLib.ico")
+    mainClassName.set(application.mainClass.get())
+    icon.set("${projectDir}/icons/BookLib.ico")
+  	outfile.set("BookLib.exe")
+	copyright.set("amac")
+	windowTitle.set("BookLib")
+	companyName.set("BookLib")
+	jreMinVersion.set("11")
+    requires64Bit.set(true)
+    //bundledJrePath.set("jre")
+}
+
+tasks.register<Copy>("addJreToDistributable") {
+    from(zipTree("jre/jdk-11.0.21.9-hotspot.zip"))
+    into("$buildDir/jdk-win34")
+    dependsOn("createExe")
 }
