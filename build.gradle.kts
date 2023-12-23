@@ -62,11 +62,26 @@ launch4j {
 	companyName.set("BookLib")
 	jreMinVersion.set("11")
     requires64Bit.set(true)
-    //bundledJrePath.set("jre")
+    bundledJrePath.set("jre/bin/java")
+    requiresJdk.set(true)
 }
 
 tasks.register<Copy>("addJreToDistributable") {
-    from(zipTree("jre/jdk-11.0.21.9-hotspot.zip"))
-    into("$buildDir/jdk-win34")
+    from(zipTree("src/resources/jre.zip"))
+    into("$buildDir/launch4j")
     dependsOn("createExe")
 }
+
+tasks.register<Zip>("windowsPackageZip") {
+    from(fileTree("$buildDir/launch4j"))
+    destinationDirectory.set(File("$buildDir/tmp/windowsPackage"))
+    archiveFileName.set("BookLib-win64.zip")
+    dependsOn("addJreToDistributable")
+}
+
+tasks.register<Copy>("windowsPackage") {
+    from(file("$buildDir/tmp/windowsPackage/BookLib-win64.zip"))
+    into("$buildDir/distributions")
+    dependsOn("windowsPackageZip")
+}
+
