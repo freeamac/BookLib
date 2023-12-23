@@ -1,3 +1,5 @@
+package com.amac.BookLib;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -6,8 +8,9 @@ import javax.swing.table.*;
 import java.util.*;
 import java.io.*;
 
-import com.google.j2objc.annotations.J2ObjCIncompatible;
 import com.opencsv.CSVWriter;
+
+import com.amac.BookLib.Author;
 
 /**
  * The <code>BookLibGui</code> is the graphical interface allowing

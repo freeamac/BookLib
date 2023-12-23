@@ -4,5 +4,6 @@
         "/home/amac/Data/git/BookLib/libs/opencsv-5.5.jar",
         "libs\\opencsv-5.5.jar"
     ],
-    "java.compile.nullAnalysis.mode": "automatic"
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.updateBuildConfiguration": "interactive"
 }

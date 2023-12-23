@@ -1,3 +1,5 @@
+package com.amac.BookLib;
+
 import java.util.*;
 
 public class BookLibTest {

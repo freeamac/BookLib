@@ -1,4 +1,9 @@
+package com.amac.BookLib;
+
 import java.util.*;
+
+import com.amac.BookLib.Author;
+
 import java.io.*;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;

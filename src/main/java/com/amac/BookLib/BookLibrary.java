@@ -1,9 +1,14 @@
+package com.amac.BookLib;
+
 import java.util.*;
 import java.io.*;
 import java.nio.CharBuffer;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+
+import com.amac.BookLib.Author;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;

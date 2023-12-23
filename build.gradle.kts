@@ -8,7 +8,9 @@
 
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
-    application
+    id("application")
+    id("java")
+    id("edu.sc.seis.launch4j") version "3.0.5"
 }
 
 repositories {
@@ -23,17 +25,26 @@ dependencies {
     // This dependency is used by the application.
     implementation("com.google.guava:guava:30.1-jre")
     implementation("com.opencsv:opencsv:5.5")
+    //implementation("javax.xml.parsers:DocumentBuilder:1.4.5")
+   
 }
 
 application {
     // Define the main class for the application.
-    mainClass.set("BookLibGui")
+    applicationName = ("BookLib")
+    mainClass.set("com.amac.BookLib.BookLibGui")
+}
+
+plugins.withType<JavaPlugin>().configureEach {
+    configure<JavaPluginExtension> {
+        modularity.inferModulePath.set(true)
+    }
 }
 
 tasks.jar {
     manifest {
         attributes(
-            "Main-Class" to "com.amac.BookLibGui"
+            "Main-Class" to "com.amac.BookLib.BookLibGui"
          )
     }
 }
@@ -41,4 +52,9 @@ tasks.jar {
 tasks.test {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
+}
+
+launch4j {
+  mainClassName.set(application.mainClass.get())
+  icon.set("${projectDir}/icons/BookLib.ico")
 }
