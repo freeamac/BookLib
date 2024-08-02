@@ -12,17 +12,6 @@
    <isbn>0-87980-11-5</isbn>
   </book>
   <book>
-   <title>101 Great Hikes Of The San Francisco Bay Area</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Ann </first>
-    <middle>Marie</middle>
-    <last>Brown</last>
-   </author>
-   <year>2003</year>
-   <isbn>1-56691-578-3</isbn>
-  </book>
-  <book>
    <title>1984</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -878,6 +867,16 @@
    </author>
    <year>2016</year>
    <isbn>978-0-425-27900-7</isbn>
+  </book>
+  <book>
+   <title>Bullshit Jobs</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>David</first>
+    <last>Graeber</last>
+   </author>
+   <year>2018</year>
+   <isbn>978-1-5011-4333-5</isbn>
   </book>
   <book>
    <title>C Programming Techniques For The Macintosh</title>
@@ -2929,20 +2928,6 @@
    <isbn>1-56044-801-6</isbn>
   </book>
   <book>
-   <title>Mountain Biking In The Bay Area A Nearly Complete Guide</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Michael</first>
-    <last>Hodgson</last>
-   </author>
-   <author>
-    <first>Mark</first>
-    <last>Lord</last>
-   </author>
-   <year>1992</year>
-   <isbn>0-934136-51-3</isbn>
-  </book>
-  <book>
    <title>Mountain Biking Moab</title>
    <covertype>Soft Cover</covertype>
    <series>Pocket Guide</series>
@@ -3195,6 +3180,16 @@
    </author>
    <year>2005</year>
    <isbn>0-89997-317-5</isbn>
+  </book>
+  <book>
+   <title>Pain Free</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Pete</first>
+    <last>Egoscue</last>
+   </author>
+   <year>2021</year>
+   <isbn>978-1-101-88664-9</isbn>
   </book>
   <book>
    <title>Park Ranger</title>
@@ -4242,6 +4237,16 @@
    <year>1974</year>
   </book>
   <book>
+   <title>The Dragon Never Sleeps</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Glen</first>
+    <last>Cook</last>
+   </author>
+   <year>1988</year>
+   <isbn>0-445-20349-8</isbn>
+  </book>
+  <book>
    <title>The Dragon Reborn</title>
    <covertype>Hard Cover</covertype>
    <series>The Wheel Of Time Book Three</series>
@@ -4261,16 +4266,6 @@
     <last>McCaffrey</last>
    </author>
    <year>1978</year>
-  </book>
-  <book>
-   <title>The Dragon Never Sleeps</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Glen</first>
-    <last>Cook</last>
-   </author>
-   <year>1988</year>
-   <isbn>0-445-20349-8</isbn>
   </book>
   <book>
    <title>The Elric Saga Part I</title>
