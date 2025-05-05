@@ -6,4 +6,6 @@
     ],
     "java.compile.nullAnalysis.mode": "automatic",
     "java.configuration.updateBuildConfiguration": "interactive"
+
+    "java.import.gradle.java.home": "C:\\Program Files\\Microsoft\\jdk-11.0.27.6-hotspot"
 }
