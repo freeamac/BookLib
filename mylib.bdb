@@ -5615,4 +5615,14 @@
    <year>2012</year>
    <isbn>978-1-84951-546-7</isbn>
   </book>
+  <book>
+   <title>マスカレードナイト</title>
+   <covertype>Soft Cover</covertype>
+   <series>ホテルシリーズ</series>
+   <author>
+    <last>東野圭吾</last>
+   </author>
+   <year>2014</year>
+   <isbn>978-4-08-745216-7</isbn>
+  </book>
 </booklibrary>
