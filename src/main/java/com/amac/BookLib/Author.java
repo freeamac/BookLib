@@ -342,7 +342,10 @@ public class Author {
 	 * @return True is equal. False otherwise.
 	 */
 	public boolean equals(Author y) {
-		if (firstname.equalsIgnoreCase(y.getFirstName())
+		String y_firstname = y.getFirstName();
+		if ((firstname == null) && (y_firstname != null))
+			return false;
+		if ((firstname == null) && (y_firstname == null) || (firstname.equalsIgnoreCase(y_firstname))
 			&& lastname.equalsIgnoreCase(y.getLastName()))
 			return true;
 		else
