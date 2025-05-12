@@ -14,7 +14,7 @@ Formerly it was developed under an Ubuntu environment (version 20.04.5 LTS) unde
 could be developed in that environment but running in that environment prevents access to the Microsoft
 IME for non-English input (ie. Japanese). For more details see [IME Experiments](docs/ime_experiments/README.md)
 
-The current version of java being used is openjdk 11.0.17
+The current version of java being used is openjdk 17.0.15 for `jpackage` support. That also requires the installation of the [Wix Toolset V3](https://github.com/wixtoolset/wix3/releases) to package the app into a Microsoft installer package (.msi).
 
 
 ## Developer Linting
@@ -35,10 +35,10 @@ Currently a limited number of unit test cases exist but have not been integrated
     ./gradlew run
 ```
 
-## Packaging For Windows
+## Packaging For Windows Installer
 
 ```
-    .gradlew windowsPackage
+    ./gradlew msiPackage
 ```
 
 ## Github Workflows

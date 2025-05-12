@@ -10,7 +10,7 @@ plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id("application")
     id("java")
-    id("edu.sc.seis.launch4j") version "3.0.5"
+    id("org.beryx.jlink") version "2.23.6"
 }
 
 repositories {
@@ -34,6 +34,50 @@ application {
     mainClass.set("com.amac.BookLib.BookLibGui")
 }
 
+java {
+  toolchain {
+    languageVersion.set(JavaLanguageVersion.of(17))
+  }
+}
+
+jlink {
+    options.set(listOf(
+        "--strip-debug",
+        "--compress=2",
+        "--no-header-files",
+        "--no-man-pages"))
+    launcher{
+        name = "BookLib"
+    }
+        jpackage {
+            imageName = "BookLib"
+            icon = "${projectDir}/icons/BookLib.ico"
+            appVersion = "1.0.0"
+    }
+}
+
+tasks.register("msiPackage", Exec::class) {
+
+    group = "build"
+
+    // Get the java binaries installation directory
+    val launcher = javaToolchains.launcherFor(java.toolchain)
+    val javaBinDir = launcher.get().metadata.installationPath
+
+    // Install properties
+    val programName = "BookLib"
+    val programVersion = "1.0.0"
+    val programCopyright = "2025"
+    val programVendor = "amacInc"
+    val programDescription = "MacLeod Book Library"
+
+    // Set the command to execute
+    commandLine("$javaBinDir\\bin\\jpackage.exe", "--type", "msi", "--dest", "$buildDir\\jpackage", "--name", "$programName", "--app-version", "$programVersion", "--app-image", "$buildDir\\jpackage\\$programName", "--copyright", "$programCopyright", "--vendor", "$programVendor", "--description", "$programDescription")
+
+    dependsOn("jpackage")
+}
+
+
 plugins.withType<JavaPlugin>().configureEach {
     configure<JavaPluginExtension> {
         modularity.inferModulePath.set(true)
@@ -52,36 +96,3 @@ tasks.test {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
-
-launch4j {
-    mainClassName.set(application.mainClass.get())
-    icon.set("${projectDir}/icons/BookLib.ico")
-  	outfile.set("BookLib.exe")
-	copyright.set("amac")
-	windowTitle.set("BookLib")
-	companyName.set("BookLib")
-	jreMinVersion.set("11")
-    requires64Bit.set(true)
-    bundledJrePath.set("jre/bin/java")
-    requiresJdk.set(true)
-}
-
-tasks.register<Copy>("addJreToDistributable") {
-    from(zipTree("src/resources/jre.zip"))
-    into("$buildDir/launch4j")
-    dependsOn("createExe")
-}
-
-tasks.register<Zip>("windowsPackageZip") {
-    from(fileTree("$buildDir/launch4j"))
-    destinationDirectory.set(File("$buildDir/tmp/windowsPackage"))
-    archiveFileName.set("BookLib-win64.zip")
-    dependsOn("addJreToDistributable")
-}
-
-tasks.register<Copy>("windowsPackage") {
-    from(file("$buildDir/tmp/windowsPackage/BookLib-win64.zip"))
-    into("$buildDir/distributions")
-    dependsOn("windowsPackageZip")
-}
-
