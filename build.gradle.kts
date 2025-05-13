@@ -53,6 +53,12 @@ jlink {
             imageName = "BookLib"
             icon = "${projectDir}/icons/BookLib.ico"
             appVersion = "1.0.0"
+            installerOptions = listOf(
+                "--vendor", "amacInc",
+                "--win-menu",
+                "--copyright", "2025",
+                "--description", "MacLeod Book Library"
+            )
     }
 }
 
@@ -72,7 +78,18 @@ tasks.register("msiPackage", Exec::class) {
     val programDescription = "MacLeod Book Library"
 
     // Set the command to execute
-    commandLine("$javaBinDir\\bin\\jpackage.exe", "--type", "msi", "--dest", "$buildDir\\jpackage", "--name", "$programName", "--app-version", "$programVersion", "--app-image", "$buildDir\\jpackage\\$programName", "--copyright", "$programCopyright", "--vendor", "$programVendor", "--description", "$programDescription")
+    commandLine(
+        "$javaBinDir\\bin\\jpackage.exe",
+        "--type", "msi",
+        "--dest", "$buildDir\\jpackage",
+        "--name", "$programName",
+        "--app-version", "$programVersion",
+        "--app-image", "$buildDir\\jpackage\\$programName",
+        "--copyright", "$programCopyright",
+        "--vendor", "$programVendor",
+        "--description", "$programDescription",
+        "--win-menu"
+    )
 
     dependsOn("jpackage")
 }

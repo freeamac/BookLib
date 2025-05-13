@@ -40,6 +40,10 @@ Currently a limited number of unit test cases exist but have not been integrated
 ```
     ./gradlew msiPackage
 ```
+or
+```
+     ./gradlew jpackage
+```
 
 ## Github Workflows
 
