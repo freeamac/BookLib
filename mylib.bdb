@@ -2653,16 +2653,6 @@
    <isbn>978-0-89997-470-5</isbn>
   </book>
   <book>
-   <title>Last Train To Alcatraz</title>
-   <covertype>Hard Cover</covertype>
-   <author>
-    <first>Leon</first>
-    <middle>W.</middle>
-    <last>Thompson</last>
-   </author>
-   <year>1995</year>
-  </book>
-  <book>
    <title>Learning Japanese Hiragana Katakana A Workbook For Self-Study</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -5011,16 +5001,6 @@
     <last>Harrison</last>
    </author>
    <year>1979</year>
-  </book>
-  <book>
-   <title>The Star Trek Compendium</title>
-   <covertype>Soft Cover</covertype>
-   <author>
-    <first>Allan</first>
-    <last>Asherman</last>
-   </author>
-   <year>1989</year>
-   <isbn>0-671-68440-X</isbn>
   </book>
   <book>
    <title>The Star Wars Album</title>
