@@ -580,14 +580,14 @@
   </book>
   <book>
    <title>Assassin's Apprentice</title>
-   <covertype>Soft Cover</covertype>
-   <series>The Farseer Trilogy Book One - Delete?</series>
+   <covertype>Hard Cover</covertype>
+   <series>The Farseer Trilogy Book One</series>
    <author>
     <first>Robin</first>
     <last>Hobb</last>
    </author>
-   <year>1996</year>
-   <isbn>0-553-57339-X</isbn>
+   <year>2019</year>
+   <isbn>978-1-9848-1785-3</isbn>
   </book>
   <book>
    <title>Assassin's Quest</title>
@@ -2371,6 +2371,17 @@
    <isbn>0-07-048845-2</isbn>
   </book>
   <book>
+   <title>Irish Fairy Tales And Folklore</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>William</first>
+    <middle>Butler</middle>
+    <last>Yeats</last>
+   </author>
+   <year>2022</year>
+   <isbn>978-1-949846-44-7</isbn>
+  </book>
+  <book>
    <title>Irregular Openings</title>
    <covertype>Soft Cover</covertype>
    <author>
@@ -3527,6 +3538,17 @@
    </author>
    <year>1997</year>
    <isbn>0-553-57341-1</isbn>
+  </book>
+  <book>
+   <title>Royal Assassin</title>
+   <covertype>Hard Cover</covertype>
+   <series>The Farseer Trilogy Book Two</series>
+   <author>
+    <first>Robin</first>
+    <last>Hobb</last>
+   </author>
+   <year>2020</year>
+   <isbn>978-0-593-15792-3</isbn>
   </book>
   <book>
    <title>Royal Nova Scotia International Tatoo</title>
@@ -5528,6 +5550,17 @@
    </author>
    <year>2012</year>
    <isbn>978-4-8053-1219-3</isbn>
+  </book>
+  <book>
+   <title>Yosemite National Park A Complete Hiker's Guide</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Jeffrey</first>
+    <middle>P.</middle>
+    <last>Schaffer</last>
+   </author>
+   <year>2006</year>
+   <isbn>0-89997-383-3</isbn>
   </book>
   <book>
    <title>You Are Here</title>
