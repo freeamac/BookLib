@@ -513,6 +513,7 @@
   <book>
    <title>Apprentice In Death</title>
    <covertype>Soft Cover</covertype>
+   <series>In Death</series>
    <author>
     <first>J.</first>
     <middle>D.</middle>
@@ -816,6 +817,7 @@
   <book>
    <title>Born In Death</title>
    <covertype>Soft Cover</covertype>
+   <series>In Death</series>
    <author>
     <first>J.</first>
     <middle>D.</middle>
@@ -860,6 +862,7 @@
   <book>
    <title>Brotherhood In Death</title>
    <covertype>Soft Cover</covertype>
+   <series>In Death</series>
    <author>
     <first>J.</first>
     <middle>D.</middle>
@@ -1594,6 +1597,7 @@
   <book>
    <title>Festive In Death</title>
    <covertype>Soft Cover</covertype>
+   <series>In Death</series>
    <author>
     <first>J.</first>
     <middle>D.</middle>
@@ -1892,6 +1896,7 @@
   <book>
    <title>Glory In Death</title>
    <covertype>Soft Cover</covertype>
+   <series>In Death</series>
    <author>
     <first>J.</first>
     <middle>D.</middle>
@@ -2100,6 +2105,7 @@
   <book>
    <title>Holiday In Death</title>
    <covertype>Soft Cover</covertype>
+   <series>In Death</series>
    <author>
     <first>J.</first>
     <middle>D.</middle>
@@ -2208,6 +2214,7 @@
   <book>
    <title>Immortal In Death</title>
    <covertype>Soft Cover</covertype>
+   <series>In Death</series>
    <author>
     <first>J.</first>
     <middle>D.</middle>
@@ -2241,6 +2248,7 @@
   <book>
    <title>Innocent In Death</title>
    <covertype>Soft Cover</covertype>
+   <series>In Death</series>
    <author>
     <first>J.</first>
     <middle>D.</middle>
@@ -2523,6 +2531,7 @@
   <book>
    <title>Judgment In Death</title>
    <covertype>Soft Cover</covertype>
+   <series>In Death</series>
    <author>
     <first>J.</first>
     <middle>D.</middle>
@@ -2787,6 +2796,7 @@
   <book>
    <title>Loyalty In Death</title>
    <covertype>Soft Cover</covertype>
+   <series>In Death</series>
    <author>
     <first>J.</first>
     <middle>D.</middle>
@@ -2966,6 +2976,7 @@
   <book>
    <title>Naked In Death</title>
    <covertype>Soft Cover</covertype>
+   <series>In Death</series>
    <author>
     <first>J.</first>
     <middle>D.</middle>
@@ -3095,6 +3106,17 @@
    <isbn>978-0-9784784-3-8</isbn>
   </book>
   <book>
+   <title>NかMか</title>
+   <covertype>Soft Cover</covertype>
+   <series>N or M? 1941</series>
+   <author>
+    <first>アガサクリスティ</first>
+    <last>Agatha Christie</last>
+   </author>
+   <year>1978</year>
+   <isbn>978-4-15-070042-7</isbn>
+  </book>
+  <book>
    <title>Object-Oriented Programming</title>
    <covertype>Hard Cover</covertype>
    <series>Delete?</series>
@@ -3163,6 +3185,7 @@
   <book>
    <title>Origin In Death</title>
    <covertype>Soft Cover</covertype>
+   <series>In Death</series>
    <author>
     <first>J.</first>
     <middle>D.</middle>
@@ -3251,6 +3274,7 @@
   <book>
    <title>Portrait In Death</title>
    <covertype>Soft Cover</covertype>
+   <series>In Death</series>
    <author>
     <first>J.</first>
     <middle>D.</middle>
@@ -3362,6 +3386,7 @@
   <book>
    <title>Purity In Death</title>
    <covertype>Soft Cover</covertype>
+   <series>In Death</series>
    <author>
     <first>J.</first>
     <middle>D.</middle>
@@ -3530,17 +3555,6 @@
   </book>
   <book>
    <title>Royal Assassin</title>
-   <covertype>Soft Cover</covertype>
-   <series>The Farseer Trilogy Book Two - Delete</series>
-   <author>
-    <first>Robin</first>
-    <last>Hobb</last>
-   </author>
-   <year>1997</year>
-   <isbn>0-553-57341-1</isbn>
-  </book>
-  <book>
-   <title>Royal Assassin</title>
    <covertype>Hard Cover</covertype>
    <series>The Farseer Trilogy Book Two</series>
    <author>
@@ -3549,6 +3563,17 @@
    </author>
    <year>2020</year>
    <isbn>978-0-593-15792-3</isbn>
+  </book>
+  <book>
+   <title>Royal Assassin</title>
+   <covertype>Soft Cover</covertype>
+   <series>The Farseer Trilogy Book Two - Delete</series>
+   <author>
+    <first>Robin</first>
+    <last>Hobb</last>
+   </author>
+   <year>1997</year>
+   <isbn>0-553-57341-1</isbn>
   </book>
   <book>
    <title>Royal Nova Scotia International Tatoo</title>
@@ -3603,7 +3628,7 @@
    <author>
     <last>Fodor's Publishing</last>
    </author>
-   <year>-1</year>
+   <year>2009</year>
    <isbn>978-1-4000-0776-9</isbn>
   </book>
   <book>
@@ -3803,6 +3828,39 @@
    <isbn>486-21477-X</isbn>
   </book>
   <book>
+   <title>Spy Hook</title>
+   <covertype>Hard Cover</covertype>
+   <series>Hook, Line, Sinker</series>
+   <author>
+    <first>Len</first>
+    <last>Deighton</last>
+   </author>
+   <year>1988</year>
+   <isbn>978-0-09-173642-0</isbn>
+  </book>
+  <book>
+   <title>Spy Line</title>
+   <covertype>Hard Cover</covertype>
+   <series>Hook, Line, Sinker</series>
+   <author>
+    <first>Len</first>
+    <last>Deighton</last>
+   </author>
+   <year>1989</year>
+   <isbn>978-0-09-174320-6</isbn>
+  </book>
+  <book>
+   <title>Spy Sinker</title>
+   <covertype>Hard Cover</covertype>
+   <series>Hook, Line, Sinker</series>
+   <author>
+    <first>Len</first>
+    <last>Deighton</last>
+   </author>
+   <year>1990</year>
+   <isbn>978-0-09-173784-2</isbn>
+  </book>
+  <book>
    <title>Standard Grading Guide To Canadian Decimal Coins</title>
    <covertype>Hard Cover</covertype>
    <author>
@@ -3894,6 +3952,7 @@
   <book>
    <title>Survivor In Death</title>
    <covertype>Soft Cover</covertype>
+   <series>In Death</series>
    <author>
     <first>J.</first>
     <middle>D.</middle>
@@ -4071,6 +4130,16 @@
    </author>
    <year>1998</year>
    <isbn>1-56865-807-9</isbn>
+  </book>
+  <book>
+   <title>The Bullet That Missed</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Richard</first>
+    <last>Osman</last>
+   </author>
+   <year>2022</year>
+   <isbn>978-0-24-151243-2</isbn>
   </book>
   <book>
    <title>The C Programming Language</title>
@@ -4523,6 +4592,16 @@
    <isbn>0-06-105048-2</isbn>
   </book>
   <book>
+   <title>The Last Devil To Die</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Richard</first>
+    <last>Osman</last>
+   </author>
+   <year>2023</year>
+   <isbn>978-0-24-151245-6</isbn>
+  </book>
+  <book>
    <title>The Lavalite World</title>
    <covertype>Soft Cover</covertype>
    <series>World Of Tiers Series Book Five - Delete?</series>
@@ -4650,6 +4729,16 @@
     <last>Anthony</last>
    </author>
    <year>1979</year>
+  </book>
+  <book>
+   <title>The Man Who Died Twice</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Richard</first>
+    <last>Osman</last>
+   </author>
+   <year>2021</year>
+   <isbn>978-0-24-142543-5</isbn>
   </book>
   <book>
    <title>The Metamorphosis</title>
@@ -5104,6 +5193,16 @@
    <isbn>0-441-00345-1</isbn>
   </book>
   <book>
+   <title>The Thursday Murder Club</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>Richard</first>
+    <last>Osman</last>
+   </author>
+   <year>2020</year>
+   <isbn>978-0-24-198826-8</isbn>
+  </book>
+  <book>
    <title>The Tower Of Fear</title>
    <covertype>Soft Cover</covertype>
    <series>Delete?</series>
@@ -5341,6 +5440,7 @@
   <book>
    <title>Vengeance In Death</title>
    <covertype>Soft Cover</covertype>
+   <series>In Death</series>
    <author>
     <first>J.</first>
     <middle>D.</middle>
@@ -5363,8 +5463,19 @@
    <year>1984</year>
   </book>
   <book>
+   <title>Vinyl Café Celebrates</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>Stuart</first>
+    <last>McLean</last>
+   </author>
+   <year>2021</year>
+   <isbn>978-0-735-24264-7</isbn>
+  </book>
+  <book>
    <title>Visions In Death</title>
    <covertype>Soft Cover</covertype>
+   <series>In Death</series>
    <author>
     <first>J.</first>
     <middle>D.</middle>
@@ -5383,6 +5494,42 @@
    </author>
    <year>2004</year>
    <isbn>0-7627-3072-2</isbn>
+  </book>
+  <book>
+   <title>Vow バウッ！</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <last>宝島社</last>
+   </author>
+   <year>1987</year>
+   <isbn>978-4-88-063339-9</isbn>
+  </book>
+  <book>
+   <title>Vow バウッ！　スリー</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <last>宝島社</last>
+   </author>
+   <year>1991</year>
+   <isbn>978-4-79-660138-4</isbn>
+  </book>
+  <book>
+   <title>Vow バウッ！　セブン</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <last>宝島社</last>
+   </author>
+   <year>1995</year>
+   <isbn>978-4-79-660977-7</isbn>
+  </book>
+  <book>
+   <title>Vow バウッ！　ツー</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <last>宝島社</last>
+   </author>
+   <year>1989</year>
+   <isbn>978-4-88-063569-6</isbn>
   </book>
   <book>
    <title>Warlock</title>
@@ -5629,13 +5776,1304 @@
    <isbn>978-1-84951-546-7</isbn>
   </book>
   <book>
+   <title>おいしいバスタ</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>群ようこ</first>
+    <last>Mure Yoko</last>
+   </author>
+   <year>1994</year>
+   <isbn>978-4-56-956611-5</isbn>
+  </book>
+  <book>
+   <title>きちんとした日本語の話し方</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>今井登茂子</first>
+    <last>Imai Tomoko</last>
+   </author>
+   <year>2004</year>
+   <isbn>978-4-06-256882-1</isbn>
+  </book>
+  <book>
+   <title>こちら葛飾区亀有公園前派出所15</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>秋元治</first>
+    <last>Akimoto Osamu</last>
+   </author>
+   <year>1997</year>
+   <isbn>978-4-08-617115-1</isbn>
+  </book>
+  <book>
+   <title>そして誰もいなくなった</title>
+   <covertype>Soft Cover</covertype>
+   <series>Ten Little Niggers 1939</series>
+   <author>
+    <first>アガサクリスティ</first>
+    <last>Agatha Christie</last>
+   </author>
+   <year>1976</year>
+  </book>
+  <book>
+   <title>ちびまる子ちゃん　１３</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>さくらももこ</first>
+    <last>Sakura Momoko</last>
+   </author>
+   <year>1995</year>
+   <isbn>978-4-08-853831-0</isbn>
+  </book>
+  <book>
+   <title>ちびまる子ちゃん　６</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>さくらももこ</first>
+    <last>Sakura Momoko</last>
+   </author>
+   <year>1990</year>
+   <isbn>978-4-08-853511-1</isbn>
+  </book>
+  <book>
+   <title>とんかつの丸かじり</title>
+   <covertype>Soft Cover</covertype>
+   <series>丸かじりシリーズ</series>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>1995</year>
+   <isbn>978-4-16-717728-9</isbn>
+  </book>
+  <book>
+   <title>どら焼きの丸かじり</title>
+   <covertype>Soft Cover</covertype>
+   <series>丸かじりシリーズ</series>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>2013</year>
+   <isbn>978-4-16-717779-9</isbn>
+  </book>
+  <book>
+   <title>ひらいたトランプ</title>
+   <covertype>Soft Cover</covertype>
+   <series>Cards On the Table 1936</series>
+   <author>
+    <first>アガサクリスティ</first>
+    <last>Agatha Christie</last>
+   </author>
+   <year>1976</year>
+  </book>
+  <book>
+   <title>まどろみ消去</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>森博嗣</first>
+    <last>MoriHiroshi</last>
+   </author>
+   <year>2000</year>
+   <isbn>978-4-06-264936-0</isbn>
+  </book>
+  <book>
+   <title>ゆで卵の丸かじり</title>
+   <covertype>Soft Cover</covertype>
+   <series>丸かじりシリーズ</series>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>2014</year>
+   <isbn>9784167901479</isbn>
+  </book>
+  <book>
+   <title>アクロイド殺し</title>
+   <covertype>Soft Cover</covertype>
+   <series>The Murder of Roger Ackroyd 1925</series>
+   <author>
+    <first>アガサクリスティ</first>
+    <last>Agatha Christie</last>
+   </author>
+   <year>1979</year>
+   <isbn>978-4-15-070045-1</isbn>
+  </book>
+  <book>
+   <title>アンパンの丸かじり</title>
+   <covertype>Soft Cover</covertype>
+   <series>丸かじりシリーズ</series>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>2015</year>
+   <isbn>978-4-16-790346-6</isbn>
+  </book>
+  <book>
+   <title>イタリア語</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <last>Travel</last>
+   </author>
+   <year>2004</year>
+   <isbn>978-4-398-21533-6</isbn>
+  </book>
+  <book>
+   <title>カーテン</title>
+   <covertype>Soft Cover</covertype>
+   <series>Curtain 1975</series>
+   <author>
+    <first>アガサクリスティ</first>
+    <last>Agatha Christie</last>
+   </author>
+   <year>1982</year>
+   <isbn>978-4-15-070069-9</isbn>
+  </book>
+  <book>
+   <title>キャベツの丸かじり</title>
+   <covertype>Soft Cover</covertype>
+   <series>丸かじりシリーズ</series>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>1994</year>
+   <isbn>978-4-16-717726-3</isbn>
+  </book>
+  <book>
+   <title>クリスマスツリー</title>
+   <covertype>Soft Cover</covertype>
+   <series>L'arbre de Noel</series>
+   <author>
+    <first>ミシェルバタイユ</first>
+    <last>Michel Bataille</last>
+   </author>
+   <year>1970</year>
+  </book>
+  <book>
+   <title>クリスマスプディングの冒険</title>
+   <covertype>Soft Cover</covertype>
+   <series>The Adventure of the Christmas Pudding</series>
+   <author>
+    <first>アガサクリスティ</first>
+    <last>Agatha Christie</last>
+   </author>
+   <year>1985</year>
+   <isbn>978-4-15-070078-8</isbn>
+  </book>
+  <book>
+   <title>ケーキの丸かじり</title>
+   <covertype>Soft Cover</covertype>
+   <series>丸かじりシリーズ</series>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>2003</year>
+   <isbn>978-4-16-717754-6</isbn>
+  </book>
+  <book>
+   <title>コロッケの丸かじり</title>
+   <covertype>Soft Cover</covertype>
+   <series>丸かじりシリーズ</series>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>2010</year>
+   <isbn>978-4-16-717774-4</isbn>
+  </book>
+  <book>
+   <title>ゴクミ語録</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>後藤久美子</first>
+    <last>Goto Kumiko</last>
+   </author>
+   <year>1987</year>
+   <isbn>978-4-04-169401-9</isbn>
+  </book>
+  <book>
+   <title>シウマイの丸かじり</title>
+   <covertype>Soft Cover</covertype>
+   <series>丸かじりシリーズ</series>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>2019</year>
+   <isbn>978-4-16-791262-8</isbn>
+  </book>
+  <book>
+   <title>ジョージ君の料理大好き！</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>1981</year>
+   <isbn>978-4-10-136401-0</isbn>
+  </book>
+  <book>
+   <title>タクアンの丸かじり</title>
+   <covertype>Soft Cover</covertype>
+   <series>丸かじりシリーズ</series>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>1997</year>
+   <isbn>978-4-16-717736-2</isbn>
+  </book>
+  <book>
+   <title>タコの丸かじり</title>
+   <covertype>Soft Cover</covertype>
+   <series>丸かじりシリーズ</series>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>1994</year>
+   <isbn>978-4-16-717725-6</isbn>
+  </book>
+  <book>
+   <title>ダンサーズダイエットブック</title>
+   <covertype>Hard Cover</covertype>
+   <series>The Dancers Body Book</series>
+   <author>
+    <first>Allegra</first>
+    <last>Kent</last>
+   </author>
+   <year>1984</year>
+   <isbn>978-4-46-926223-4</isbn>
+  </book>
+  <book>
+   <title>ドラえもん　昔ばなし編</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>藤子不二雄</first>
+    <last>Fujiko Fujio</last>
+   </author>
+   <year>1995</year>
+   <isbn>978-4-09-194005-6</isbn>
+  </book>
+  <book>
+   <title>ドラえもん　０点家出編</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>藤子不二雄</first>
+    <last>Fujiko Fujio</last>
+   </author>
+   <year>1994</year>
+   <isbn>978-4-09-194002-1</isbn>
+  </book>
+  <book>
+   <title>ドラえもん　１</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>藤子不二雄</first>
+    <last>Fujiko Fujio</last>
+   </author>
+   <year>2005</year>
+   <isbn>978-4-09-143301-5</isbn>
+  </book>
+  <book>
+   <title>ドラえもん　２</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>藤子不二雄</first>
+    <last>Fujiko Fujio</last>
+   </author>
+   <year>2005</year>
+   <isbn>978-4-09-143302-2</isbn>
+  </book>
+  <book>
+   <title>ナマズの丸かじり</title>
+   <covertype>Soft Cover</covertype>
+   <series>丸かじりシリーズ</series>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>1996</year>
+   <isbn>978-4-16-717734-X</isbn>
+  </book>
+  <book>
+   <title>バナナの丸かじり</title>
+   <covertype>Soft Cover</covertype>
+   <series>丸かじりシリーズ</series>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>2021</year>
+   <isbn>978-4-16-791680-0</isbn>
+  </book>
+  <book>
+   <title>パイナップルの丸かじり</title>
+   <covertype>Soft Cover</covertype>
+   <series>丸かじりシリーズ</series>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>2010</year>
+   <isbn>978-4-16-717773-7</isbn>
+  </book>
+  <book>
+   <title>パンダの丸かじり</title>
+   <covertype>Soft Cover</covertype>
+   <series>丸かじりシリーズ</series>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>2023</year>
+   <isbn>978-4-16-792033-3</isbn>
+  </book>
+  <book>
+   <title>ヒッコリーロードの殺人</title>
+   <covertype>Soft Cover</covertype>
+   <series>Hickory Dickory Dock 1955</series>
+   <author>
+    <first>アガサクリスティ</first>
+    <last>Agatha Christie</last>
+   </author>
+   <year>1978</year>
+  </book>
+  <book>
+   <title>ビッグ４</title>
+   <covertype>Soft Cover</covertype>
+   <series>The Big Four 1927</series>
+   <author>
+    <first>アガサクリスティ</first>
+    <last>Agatha Christie</last>
+   </author>
+   <year>1984</year>
+   <isbn>978-4-15-070077-X</isbn>
+  </book>
+  <book>
+   <title>ファーザーファッカー</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>内田春菊</first>
+    <last>Uchida Shungiku</last>
+   </author>
+   <year>1996</year>
+   <isbn>978-4-16-726704-9</isbn>
+  </book>
+  <book>
+   <title>ブタの丸かじり</title>
+   <covertype>Soft Cover</covertype>
+   <series>丸かじりシリーズ</series>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>2000</year>
+   <isbn>978-4-16-717745-4</isbn>
+  </book>
+  <book>
+   <title>ポアロのクリスマス</title>
+   <covertype>Soft Cover</covertype>
+   <series>Hercule Poirot's Christmas 19</series>
+   <author>
+    <first>アガサクリスティ</first>
+    <last>Agatha Christie</last>
+   </author>
+   <year>1976</year>
+   <isbn>978-4-15-070015-X</isbn>
+  </book>
+  <book>
+   <title>ポケットジョーク　先生と生徒</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>植松黎</first>
+    <last>Uematsu Rei</last>
+   </author>
+   <year>1986</year>
+   <isbn>978-4-04-242716-2</isbn>
+  </book>
+  <book>
+   <title>ポケットジョーク　神様仏様</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>植松黎</first>
+    <last>Uematsu Rei</last>
+   </author>
+   <year>1994</year>
+   <isbn>978-4-04-242723-0</isbn>
+  </book>
+  <book>
+   <title>マスカレードゲーム</title>
+   <covertype>Soft Cover</covertype>
+   <series>マスカレードシリーズ</series>
+   <author>
+    <first>東野圭吾</first>
+    <last>HigashinoKeigo</last>
+   </author>
+   <year>2025</year>
+   <isbn>978-4-08-74474-7</isbn>
+  </book>
+  <book>
+   <title>マスカレードナイト</title>
+   <covertype>Soft Cover</covertype>
+   <series>マスカレードシリーズ</series>
+   <author>
+    <first>東野圭吾</first>
+    <last>HigashinoKeigo</last>
+   </author>
+   <year>2020</year>
+   <isbn>978-4-08-744152-9</isbn>
+  </book>
+  <book>
    <title>マスカレードナイト</title>
    <covertype>Soft Cover</covertype>
    <series>ホテルシリーズ</series>
    <author>
-    <last>東野圭吾</last>
+    <first>東野圭吾</first>
+    <last>HigashinoKeigo</last>
    </author>
    <year>2014</year>
    <isbn>978-4-08-745216-7</isbn>
+  </book>
+  <book>
+   <title>マツタケの丸かじり</title>
+   <covertype>Soft Cover</covertype>
+   <series>丸かじりシリーズ</series>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>2001</year>
+   <isbn>978-4-167-17746-1</isbn>
+  </book>
+  <book>
+   <title>マディソン郡の橋</title>
+   <covertype>Hard Cover</covertype>
+   <series>Bridges of Madison County</series>
+   <author>
+    <first>Robert </first>
+    <middle>James</middle>
+    <last>Waller</last>
+   </author>
+   <year>1993</year>
+   <isbn>978-4-16-313840-4</isbn>
+  </book>
+  <book>
+   <title>マヤ文明インカ文明の謎</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>落合一泰</first>
+    <last>Ochiai Kazuyasu</last>
+   </author>
+   <year>1988</year>
+   <isbn>978-4-33-670780-7</isbn>
+  </book>
+  <book>
+   <title>メロンの丸かじり</title>
+   <covertype>Soft Cover</covertype>
+   <series>丸かじりシリーズ</series>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>2011</year>
+   <isbn>978-4-16-717777-5</isbn>
+  </book>
+  <book>
+   <title>メンチカツの丸かじり</title>
+   <covertype>Soft Cover</covertype>
+   <series>丸かじりシリーズ</series>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>2018</year>
+   <isbn>978-4-16-791126-3</isbn>
+  </book>
+  <book>
+   <title>モーパッサン短編集III</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>モーパッサン</first>
+    <last>Guy de Moupassant</last>
+   </author>
+   <year>1971</year>
+   <isbn>978-4-10-201408-X</isbn>
+  </book>
+  <book>
+   <title>ヨーロッパ</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <last>Globe Trotter</last>
+   </author>
+   <year>2002</year>
+   <isbn>978-4-478-05030-9</isbn>
+  </book>
+  <book>
+   <title>ライ麦畑で捕まえて</title>
+   <covertype>Soft Cover</covertype>
+   <series>The Catcher In The Rye</series>
+   <author>
+    <first>J.</first>
+    <middle>D.</middle>
+    <last>Salinger</last>
+   </author>
+   <year>1984</year>
+   <isbn>978-4-560-07051-2</isbn>
+  </book>
+  <book>
+   <title>ワニの丸かじり</title>
+   <covertype>Soft Cover</covertype>
+   <series>丸かじりシリーズ</series>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>1996</year>
+   <isbn>978-4-16-717733-1</isbn>
+  </book>
+  <book>
+   <title>予知夢</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>東野圭吾</first>
+    <last>HigashinoKeigo</last>
+   </author>
+   <year>2003</year>
+   <isbn>978-4-67-11008-6</isbn>
+  </book>
+  <book>
+   <title>人生勉強</title>
+   <covertype>Hard Cover</covertype>
+   <author>
+    <first>群ようこ</first>
+    <last>Mure Yoko</last>
+   </author>
+   <year>1998</year>
+   <isbn>978-4-87-728586-9</isbn>
+  </book>
+  <book>
+   <title>人間失格</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>太宰治</first>
+    <last>Dazai Osamu</last>
+   </author>
+   <year>1922</year>
+   <isbn>978-4-10-100605-9</isbn>
+  </book>
+  <book>
+   <title>伊勢エビの丸かじり</title>
+   <covertype>Soft Cover</covertype>
+   <series>丸かじりシリーズ</series>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>1998</year>
+   <isbn>978-4-16-717739-3</isbn>
+  </book>
+  <book>
+   <title>冷たい密室と博士たち</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>森博嗣</first>
+    <last>MoriHiroshi</last>
+   </author>
+   <year>1999</year>
+   <isbn>978-4-06-264560-7</isbn>
+  </book>
+  <book>
+   <title>凍</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>沢木耕太郎</first>
+    <last>Sawaki Kotaro</last>
+   </author>
+   <year>2008</year>
+   <isbn>978-4-10-123517-2</isbn>
+  </book>
+  <book>
+   <title>分かれ上手</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>森瑤子</first>
+    <last>Mori Yoko</last>
+   </author>
+   <year>1988</year>
+   <isbn>978-4-04-155214-8</isbn>
+  </book>
+  <book>
+   <title>分身</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>東野圭吾</first>
+    <last>HigashinoKeigo</last>
+   </author>
+   <year>1996</year>
+   <isbn>978-4-08-748519-6</isbn>
+  </book>
+  <book>
+   <title>動物のお医者さん　1</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>佐々木倫子</first>
+    <last>Sasaki Tomoko</last>
+   </author>
+   <year>1995</year>
+   <isbn>978-4-59-288141-9</isbn>
+  </book>
+  <book>
+   <title>動物のお医者さん　2</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>佐々木倫子</first>
+    <last>Sasaki Tomoko</last>
+   </author>
+   <year>1995</year>
+   <isbn>978-4-59-288142-7</isbn>
+  </book>
+  <book>
+   <title>動物のお医者さん　3</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>佐々木倫子</first>
+    <last>Sasaki Tomoko</last>
+   </author>
+   <year>1995</year>
+   <isbn>978-4-59-288143-5</isbn>
+  </book>
+  <book>
+   <title>動物のお医者さん　4</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>佐々木倫子</first>
+    <last>Sasaki Tomoko</last>
+   </author>
+   <year>1996</year>
+   <isbn>978-4-59-288144-3</isbn>
+  </book>
+  <book>
+   <title>動物のお医者さん　5</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>佐々木倫子</first>
+    <last>Sasaki Tomoko</last>
+   </author>
+   <year>1996</year>
+   <isbn>978-4-59-288145-1</isbn>
+  </book>
+  <book>
+   <title>動物のお医者さん　6</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>佐々木倫子</first>
+    <last>Sasaki Tomoko</last>
+   </author>
+   <year>1996</year>
+   <isbn>978-4-59-288146-X</isbn>
+  </book>
+  <book>
+   <title>動物のお医者さん　7</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>佐々木倫子</first>
+    <last>Sasaki Tomoko</last>
+   </author>
+   <year>1996</year>
+   <isbn>978-4-59-288147-8</isbn>
+  </book>
+  <book>
+   <title>動物のお医者さん　8</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>佐々木倫子</first>
+    <last>Sasaki Tomoko</last>
+   </author>
+   <year>1996</year>
+   <isbn>978-4-59-288148-6</isbn>
+  </book>
+  <book>
+   <title>友情</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>武者小路実篤</first>
+    <last>Mushanokoji Saneatsu</last>
+   </author>
+   <year>1917</year>
+   <isbn>978-4-10-105701-X</isbn>
+  </book>
+  <book>
+   <title>古典落語100席</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>立川志の輔</first>
+    <last>Tachikawa Shinosuke</last>
+   </author>
+   <year>1997</year>
+   <isbn>978-4-56-957080-8</isbn>
+  </book>
+  <book>
+   <title>変身</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>東野圭吾</first>
+    <last>HigashinoKeigo</last>
+   </author>
+   <year>1994</year>
+   <isbn>978-4-06-185698-1</isbn>
+  </book>
+  <book>
+   <title>夜のチョコレート</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>森瑤子</first>
+    <last>Mori Yoko</last>
+   </author>
+   <year>1992</year>
+   <isbn>978-4-04-155230-8</isbn>
+  </book>
+  <book>
+   <title>夢幻花</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>東野圭吾</first>
+    <last>HigashinoKeigo</last>
+   </author>
+   <year>2016</year>
+   <isbn>978-4-56-976560-0</isbn>
+  </book>
+  <book>
+   <title>大人の新常識520</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>大疑問研究会</first>
+    <last>大疑問研究会</last>
+   </author>
+   <year>2004</year>
+   <isbn>978-4-56-966105-6</isbn>
+  </book>
+  <book>
+   <title>宿命</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>東野圭吾</first>
+    <last>HigashinoKeigo</last>
+   </author>
+   <year>1993</year>
+   <isbn>978-4-06-185444</isbn>
+  </book>
+  <book>
+   <title>希望の仕組み</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>養老孟司</first>
+    <last>Youro Takeshi</last>
+   </author>
+   <year>2006</year>
+   <isbn>978-4-79-665331-2</isbn>
+  </book>
+  <book>
+   <title>干し芋の丸かじり</title>
+   <covertype>Soft Cover</covertype>
+   <series>丸かじりシリーズ</series>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>2025</year>
+   <isbn>978-4-16-792338-9</isbn>
+  </book>
+  <book>
+   <title>彼のバターナイフ</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>内田春菊</first>
+    <last>Uchida Shungiku</last>
+   </author>
+   <year>2003</year>
+   <isbn>978-4-04-344424-9</isbn>
+  </book>
+  <book>
+   <title>恋愛論</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>森瑤子</first>
+    <last>Mori Yoko</last>
+   </author>
+   <year>1997</year>
+   <isbn>978-4-04-155241-4</isbn>
+  </book>
+  <book>
+   <title>恋愛関係</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>森瑤子</first>
+    <last>Mori Yoko</last>
+   </author>
+   <year>1988</year>
+   <isbn>978-4-04-155215-5</isbn>
+  </book>
+  <book>
+   <title>手紙</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>東野圭吾</first>
+    <last>HigashinoKeigo</last>
+   </author>
+   <year>2001</year>
+   <isbn>978-4-16-711011-6</isbn>
+  </book>
+  <book>
+   <title>探偵ガリレオ</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>東野圭吾</first>
+    <last>HigashinoKeigo</last>
+   </author>
+   <year>2002</year>
+   <isbn>978-4-16-711007-9</isbn>
+  </book>
+  <book>
+   <title>探偵俱楽部</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>東野圭吾</first>
+    <last>HigashinoKeigo</last>
+   </author>
+   <year>1996</year>
+   <isbn>978-4-04-371802-3</isbn>
+  </book>
+  <book>
+   <title>散歩マップ　京都</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <last>Sampo</last>
+   </author>
+   <year>2009</year>
+   <isbn>978-4-415-30513-4</isbn>
+  </book>
+  <book>
+   <title>新参者</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>東野圭吾</first>
+    <last>HigashinoKeigo</last>
+   </author>
+   <year>2013</year>
+   <isbn>978-4-06-277628-8</isbn>
+  </book>
+  <book>
+   <title>旅する力　深夜特急ノート</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>沢木耕太郎</first>
+    <last>Sawaki Kotaro</last>
+   </author>
+   <year>2011</year>
+   <isbn>978-4-10-123518-9</isbn>
+  </book>
+  <book>
+   <title>日本人の起源を探る</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>隈本裕彦</first>
+    <last>Kumamoto Hirohiko</last>
+   </author>
+   <year>2001</year>
+   <isbn>978-4-10-290074-1</isbn>
+  </book>
+  <book>
+   <title>日本百名山トレッキングコースガイド　上巻</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <last>HYakumeizan</last>
+   </author>
+   <year>2015</year>
+   <isbn>978-4-398-13277-2</isbn>
+  </book>
+  <book>
+   <title>本当に建つのかな</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>内田春菊</first>
+    <last>Uchida Shungiku</last>
+   </author>
+   <year>2007</year>
+   <isbn>978-4-06-275828-4</isbn>
+  </book>
+  <book>
+   <title>札幌着２３時２５分</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>西村京太郎</first>
+    <last>Nishimura Kyotaro</last>
+   </author>
+   <year>1985</year>
+   <isbn>978-4-04-152710-4</isbn>
+  </book>
+  <book>
+   <title>東野エデン</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>神山健司</first>
+    <last>Kamiyama Kenji</last>
+   </author>
+   <year>2012</year>
+   <isbn>978-4-84-014832-0</isbn>
+  </book>
+  <book>
+   <title>桃色浄土</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>坂東眞砂子</first>
+    <last>Masako Bando</last>
+   </author>
+   <year>1997</year>
+   <isbn>978-4-10-132321-3</isbn>
+  </book>
+  <book>
+   <title>死との約束</title>
+   <covertype>Soft Cover</covertype>
+   <series>Appointment with Death 1938</series>
+   <author>
+    <first>アガサクリスティ</first>
+    <last>Agatha Christie</last>
+   </author>
+   <year>1978</year>
+   <isbn>978-4-15-070033-8</isbn>
+  </book>
+  <book>
+   <title>永遠のゼロ</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>百田尚樹</first>
+    <last>Hyakuta Naoki</last>
+   </author>
+   <year>2009</year>
+   <isbn>978-4-06-276413-1</isbn>
+  </book>
+  <book>
+   <title>沈黙のパレード</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>東野圭吾</first>
+    <last>HigashinoKeigo</last>
+   </author>
+   <year>2021</year>
+   <isbn>978-4-16-791745-6</isbn>
+  </book>
+  <book>
+   <title>法医学教室の午後</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>西丸與一</first>
+    <last>Nishimaru Yoichi</last>
+   </author>
+   <year>1985</year>
+   <isbn>978-4-02-260327-2</isbn>
+  </book>
+  <book>
+   <title>物忘れを90％防ぐ法</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>米山公啓</first>
+    <last>Yoneyama Kimihiro</last>
+   </author>
+   <year>-1</year>
+   <isbn>978-4-83-797466-6</isbn>
+  </book>
+  <book>
+   <title>狗神</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>坂東眞砂子</first>
+    <last>Masako Bando</last>
+   </author>
+   <year>1996</year>
+   <isbn>978-4-04-193203-2</isbn>
+  </book>
+  <book>
+   <title>猫と海鞘</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>群ようこ</first>
+    <last>Mure Yoko</last>
+   </author>
+   <year>1998</year>
+   <isbn>978-4-16-748508-5</isbn>
+  </book>
+  <book>
+   <title>白馬山荘殺人事件</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>東野圭吾</first>
+    <last>HigashinoKeigo</last>
+   </author>
+   <year>1990</year>
+   <isbn>978-4-33-471122-1 </isbn>
+  </book>
+  <book>
+   <title>知っているようで知らない日本語</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>柴田武</first>
+    <last>Shibara Takeshi</last>
+   </author>
+   <year>2001</year>
+   <isbn>978-4-56-957509-4</isbn>
+  </book>
+  <book>
+   <title>知恵の七柱 1</title>
+   <covertype>Hard Cover</covertype>
+   <series>Seven Pillars of Wisdom</series>
+   <author>
+    <first>T.</first>
+    <middle>E.</middle>
+    <last>Lawrence</last>
+   </author>
+   <year>1969</year>
+   <isbn>978-4-58-280152-8</isbn>
+  </book>
+  <book>
+   <title>知恵の七柱 2</title>
+   <covertype>Hard Cover</covertype>
+   <series>Seven Pillars of Wisdom</series>
+   <author>
+    <first>T.</first>
+    <middle>E.</middle>
+    <last>Lawrence</last>
+   </author>
+   <year>1971</year>
+   <isbn>978-4-58-280181-1</isbn>
+  </book>
+  <book>
+   <title>知恵の七柱 3</title>
+   <covertype>Hard Cover</covertype>
+   <series>Seven Pillars of Wisdom</series>
+   <author>
+    <first>T.</first>
+    <middle>E.</middle>
+    <last>Lawrence</last>
+   </author>
+   <year>1971</year>
+   <isbn>978-4-58-280200-1</isbn>
+  </book>
+  <book>
+   <title>砂の女</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>安部公房</first>
+    <last>Abe Kobo</last>
+   </author>
+   <year>1981</year>
+   <isbn>978-4-10-112115-X</isbn>
+  </book>
+  <book>
+   <title>私が帰る二つの国</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>ドウス昌代</first>
+    <last>Duus Masayo</last>
+   </author>
+   <year>1980</year>
+  </book>
+  <book>
+   <title>私たちは繁殖している　イエロー</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>内田春菊 </first>
+    <last>Uchida Shungiku</last>
+   </author>
+   <year>2000</year>
+   <isbn>978-4-04-344404-5</isbn>
+  </book>
+  <book>
+   <title>私たちは繁殖している　オレンジ</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>内田春菊</first>
+    <last>Uchida Shungiku</last>
+   </author>
+   <year>2013</year>
+   <isbn>978-4-04-400313-5</isbn>
+  </book>
+  <book>
+   <title>私たちは繁殖している　グリーン</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>内田春菊 </first>
+    <last>Uchida Shungiku</last>
+   </author>
+   <year>2007</year>
+   <isbn>978-4-04-344442-7</isbn>
+  </book>
+  <book>
+   <title>私たちは繁殖している　バトル</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>内田春菊</first>
+    <last>Uchida Shungiku</last>
+   </author>
+   <year>2008</year>
+   <isbn>978-4-04-344443-4</isbn>
+  </book>
+  <book>
+   <title>私たちは繁殖している　ピンク</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>内田春菊</first>
+    <last>Uchida Shungiku</last>
+   </author>
+   <year>2001</year>
+   <isbn>978-4-04-344405-2</isbn>
+  </book>
+  <book>
+   <title>私たちは繁殖している　ブルー</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>内田春菊</first>
+    <last>Uchida Shungiku</last>
+   </author>
+   <year>2001</year>
+   <isbn>978-4-04-344406-9</isbn>
+  </book>
+  <book>
+   <title>私たちは繁殖している　レッド</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>内田春菊</first>
+    <last>Uchida Shungiku</last>
+   </author>
+   <year>2004</year>
+   <isbn>978-4-04-344427-4</isbn>
+  </book>
+  <book>
+   <title>私たちは繁殖しているソーダ</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>内田春菊</first>
+    <last>Uchida Shungiku</last>
+   </author>
+   <year>2014</year>
+   <isbn>978-4-04-400320-3</isbn>
+  </book>
+  <book>
+   <title>笑いのもつ煮込み</title>
+   <covertype>Soft Cover</covertype>
+   <series>丸かじりシリーズ</series>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>1993</year>
+   <isbn>978-4-16-717724-9</isbn>
+  </book>
+  <book>
+   <title>第三の女</title>
+   <covertype>Soft Cover</covertype>
+   <series>Third Girl 1966</series>
+   <author>
+    <first>アガサクリスティ</first>
+    <last>Agatha Christie</last>
+   </author>
+   <year>1977</year>
+  </book>
+  <book>
+   <title>終わりの美学</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>森瑤子</first>
+    <last>Mori Yoko</last>
+   </author>
+   <year>1998</year>
+   <isbn>978-4-04-155242-1</isbn>
+  </book>
+  <book>
+   <title>続　法医学教室の午後</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>西丸與一</first>
+    <last>Nishimaru Yoichi</last>
+   </author>
+   <year>1986</year>
+   <isbn>978-4-02-260419-0</isbn>
+  </book>
+  <book>
+   <title>羊と銅の森</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>宮下奈都</first>
+    <last>Miyashita Nao</last>
+   </author>
+   <year>2018</year>
+   <isbn>978-4-16-791010-5</isbn>
+  </book>
+  <book>
+   <title>複数の時計</title>
+   <covertype>Soft Cover</covertype>
+   <series>The Clocks</series>
+   <author>
+    <first>アガサクリスティ</first>
+    <last>Agatha Christie</last>
+   </author>
+   <year>1976</year>
+   <isbn>978-4-15-070006-0</isbn>
+  </book>
+  <book>
+   <title>親子丼の丸かじり</title>
+   <covertype>Soft Cover</covertype>
+   <series>丸かじりシリーズ</series>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>2002</year>
+   <isbn>978-4-16-717750-8</isbn>
+  </book>
+  <book>
+   <title>赤毛のアン</title>
+   <covertype>Soft Cover</covertype>
+   <series>Anne Of Green Gables</series>
+   <author>
+    <first>モントゴメリ</first>
+    <last>Lucy Maud Montgomery</last>
+   </author>
+   <year>1952</year>
+   <isbn>978-4-10-211341-7</isbn>
+  </book>
+  <book>
+   <title>青の炎</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>貴志祐介</first>
+    <last>KishiYusuke</last>
+   </author>
+   <year>1999</year>
+   <isbn>978-4-04-197906-8</isbn>
+  </book>
+  <book>
+   <title>非常識の美学</title>
+   <covertype>Soft Cover</covertype>
+   <author>
+    <first>森瑤子</first>
+    <last>Mori Yoko</last>
+   </author>
+   <year>1995</year>
+   <isbn>978-4-04-155237-7</isbn>
+  </book>
+  <book>
+   <title>食後のライスは大盛りで</title>
+   <covertype>Soft Cover</covertype>
+   <series>丸かじりシリーズ</series>
+   <author>
+    <first>東海林さだお</first>
+    <last>Shouji Sadao</last>
+   </author>
+   <year>1995</year>
+   <isbn>978-4-16-717827-2</isbn>
   </book>
 </booklibrary>
